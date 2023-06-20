@@ -1,7 +1,6 @@
-# pem_rl_game
-ML project in Unity
+# Pool Chess (Working title)
 
-#  Amazing Game
+Chess with pool cues. A Reinforcement Learning game implemented in Unity. 
 
 TODO:
 * find existing (open source) implementation of pool/billiard game for unity, to steal the control mechanism
