@@ -13,6 +13,7 @@ https://www.youtube.com/watch?v=2nHh9vzTW_Y
 https://www.youtube.com/watch?v=FtGy7J8XD90
 https://assetstore.unity.com/packages/3d/props/chess-pieces-board-70092
 https://github.com/SacuL/3D-Chess-Unity
+https://www.cgtrader.com/free-3d-models/chess
 
 * decide on a chess engine -> is there any free chess engine?
 * Consider how to train the agent, how to build the physic simulation 
