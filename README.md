@@ -1,8 +1,12 @@
-# Chess Brawl (Working title)
+# Pool Chess (Working title)
 
-Chess with a lot of force. A Reinforcement Learning game implemented in Unity. 
+Chess with pool cues. A Reinforcement Learning game implemented in Unity. 
 
 TODO:
+* find existing (open source) implementation of pool/billiard game for unity, to inspire the control mechanism 
+-> Resources Pool game Unity:
+https://github.com/fgrehm/pucrs-unity3d-pool
+https://www.youtube.com/watch?v=2nHh9vzTW_Y
 
 * find existing (open source) implementation of (3D) chessboard, to inspire the assets
 -> Resources Chess game Unity:
@@ -11,8 +15,11 @@ https://assetstore.unity.com/packages/3d/props/chess-pieces-board-70092
 https://github.com/SacuL/3D-Chess-Unity
 https://www.cgtrader.com/free-3d-models/chess
 
+* decide on a chess engine -> is there any free chess engine?
 * Consider how to train the agent, how to build the physic simulation 
 * test the learning
+* Decide on a game name: Pool Chess, Cue Chess, Chess Billiard, Chess Billiards, Chess Pool? -> I suggest Pool Chess
+* Design creative chess figures (optional depending on time)
 * Implement animations
 * Add extra pool areas where we place the ball on. Reference: https://play.google.com/store/apps/details?id=com.SAGlobalLLC.ChessPool&hl=gsw&gl=US&pli=1
 
@@ -30,7 +37,3 @@ conda create -n chessbrawl python=3.10.8
 conda activate chessbrawl
 pip install mlagents
 '''
-
-Homefolder of the project:
-
-ml-agents/Project/Assets/ML-Agents/Examples/ChessBrawl
