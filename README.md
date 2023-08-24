@@ -28,3 +28,12 @@ Take-away from presentation:
 * Maybe use a pool ball additionally, to add the complexity to the game
 * Test how hard it is for a user, the agent can do the physical task way easier, maybe add a target mark for users
 * Something else?
+
+# Setup
+Install Unity (https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
+Add the correct packages (https://unity-technologies.github.io/ml-agents/com.unity.ml-agents/)
+'''
+conda create -n chessbrawl python=3.10.8
+conda activate chessbrawl
+pip install mlagents
+'''
