@@ -1,8 +1,8 @@
 TODOs (new, to be updated)
-A: study the suitable hyperparameters in .yaml for training the model
-B: implement the behaviors of agents in C# scripts
-C: design the environments/scenes in Unity
-D: add visual, sound effects and animations
+- A: study the suitable hyperparameters in .yaml for training the model
+- B: implement the behaviors of agents in C# scripts
+- C: design the environments/scenes in Unity
+- D: add visual, sound effects and animations
 
 Preferences:
 - Van: 1A, 2B, 2C, 3D
