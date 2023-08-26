@@ -176,7 +176,15 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  targetTransform: {fileID: 373744593261552146}
+  targetTransforms:
+  - {fileID: 412844314249777964}
+  - {fileID: 69537932391401427}
+  - {fileID: 73168505164530433}
+  - {fileID: 3935337616668387064}
+  - {fileID: 270217866395724130}
+  - {fileID: 4275568060509815666}
+  - {fileID: 9196594055941202351}
+  - {fileID: 373744593261552146}
 --- !u!114 &199547835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 6
+    VectorObservationSize: 27
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 2
@@ -1564,6 +1572,7 @@ GameObject:
   - component: {fileID: 7854523106938760676}
   - component: {fileID: 7854523106938760678}
   - component: {fileID: 7854523106938760677}
+  - component: {fileID: 7854523106938760679}
   m_Layer: 0
   m_Name: Pawn.008
   m_TagString: Untagged
@@ -1584,6 +1593,7 @@ GameObject:
   - component: {fileID: 7283642347086989182}
   - component: {fileID: 7283642347086989184}
   - component: {fileID: 7283642347086989183}
+  - component: {fileID: 7283642347086989185}
   m_Layer: 0
   m_Name: Pawn.012
   m_TagString: Untagged
@@ -2487,6 +2497,7 @@ GameObject:
   - component: {fileID: 7537896790016461968}
   - component: {fileID: 9196594055941202353}
   - component: {fileID: 9196594055941202352}
+  - component: {fileID: 9196594055941202354}
   m_Layer: 0
   m_Name: Pawn.014
   m_TagString: Untagged
@@ -3137,6 +3148,7 @@ GameObject:
   - component: {fileID: 3568339671472884455}
   - component: {fileID: 9094527081626230175}
   - component: {fileID: 9094527081626230174}
+  - component: {fileID: 9094527081626230176}
   m_Layer: 0
   m_Name: Pawn.011
   m_TagString: Untagged
@@ -3194,7 +3206,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753795613400632677}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -3210,11 +3222,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7283642347086989185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753795613400632677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &7338695805343921016
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3388,6 +3412,7 @@ GameObject:
   - component: {fileID: 1681783199900319291}
   - component: {fileID: 7757260957837103832}
   - component: {fileID: 7757260957837103831}
+  - component: {fileID: 7757260957837103833}
   m_Layer: 0
   m_Name: Pawn.010
   m_TagString: Untagged
@@ -3403,7 +3428,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7757260957837103830}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -3419,11 +3444,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7757260957837103833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7757260957837103830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7790005660165552775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,6 +3474,7 @@ GameObject:
   - component: {fileID: 8131241547945341646}
   - component: {fileID: 8131241547945341648}
   - component: {fileID: 8131241547945341647}
+  - component: {fileID: 8131241547945341649}
   m_Layer: 0
   m_Name: Pawn.013
   m_TagString: Untagged
@@ -3494,7 +3532,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740673440013902194}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -3510,11 +3548,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7854523106938760679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740673440013902194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &7858036504355599350
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3596,7 +3646,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7790005660165552775}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -3612,11 +3662,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8131241547945341649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7790005660165552775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &8232520929706398790
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3904,7 +3966,7 @@ BoxCollider:
   m_GameObject: {fileID: 2597697060604145162}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
   m_Center: {x: 0, y: 0.8506619, z: 0}
@@ -4025,7 +4087,7 @@ BoxCollider:
   m_GameObject: {fileID: 8517909899423764551}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
   m_Center: {x: 0, y: 0.8596714, z: 0}
@@ -4058,6 +4120,7 @@ GameObject:
   - component: {fileID: 3612572056233749725}
   - component: {fileID: 8624529850425016944}
   - component: {fileID: 8624529850425016943}
+  - component: {fileID: 8624529850425016945}
   m_Layer: 0
   m_Name: Pawn.009
   m_TagString: Untagged
@@ -4073,7 +4136,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8624529850425016942}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -4089,11 +4152,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8624529850425016945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8624529850425016942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &8721086298690342911
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4303,7 +4378,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7213921135924700434}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -4319,11 +4394,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9094527081626230176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213921135924700434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9176604993854000921
 Transform:
   m_ObjectHideFlags: 0
@@ -4399,7 +4486,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5198559420892066679}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
@@ -4415,8 +4502,20 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9196594055941202354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198559420892066679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

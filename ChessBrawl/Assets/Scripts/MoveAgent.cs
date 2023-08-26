@@ -7,14 +7,20 @@ using Unity.MLAgents.Sensors;
 
 public class MoveAgent : Agent {
 
-    [SerializeField] private Transform targetTransform;
+    //[SerializeField] private Transform targetTransform;
+    public List<Transform> targetTransforms = new List<Transform>();
 
     public override void OnEpisodeBegin(){
         transform.localPosition = new Vector3(1, 0, 1.5f);    }
 
     public override void CollectObservations(VectorSensor sensor){
         sensor.AddObservation(transform.position);
-        sensor.AddObservation(targetTransform.position);
+
+        foreach (Transform targetTransform in targetTransforms)
+        {
+            sensor.AddObservation(targetTransform.position);
+        }
+           
     }
 
     public override void OnActionReceived(ActionBuffers actions){
