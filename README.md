@@ -1,8 +1,10 @@
-TODOs (new, to be updated)
-- A: study the suitable hyperparameters in .yaml for training the model
-- B: implement the behaviors of agents in C# scripts
-- C: design the environments/scenes in Unity
-- D: add visual, sound effects and animations
+# ChessBrawl
+
+TODOs (to be updated)
+- A: Study the suitable hyperparameters in .yaml for training the model
+- B: Implement the behaviors of agents in C# scripts
+- C: Design the environments/scenes in Unity
+- D: Add visual, sound effects and animations
 
 Preferences:
 - Van: 1A, 2B, 2C, 3D
@@ -10,31 +12,27 @@ Preferences:
 - Ludwig:
 - Max:
 
+Subtasks:
+- Design a simple scene with 1 chessboard, 2 agents, and chess pieces
+- Consider how to implement the behaviors of agents kick the chess pieces
+- Consider hot to implement the chess pieces to move forward or kick other chess pieces
+- Consider which information needed to feed the agents to solve desired tasks
+- Implement the OnEpisodeBegin() in C#
+- Implement CollectObservations(VectorSensor sensor) in C#
+- Implement OnActionReceived(ActionBuffers actionBuffers) in C#
+- Implement the human player mode
+- Study and test different hyperparameters for training the model
+- Set up configuration file .yaml
+- Train the agents
+- Test the learning with inference model
+- Test the learning with heuristic mode
+- Design creative chess figures 
+- Add sound, visual effects, animations
 
-# Pool Chess (Working title)
 
-Chess with pool cues. A Reinforcement Learning game implemented in Unity. 
 
-TODO:
-* find existing (open source) implementation of pool/billiard game for unity, to inspire the control mechanism 
--> Resources Pool game Unity:
-https://github.com/fgrehm/pucrs-unity3d-pool
-https://www.youtube.com/watch?v=2nHh9vzTW_Y
 
-* find existing (open source) implementation of (3D) chessboard, to inspire the assets
--> Resources Chess game Unity:
-https://www.youtube.com/watch?v=FtGy7J8XD90
-https://assetstore.unity.com/packages/3d/props/chess-pieces-board-70092
-https://github.com/SacuL/3D-Chess-Unity
-https://www.cgtrader.com/free-3d-models/chess
 
-* decide on a chess engine -> is there any free chess engine?
-* Consider how to train the agent, how to build the physic simulation 
-* test the learning
-* Decide on a game name: Pool Chess, Cue Chess, Chess Billiard, Chess Billiards, Chess Pool? -> I suggest Pool Chess
-* Design creative chess figures (optional depending on time)
-* Implement animations
-* Add extra pool areas where we place the ball on. Reference: https://play.google.com/store/apps/details?id=com.SAGlobalLLC.ChessPool&hl=gsw&gl=US&pli=1
 
 Take-away from presentation:
 * Using the chess engine should be only done if the Agent actually needs to do anything. (For testing it would be nice to just use the engine to see if it can learn the physical task to move a figure across the board)
