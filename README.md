@@ -14,8 +14,8 @@ Preferences:
 
 Subtasks:
 - Design a simple scene with 1 chessboard, 2 agents, and chess pieces
-- Consider how to implement the behaviors of agents kick the chess pieces
-- Consider hot to implement the chess pieces to move forward or kick other chess pieces
+- Consider how to implement the behaviors of agents to kick the chess pieces
+- Consider how to implement the chess pieces to move forward or kick other chess pieces
 - Consider which information needed to feed the agents to solve desired tasks
 - Implement the OnEpisodeBegin() in C#
 - Implement CollectObservations(VectorSensor sensor) in C#
