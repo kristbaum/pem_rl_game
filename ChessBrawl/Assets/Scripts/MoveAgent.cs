@@ -34,7 +34,7 @@ public class MoveAgent : Agent {
 
     private void OnTriggerEnter(Collider other){
         if(other.TryGetComponent<Wall>(out Wall wall)){
-            AddReward(-1f);
+            AddReward(-100f);
             EndEpisode();
         }
         if(other.TryGetComponent<Goal>(out Goal goal)){
