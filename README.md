@@ -17,16 +17,17 @@ Subtasks:
 - Consider how to implement the behaviors of agents to kick the chess pieces
 - Consider how to implement the chess pieces to move forward or kick other chess pieces
 - Consider which information needed to feed the agents to solve desired tasks
-- Implement the OnEpisodeBegin() in C#
+- Implement OnEpisodeBegin() in C#
 - Implement CollectObservations(VectorSensor sensor) in C#
 - Implement OnActionReceived(ActionBuffers actionBuffers) in C#
 - Implement the human player mode
 - Study and test different hyperparameters for training the model
+- Implement the policy and optimizer for the trainer in Python
 - Set up configuration file .yaml
 - Train the agents
 - Test the learning with inference model
 - Test the learning with heuristic mode
-- Design creative chess figures 
+- Design creative chess figures, agents 
 - Add sound, visual effects, animations
 
 
