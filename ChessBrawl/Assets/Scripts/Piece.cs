@@ -59,7 +59,7 @@ public class Piece : MonoBehaviour
             // Chain Interaction Detected
             if(agent != null) 
             {
-                agent.AddReward(10f);
+                agent.AddReward(20f);
                 Debug.Log("Chain Interaction Detected!");
                 
                 agent.EndEpisode();

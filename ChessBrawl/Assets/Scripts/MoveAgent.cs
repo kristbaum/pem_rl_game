@@ -65,11 +65,17 @@ public class MoveAgent : Agent {
         }      
     }
 
+    private float kickForce; 
     public override void OnActionReceived(ActionBuffers actions){
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
+        float moveSpeed = actions.ContinuousActions[2];
+        float kickForce = actions.ContinuousActions[3];  // Extracting the kickForce from actions
 
-        float moveSpeed = 1f;
+
+        moveSpeed = Mathf.Clamp(moveSpeed, 0.5f, 5f); // Move speed range
+        kickForce = Mathf.Clamp(kickForce, 2f, 20f); // Kick force range
+
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
     }
 
@@ -89,9 +95,26 @@ public class MoveAgent : Agent {
             EndEpisode();
         }
 
+        // Check agent collision.
+        if(other.TryGetComponent<MoveAgent>(out MoveAgent agent))
+        {
+            // Penalize for touching the opposite agent directly.
+            AddReward(-50f);
+        }
+
         // Check for piece collision.
         if(other.TryGetComponent<Piece>(out Piece piece))
         {
+             // Calculate kick direction.
+            Vector3 kickDirection = (piece.transform.position - transform.position).normalized;
+
+            // Apply force to the piece's Rigidbody.
+            Rigidbody pieceRb = piece.GetComponent<Rigidbody>();
+            if (pieceRb)
+            {
+                pieceRb.AddForce(kickDirection * kickForce, ForceMode.Impulse);
+            }
+
             // If agent collides with a piece of its own color.
             if((int)piece.PieceColorValue == (int)this.agentColor)
             {
