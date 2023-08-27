@@ -11,7 +11,11 @@ public class MoveAgent : Agent {
     public List<Transform> targetTransforms = new List<Transform>();
 
     public override void OnEpisodeBegin(){
-        transform.localPosition = new Vector3(1, 0, 1.5f);    }
+        transform.localPosition = new Vector3(
+            Random.Range(3f,11.5f),
+            2.5f,
+            -6.7f);
+    }
 
     public override void CollectObservations(VectorSensor sensor){
         sensor.AddObservation(transform.position);
