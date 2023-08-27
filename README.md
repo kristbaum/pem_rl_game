@@ -42,15 +42,15 @@ How to train the model/agents on Windows ():
 4. Navigate to the unity project -> click on start button
 
 How to stop the training:
-a. Click on stop button in unity, can start the training again when clicking on play button again
-b. Strg C 
+- a. Click on stop button in unity, can start the training again when clicking on play button again
+- b. Strg C 
 
 How to test the model/agents on Windows: (can be done in a separated environment/project)
-a. Test the trained model:
-- Navigate to agents objects in unity project -> Behavior Parameters -> Behavior Type -> Heuristic Only -> use key board or mouse to test the agents
-b. Test the behaviors (for human play mode):
-- Navigate to agents objects in unity project -> Behavior Parameters -> Behavior Type -> Inference Only
-- Navigate to /results/ppo/ -> find the trained model -> drag it into the unity project -> add it as model in Behavior Parameters -> click on play button 
+- a. Test the trained model:
+  - Navigate to agents objects in unity project -> Behavior Parameters -> Behavior Type -> Heuristic Only -> use key board or mouse to test the agents
+- b. Test the behaviors (for human play mode):
+  - Navigate to agents objects in unity project -> Behavior Parameters -> Behavior Type -> Inference Only
+  - Navigate to /results/ppo/ -> find the trained model -> drag it into the unity project -> add it as model in Behavior Parameters -> click on play button 
 
 
 Take-away from presentation:
