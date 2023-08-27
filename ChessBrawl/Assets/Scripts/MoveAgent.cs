@@ -13,7 +13,7 @@ public class MoveAgent : Agent {
     public override void OnEpisodeBegin(){
         transform.localPosition = new Vector3(
             Random.Range(3f,11.5f),
-            2.5f,
+            0f,
             -6.7f);
     }
 
