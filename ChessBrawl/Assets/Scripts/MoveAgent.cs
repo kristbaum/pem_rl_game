@@ -7,8 +7,10 @@ using Unity.MLAgents.Sensors;
 
 public class MoveAgent : Agent {
 
-    public static List<MoveAgent> AllAgents = new List<MoveAgent>();
+    public static List<MoveAgent> AllAgents;
 
+    [Header("Environment Configuration")]
+    [SerializeField] private GameObject board;
 
     public enum AgentColor
     {
@@ -34,10 +36,13 @@ public class MoveAgent : Agent {
     [SerializeField] private float startZMin = -6.7f;
     [SerializeField] private float startZMax = -6.7f;
 
-    private static List<MoveAgent> allAgents = new List<MoveAgent>();
-
     private void Awake()
     {
+        if(AllAgents == null)
+        {
+            AllAgents = new List<MoveAgent>();
+        }
+        
         AllAgents.Add(this);
     }
 
@@ -75,6 +80,9 @@ public class MoveAgent : Agent {
     public override void CollectObservations(VectorSensor sensor){
         sensor.AddObservation(transform.position);
 
+        // Observing the board's position
+        sensor.AddObservation(board.transform.position);
+
         foreach (Transform targetTransform in targetTransforms)
         {
             sensor.AddObservation(targetTransform.position);
@@ -97,6 +105,9 @@ public class MoveAgent : Agent {
         kickForce = kickForceMin + ((kickForce + 1) * (kickForceMax - kickForceMin) / 2);
 
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
+
+        // Lock X and Z rotation
+        transform.rotation = Quaternion.Euler(0f, 180f, 0f);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut){
@@ -139,17 +150,17 @@ public class MoveAgent : Agent {
             // If agent collides with a piece of its own color.
             if((int)piece.PieceColorValue == (int)this.agentColor)
             {
-                Debug.Log("Same Color Interaction Detected!");
+                //Debug.Log("Same Color Interaction Detected!");
                 piece.agent = this; // Setting the reference
                 piece.pushTimer = Piece.pushDuration; // Reference to the constant pushDuration from the Piece script
-                AddReward(1f);
+                //AddReward(1f);
             }
             // If agent collides directly with a piece of the opposite color.
             else
             {
                 // Penalize for touching the opposite piece directly.
                 AddReward(-100f);
-                EndEpisode();
+                //EndEpisode();
             }
         }
     }

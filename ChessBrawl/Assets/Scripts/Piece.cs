@@ -75,12 +75,42 @@ public class Piece : MonoBehaviour
                 {
                     if (agent != null)
                     {
-                        agent.AddReward(50f);
+                        agent.AddReward(1f);
                         Debug.Log("Successful Kick Interaction!");
                     }
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Wall") && pushTimer > 0.0f) // Assuming the wall has a "Wall" tag
+        {
+            int oppositeColorValue = GetOppositeColorValue((int)this.PieceColorValue);
+
+            foreach (var agentInstance in MoveAgent.AllAgents)
+            {
+                if ((int)agentInstance.AgentColorValue == (int)this.PieceColorValue)
+                {
+                    float penalty = this.PieceValue;
+                    agentInstance.AddReward(-penalty*4); // Negative reward (Uncomment if you want to penalize)
+                    //Debug.Log("Penalized agent with color: " + agentInstance.AgentColorValue.ToString() + " for losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+                }
+                else if ((int)agentInstance.AgentColorValue == oppositeColorValue)
+                {
+                    float reward = this.PieceValue;
+                    agentInstance.AddReward(reward*2); // Positive reward
+                    //Debug.Log("Rewarded agent with color: " + agentInstance.AgentColorValue.ToString() + " for opponent losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+                }
+            }
+        }
+    }
+
+    // Define this function based on your color system. This example assumes only two colors (0 and 1).
+    private int GetOppositeColorValue(int colorValue)
+    {
+        return colorValue == 0 ? 1 : 0;
     }
 
     public void SetPushedState()
