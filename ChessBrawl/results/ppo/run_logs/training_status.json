@@ -27,15 +27,24 @@
                 "auxillary_file_paths": [
                     "results/ppo/MoveAgent/MoveAgent-118184.pt"
                 ]
+            },
+            {
+                "steps": 265777,
+                "file_path": "results/ppo/MoveAgent/MoveAgent-265777.onnx",
+                "reward": -92.73333333333333,
+                "creation_time": 1693141333.262707,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveAgent/MoveAgent-265777.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 118184,
+            "steps": 265777,
             "file_path": "results/ppo/MoveAgent.onnx",
-            "reward": -100.3,
-            "creation_time": 1693135205.3676715,
+            "reward": -92.73333333333333,
+            "creation_time": 1693141333.262707,
             "auxillary_file_paths": [
-                "results/ppo/MoveAgent/MoveAgent-118184.pt"
+                "results/ppo/MoveAgent/MoveAgent-265777.pt"
             ]
         }
     },

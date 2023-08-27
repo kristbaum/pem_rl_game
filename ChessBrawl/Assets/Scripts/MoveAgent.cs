@@ -27,7 +27,24 @@ public class MoveAgent : Agent {
     [SerializeField] private float startZMin = -6.7f;
     [SerializeField] private float startZMax = -6.7f;
 
+    private static List<MoveAgent> allAgents = new List<MoveAgent>();
+
+    void Awake() 
+    {
+        // Every agent adds itself to the list upon being instantiated
+        allAgents.Add(this);
+    }
+
     public override void OnEpisodeBegin()
+    {
+        // This agent will reset every agent, including itself
+        foreach (MoveAgent agent in allAgents) 
+        {
+            agent.ResetAgent();
+        }
+    }
+
+    private void ResetAgent() 
     {
         ResetAllPieces();
 
@@ -37,6 +54,7 @@ public class MoveAgent : Agent {
             Random.Range(startZMin, startZMax)
         );
     }
+
 
     public override void CollectObservations(VectorSensor sensor){
         sensor.AddObservation(transform.position);
