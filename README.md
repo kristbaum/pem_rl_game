@@ -17,10 +17,14 @@ Subtasks:
 - Consider how to implement the behaviors of agents to kick the chess pieces
 - Consider how to implement the chess pieces to move forward or kick other chess pieces
 - Consider which information needed to feed the agents to solve desired tasks
-- Implement OnEpisodeBegin() in C#
-- Implement CollectObservations(VectorSensor sensor) in C#
-- Implement OnActionReceived(ActionBuffers actionBuffers) in C#
+- Implement the setup of the environment for a new episode e.g. OnEpisodeBegin() in C#
+- Implement observing behaviors of agents e.g. CollectObservations(VectorSensor sensor) in C#
+- Implement the actions of agents e.g. OnActionReceived(ActionBuffers actionBuffers) in C#
+- Implement the collisions of the agents with walls, other chess pieces, goals
+- Implement the rewards for agents
 - Implement the human player mode
+- Study self-play strategy
+- Implement self-play mode in .yaml and C#
 - Study and test different hyperparameters for training the model
 - Implement the policy and optimizer for the trainer in Python
 - Set up configuration file .yaml
@@ -31,8 +35,22 @@ Subtasks:
 - Add sound, visual effects, animations
 
 
+How to train the model/agents on Windows ():
+1. Make sure ml-agents is installed, a virtual environment is activated
+2. Navigate to the downloaded folder ml-agents -> `mlagents-learn <path to configuration file .yaml> <optional run-id>`
+3. Wait until a port is listening
+4. Navigate to the unity project -> click on start button
 
+How to stop the training:
+a. Click on stop button in unity, can start the training again when clicking on play button again
+b. Strg C 
 
+How to test the model/agents on Windows: (can be done in a separated environment/project)
+a. Test the trained model:
+- Navigate to agents objects in unity project -> Behavior Parameters -> Behavior Type -> Heuristic Only -> use key board or mouse to test the agents
+b. Test the behaviors (for human play mode):
+- Navigate to agents objects in unity project -> Behavior Parameters -> Behavior Type -> Inference Only
+- Navigate to /results/ppo/ -> find the trained model -> drag it into the unity project -> add it as model in Behavior Parameters -> click on play button 
 
 
 Take-away from presentation:
