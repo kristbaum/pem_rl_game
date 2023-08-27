@@ -47,7 +47,7 @@ public class MoveAgent : Agent {
             AddReward(-100f);
             EndEpisode();
         }
-        if(other.TryGetComponent<Goal>(out Goal goal)){
+        if(other.TryGetComponent<Piece>(out Piece piece)){
             AddReward(1f);
             EndEpisode();
         }
