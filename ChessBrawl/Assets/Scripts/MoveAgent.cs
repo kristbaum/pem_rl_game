@@ -10,11 +10,20 @@ public class MoveAgent : Agent {
     //[SerializeField] private Transform targetTransform;
     public List<Transform> targetTransforms = new List<Transform>();
 
+    [Header("Initial Position Ranges")]
+    [SerializeField] private float startXMin = 3f;
+    [SerializeField] private float startXMax = 11.5f;
+    [SerializeField] private float startYMin = 0f;
+    [SerializeField] private float startYMax = 0f;
+    [SerializeField] private float startZMin = -6.7f;
+    [SerializeField] private float startZMax = -6.7f;
+
     public override void OnEpisodeBegin(){
         transform.localPosition = new Vector3(
-            Random.Range(3f,11.5f),
-            0f,
-            -6.7f);
+            Random.Range(startXMin, startXMax),
+            Random.Range(startYMin, startYMax),
+            Random.Range(startZMin, startZMax)
+        );
     }
 
     public override void CollectObservations(VectorSensor sensor){
