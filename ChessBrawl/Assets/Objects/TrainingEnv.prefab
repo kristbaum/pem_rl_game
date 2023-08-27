@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 3700582956816065888}
   - component: {fileID: 3700582956816065889}
   - component: {fileID: 7955502752822196377}
-  - component: {fileID: 8093203787333984300}
+  - component: {fileID: 9202814879049338644}
   m_Layer: 0
   m_Name: Bishop.002
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -129,7 +129,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: 3.1895658e-22, y: 0.75311494, z: 0}
---- !u!114 &8093203787333984300
+--- !u!114 &9202814879049338644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,6 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &850715277995811373
 GameObject:
@@ -156,10 +158,10 @@ GameObject:
   - component: {fileID: 7634847722408806625}
   - component: {fileID: 3734338961469911048}
   - component: {fileID: 8476584839141829681}
-  - component: {fileID: 217206744746398243}
+  - component: {fileID: 5905284583688471846}
   m_Layer: 0
   m_Name: Pawn.006
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,7 +239,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850715277995811373}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -271,7 +273,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &217206744746398243
+--- !u!114 &5905284583688471846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,6 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &889111843330662683
 GameObject:
@@ -396,10 +400,10 @@ GameObject:
   - component: {fileID: 1796284096801184967}
   - component: {fileID: 1796284096801185016}
   - component: {fileID: 148512649959203055}
-  - component: {fileID: 6496499563359758879}
+  - component: {fileID: 4429793378488369202}
   m_Layer: 0
   m_Name: Knight.003
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -479,7 +483,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -511,7 +515,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 2.6598317e-22, y: 0.628035, z: 0.027925223}
---- !u!114 &6496499563359758879
+--- !u!114 &4429793378488369202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -523,6 +527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &1037900434834903760
 GameObject:
@@ -538,11 +544,10 @@ GameObject:
   - component: {fileID: 4171317469104750614}
   - component: {fileID: 703354028227173942}
   - component: {fileID: 4171317469104750615}
-  - component: {fileID: 4171317469104750613}
-  - component: {fileID: 2155783326243611003}
+  - component: {fileID: 1264134156765115655}
   m_Layer: 0
   m_Name: Pawn.014
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +627,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -654,7 +659,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &4171317469104750613
+--- !u!114 &1264134156765115655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -666,19 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &2155783326243611003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037900434834903760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &1144966122703576277
 GameObject:
@@ -694,11 +688,10 @@ GameObject:
   - component: {fileID: 1144966122703576275}
   - component: {fileID: 6124277862637370290}
   - component: {fileID: 1144966122703576276}
-  - component: {fileID: 1144966122703576274}
-  - component: {fileID: 6240245525636492504}
+  - component: {fileID: 1311334131791820400}
   m_Layer: 0
   m_Name: Pawn.015
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -778,7 +771,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -810,7 +803,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &1144966122703576274
+--- !u!114 &1311334131791820400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -822,19 +815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &6240245525636492504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144966122703576277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &1168015390649228897
 GameObject:
@@ -850,10 +832,10 @@ GameObject:
   - component: {fileID: 6514186251774199087}
   - component: {fileID: 7538761672251857512}
   - component: {fileID: 5441972343601378182}
-  - component: {fileID: 4970769083472581725}
+  - component: {fileID: 3217807781857365813}
   m_Layer: 0
   m_Name: Pawn.004
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -931,7 +913,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168015390649228897}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -965,7 +947,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &4970769083472581725
+--- !u!114 &3217807781857365813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -977,6 +959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &1186385361726207723
 GameObject:
@@ -992,10 +976,10 @@ GameObject:
   - component: {fileID: 3784527347103003611}
   - component: {fileID: 3784527347103003612}
   - component: {fileID: 263823911418680552}
-  - component: {fileID: 1683313920560500617}
+  - component: {fileID: 8887403203056719778}
   m_Layer: 0
   m_Name: Pawn
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1073,7 +1057,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186385361726207723}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1107,7 +1091,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &1683313920560500617
+--- !u!114 &8887403203056719778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1119,6 +1103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &1427418086332343100
 GameObject:
@@ -1134,10 +1120,10 @@ GameObject:
   - component: {fileID: 4114736642864492220}
   - component: {fileID: 4114736642864492221}
   - component: {fileID: 4876270821748567840}
-  - component: {fileID: 134867741083436719}
+  - component: {fileID: 968579382430417806}
   m_Layer: 0
   m_Name: King.001
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1217,7 +1203,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1249,7 +1235,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
   m_Center: {x: 0, y: 0.8596714, z: 0}
---- !u!114 &134867741083436719
+--- !u!114 &968579382430417806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1261,6 +1247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &1555173682912226661
 GameObject:
@@ -1276,10 +1264,10 @@ GameObject:
   - component: {fileID: 5035447818799450671}
   - component: {fileID: 3159366450080634139}
   - component: {fileID: 8656508383548078174}
-  - component: {fileID: 6773489011225190032}
+  - component: {fileID: 2254946193664870563}
   m_Layer: 0
   m_Name: Pawn.007
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1357,7 +1345,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555173682912226661}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1391,7 +1379,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &6773489011225190032
+--- !u!114 &2254946193664870563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1403,6 +1391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &1722219783434572897
 GameObject:
@@ -1418,10 +1408,10 @@ GameObject:
   - component: {fileID: 7797046822657168907}
   - component: {fileID: 5210041029548892578}
   - component: {fileID: 850920052183263130}
-  - component: {fileID: 8411611520707650903}
+  - component: {fileID: 2956415623295187534}
   m_Layer: 0
   m_Name: Bishop.003
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1501,7 +1491,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1533,7 +1523,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: -0.00000047683716, y: 0.75311494, z: 0}
---- !u!114 &8411611520707650903
+--- !u!114 &2956415623295187534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1545,7 +1535,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
+--- !u!1 &2082125209679135846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499873234142745399}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1499873234142745399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082125209679135846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5063069293597501118}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2476801395416597685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,11 +1583,10 @@ GameObject:
   - component: {fileID: 4068406879460965432}
   - component: {fileID: 1881168872392039530}
   - component: {fileID: 4068406879460965433}
-  - component: {fileID: 4068406879460965383}
-  - component: {fileID: 5350582402058934305}
+  - component: {fileID: 3237742782152077679}
   m_Layer: 0
   m_Name: Pawn.011
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1644,7 +1666,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1676,7 +1698,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &4068406879460965383
+--- !u!114 &3237742782152077679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1688,19 +1710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &5350582402058934305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2476801395416597685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &3051200213713017632
 GameObject:
@@ -1716,11 +1727,10 @@ GameObject:
   - component: {fileID: 3932869156288533367}
   - component: {fileID: 2611361811413639962}
   - component: {fileID: 3932869156288533352}
-  - component: {fileID: 3932869156288533366}
-  - component: {fileID: 7456700524132414848}
+  - component: {fileID: 1985353406375769968}
   m_Layer: 0
   m_Name: Pawn.013
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1800,7 +1810,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1832,7 +1842,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &3932869156288533366
+--- !u!114 &1985353406375769968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1844,19 +1854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &7456700524132414848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3051200213713017632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &3307033075495859057
 GameObject:
@@ -1872,11 +1871,10 @@ GameObject:
   - component: {fileID: 3307033075495859071}
   - component: {fileID: 7469826890879594635}
   - component: {fileID: 3307033075495859056}
-  - component: {fileID: 3307033075495859070}
-  - component: {fileID: 5595456885307049584}
+  - component: {fileID: 2974053961954318060}
   m_Layer: 0
   m_Name: Pawn.010
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1956,7 +1954,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1988,7 +1986,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &3307033075495859070
+--- !u!114 &2974053961954318060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2000,19 +1998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &5595456885307049584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3307033075495859057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &3429270397741079813
 GameObject:
@@ -2028,10 +2015,10 @@ GameObject:
   - component: {fileID: 9212559674465943268}
   - component: {fileID: 1377590394671645978}
   - component: {fileID: 686760030546508582}
-  - component: {fileID: 424962680677566015}
+  - component: {fileID: 3140097251368787036}
   m_Layer: 0
   m_Name: Rook.001
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2109,7 +2096,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3429270397741079813}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -2143,7 +2130,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
---- !u!114 &424962680677566015
+--- !u!114 &3140097251368787036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2155,6 +2142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &3491999856449892832
 GameObject:
@@ -2170,10 +2159,10 @@ GameObject:
   - component: {fileID: 3491999856449892846}
   - component: {fileID: 3491999856449892847}
   - component: {fileID: 1638298121024306098}
-  - component: {fileID: 3286806195483007102}
+  - component: {fileID: 7125794066884794610}
   m_Layer: 0
   m_Name: King
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2251,7 +2240,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3491999856449892832}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -2285,7 +2274,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
   m_Center: {x: 0, y: 0.8596714, z: 0}
---- !u!114 &3286806195483007102
+--- !u!114 &7125794066884794610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2297,6 +2286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &3599465194470826953
 GameObject:
@@ -2312,11 +2303,10 @@ GameObject:
   - component: {fileID: 3599465194470826967}
   - component: {fileID: 6045698079229511147}
   - component: {fileID: 3599465194470826952}
-  - component: {fileID: 3599465194470826966}
-  - component: {fileID: 5829855538555664712}
+  - component: {fileID: 8893983511654847808}
   m_Layer: 0
   m_Name: Pawn.009
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2396,7 +2386,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2428,7 +2418,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &3599465194470826966
+--- !u!114 &8893983511654847808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2440,19 +2430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &5829855538555664712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3599465194470826953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &4543972668331718717
 GameObject:
@@ -2468,10 +2447,10 @@ GameObject:
   - component: {fileID: 8846235473696215013}
   - component: {fileID: 1894488110295595518}
   - component: {fileID: 485362582408373401}
-  - component: {fileID: 6315234831352390436}
+  - component: {fileID: 2859364080807424875}
   m_Layer: 0
   m_Name: Pawn.002
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2549,7 +2528,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4543972668331718717}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -2583,7 +2562,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &6315234831352390436
+--- !u!114 &2859364080807424875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2595,6 +2574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &4920846236956684629
 GameObject:
@@ -2607,13 +2588,13 @@ GameObject:
   - component: {fileID: 5285175590764505361}
   - component: {fileID: 8676261234066729091}
   - component: {fileID: 3782012792175375841}
-  - component: {fileID: 186837586864746144}
   - component: {fileID: 5825398400146051690}
+  - component: {fileID: 186837586864746144}
   - component: {fileID: 6798927104386365683}
-  - component: {fileID: 6514468732714579752}
+  - component: {fileID: 7095350364385409101}
   m_Layer: 0
   m_Name: Bishop.001
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2683,6 +2664,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &5825398400146051690
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920846236956684629}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &186837586864746144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2696,22 +2693,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: 0, y: 0.75311494, z: 0}
---- !u!54 &5825398400146051690
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920846236956684629}
-  serializedVersion: 2
-  m_Mass: 3
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &6798927104386365683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2725,7 +2706,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: 0, y: 0.75311494, z: 0}
---- !u!114 &6514468732714579752
+--- !u!114 &7095350364385409101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2737,6 +2718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &5019800012966674216
 GameObject:
@@ -2752,10 +2735,10 @@ GameObject:
   - component: {fileID: 4203226904675811513}
   - component: {fileID: 4203226904675811514}
   - component: {fileID: 7763593749562114116}
-  - component: {fileID: 9034188105292305335}
+  - component: {fileID: 5763914990941873021}
   m_Layer: 0
   m_Name: Rook.003
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2835,7 +2818,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2867,7 +2850,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
---- !u!114 &9034188105292305335
+--- !u!114 &5763914990941873021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2879,6 +2862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &5063069291489477142
 GameObject:
@@ -3278,7 +3263,7 @@ GameObject:
   - component: {fileID: 5063069292747176478}
   - component: {fileID: 5063069292747176550}
   m_Layer: 0
-  m_Name: Agent
+  m_Name: AgentWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3411,15 +3396,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  targetTransforms:
-  - {fileID: 4897969181680677515}
-  - {fileID: 5094889303182157428}
-  - {fileID: 5134192551482548902}
-  - {fileID: 8133080930908014431}
-  - {fileID: 5009026454633957573}
-  - {fileID: 9013528927413953237}
-  - {fileID: 4171317469104750600}
-  - {fileID: 4858376881630938037}
+  agentColor: 1
+  targetTransforms: []
   startXMin: 3
   startXMax: 11.5
   startYMin: 0
@@ -3447,7 +3425,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5063069292747176479}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3643,6 +3621,7 @@ Transform:
   - {fileID: 5063069291710785819}
   - {fileID: 5063069292321265328}
   - {fileID: 5063069292760325332}
+  - {fileID: 1499873234142745399}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3660,10 +3639,10 @@ GameObject:
   - component: {fileID: 2186031608671505221}
   - component: {fileID: 2186031608671505222}
   - component: {fileID: 3716140603922901466}
-  - component: {fileID: 28353088139623861}
+  - component: {fileID: 4238778795329643659}
   m_Layer: 0
   m_Name: Knight.002
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3743,7 +3722,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3775,7 +3754,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 2.6598317e-22, y: 0.628035, z: 0.027925223}
---- !u!114 &28353088139623861
+--- !u!114 &4238778795329643659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3787,6 +3766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &5498304935568688983
 GameObject:
@@ -3802,10 +3783,10 @@ GameObject:
   - component: {fileID: 713680403014989670}
   - component: {fileID: 610234349073815049}
   - component: {fileID: 7476396253049220082}
-  - component: {fileID: 4148772523995374896}
+  - component: {fileID: 3682227261752315101}
   m_Layer: 0
   m_Name: Pawn.001
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3883,7 +3864,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5498304935568688983}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -3917,7 +3898,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &4148772523995374896
+--- !u!114 &3682227261752315101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3929,6 +3910,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &5686108824770104501
 GameObject:
@@ -3947,12 +3930,12 @@ GameObject:
   - component: {fileID: 8678607530197316040}
   - component: {fileID: 4658007605092082216}
   m_Layer: 0
-  m_Name: Agent (1)
+  m_Name: AgentBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8865035324259761285
 Transform:
   m_ObjectHideFlags: 0
@@ -4080,15 +4063,8 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  targetTransforms:
-  - {fileID: 4897969181680677515}
-  - {fileID: 5094889303182157428}
-  - {fileID: 5134192551482548902}
-  - {fileID: 8133080930908014431}
-  - {fileID: 5009026454633957573}
-  - {fileID: 9013528927413953237}
-  - {fileID: 4171317469104750600}
-  - {fileID: 4858376881630938037}
+  agentColor: 0
+  targetTransforms: []
   startXMin: 3
   startXMax: 11.5
   startYMin: 0
@@ -4136,10 +4112,10 @@ GameObject:
   - component: {fileID: 3477548942525655950}
   - component: {fileID: 3477548942525655951}
   - component: {fileID: 3942775777749947182}
-  - component: {fileID: 5019792817543272067}
+  - component: {fileID: 882867506249155818}
   m_Layer: 0
   m_Name: Bishop
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4217,7 +4193,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704173859435868369}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -4251,7 +4227,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: 0, y: 0.75311494, z: 0}
---- !u!114 &5019792817543272067
+--- !u!114 &882867506249155818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4263,6 +4239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &6072187833926354474
 GameObject:
@@ -4278,10 +4256,10 @@ GameObject:
   - component: {fileID: 1572501256333924299}
   - component: {fileID: 1572501256333924300}
   - component: {fileID: 7771973127436946302}
-  - component: {fileID: 2545678030956149599}
+  - component: {fileID: 4549066380995225137}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4359,7 +4337,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6072187833926354474}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -4393,7 +4371,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 0, y: 0.628035, z: 0.027925223}
---- !u!114 &2545678030956149599
+--- !u!114 &4549066380995225137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4405,6 +4383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &6573710848806186500
 GameObject:
@@ -4417,13 +4397,13 @@ GameObject:
   - component: {fileID: 3490206775244531988}
   - component: {fileID: 8443868824943081991}
   - component: {fileID: 6297567500014232711}
-  - component: {fileID: 3822129309246218484}
   - component: {fileID: 976100433827495551}
+  - component: {fileID: 3822129309246218484}
   - component: {fileID: 916873961977028280}
-  - component: {fileID: 1375962885517782742}
+  - component: {fileID: 5746823827638751946}
   m_Layer: 0
   m_Name: Knight.001
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4493,6 +4473,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &976100433827495551
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573710848806186500}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &3822129309246218484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4506,22 +4502,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 0, y: 0.628035, z: 0.027925223}
---- !u!54 &976100433827495551
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6573710848806186500}
-  serializedVersion: 2
-  m_Mass: 3
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &916873961977028280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4535,7 +4515,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 0, y: 0.628035, z: 0.027925223}
---- !u!114 &1375962885517782742
+--- !u!114 &5746823827638751946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4547,6 +4527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &6580617481520161016
 GameObject:
@@ -4562,10 +4544,10 @@ GameObject:
   - component: {fileID: 4558812127886848422}
   - component: {fileID: 4558812127886848423}
   - component: {fileID: 4709389799268571354}
-  - component: {fileID: 8079212780746399700}
+  - component: {fileID: 3606016877754953544}
   m_Layer: 0
   m_Name: Queen.001
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4645,7 +4627,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4677,7 +4659,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
   m_Center: {x: 0, y: 0.8506619, z: 0}
---- !u!114 &8079212780746399700
+--- !u!114 &3606016877754953544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4689,6 +4671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &6779352730321611970
 GameObject:
@@ -4704,11 +4688,10 @@ GameObject:
   - component: {fileID: 2546522451959490087}
   - component: {fileID: 6327683138146196880}
   - component: {fileID: 2546522451959490264}
-  - component: {fileID: 2546522451959490086}
-  - component: {fileID: 7893738596023837865}
+  - component: {fileID: 8229201127427952719}
   m_Layer: 0
   m_Name: Pawn.012
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4788,7 +4771,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4820,7 +4803,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &2546522451959490086
+--- !u!114 &8229201127427952719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4832,19 +4815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &7893738596023837865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6779352730321611970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &6783540642143923942
 GameObject:
@@ -4860,10 +4832,10 @@ GameObject:
   - component: {fileID: 7541957628214754316}
   - component: {fileID: 7541957628214754317}
   - component: {fileID: 5821621884371329964}
-  - component: {fileID: 7927379729697501969}
+  - component: {fileID: 6873511551265171800}
   m_Layer: 0
   m_Name: Rook.002
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4943,7 +4915,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4975,7 +4947,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
---- !u!114 &7927379729697501969
+--- !u!114 &6873511551265171800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4987,6 +4959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &6803742730414096597
 GameObject:
@@ -5002,11 +4976,10 @@ GameObject:
   - component: {fileID: 3117473445263723585}
   - component: {fileID: 4924553330424241127}
   - component: {fileID: 3117473445263723586}
-  - component: {fileID: 3117473445263723584}
-  - component: {fileID: 8487425569814831698}
+  - component: {fileID: 8912367438897281495}
   m_Layer: 0
   m_Name: Pawn.008
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5086,7 +5059,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -5118,7 +5091,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &3117473445263723584
+--- !u!114 &8912367438897281495
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5130,19 +5103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
---- !u!114 &8487425569814831698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6803742730414096597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 0
 --- !u!1 &7084018198833794989
 GameObject:
@@ -5157,12 +5119,11 @@ GameObject:
   - component: {fileID: 343524309427130839}
   - component: {fileID: 3692576109561829714}
   - component: {fileID: 3692576109561829715}
-  - component: {fileID: 3692576109561829713}
   - component: {fileID: 9195278485453301637}
-  - component: {fileID: 3159236759473871018}
+  - component: {fileID: 5432319710829481114}
   m_Layer: 0
   m_Name: Queen
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5240,7 +5201,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7084018198833794989}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -5261,19 +5222,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
   m_Center: {x: 0, y: 0.8506619, z: 0}
---- !u!114 &3692576109561829713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7084018198833794989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pieceColor: 1
 --- !u!65 &9195278485453301637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5287,7 +5235,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
   m_Center: {x: 0, y: 0.8506619, z: 0}
---- !u!114 &3159236759473871018
+--- !u!114 &5432319710829481114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5299,7 +5247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceColor: 0
+  agent: {fileID: 0}
+  pushTimer: 0
+  pieceColor: 1
 --- !u!1 &7439057931489336693
 GameObject:
   m_ObjectHideFlags: 0
@@ -5314,10 +5264,10 @@ GameObject:
   - component: {fileID: 8379365563261682685}
   - component: {fileID: 3096671150471410761}
   - component: {fileID: 1976196152554972042}
-  - component: {fileID: 4173210222454445630}
+  - component: {fileID: 2079829443409943033}
   m_Layer: 0
   m_Name: Pawn.003
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5395,7 +5345,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7439057931489336693}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -5429,7 +5379,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &4173210222454445630
+--- !u!114 &2079829443409943033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5441,6 +5391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &7899424687655315877
 GameObject:
@@ -5456,10 +5408,10 @@ GameObject:
   - component: {fileID: 6822496421078254874}
   - component: {fileID: 7370455160920900439}
   - component: {fileID: 8976302943916168147}
-  - component: {fileID: 4658471746161083795}
+  - component: {fileID: 8502740142763410571}
   m_Layer: 0
   m_Name: Pawn.005
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5537,7 +5489,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7899424687655315877}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -5571,7 +5523,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &4658471746161083795
+--- !u!114 &8502740142763410571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5583,6 +5535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1
 --- !u!1 &7955130168276341668
 GameObject:
@@ -5598,10 +5552,10 @@ GameObject:
   - component: {fileID: 4236325593071667690}
   - component: {fileID: 4236325593071667691}
   - component: {fileID: 566175726113199344}
-  - component: {fileID: 4461719760853011216}
+  - component: {fileID: 5883383711781158430}
   m_Layer: 0
   m_Name: Rook
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5679,7 +5633,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7955130168276341668}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -5713,7 +5667,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
---- !u!114 &4461719760853011216
+--- !u!114 &5883383711781158430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5725,4 +5679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  pushTimer: 0
   pieceColor: 1

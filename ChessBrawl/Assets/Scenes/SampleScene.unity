@@ -821,74 +821,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 186837586864746144, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 610234349073815049, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377590394671645978, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1572501256333924300, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894488110295595518, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096671150471410761, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3159366450080634139, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3477548942525655951, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3491999856449892847, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692576109561829713, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692576109561829715, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3692576109561829715, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3734338961469911048, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3784527347103003612, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3822129309246218484, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4236325593071667691, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5063069292747176476, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_BehaviorType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5063069293597501118, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -936,14 +868,6 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370455160920900439, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7538761672251857512, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
