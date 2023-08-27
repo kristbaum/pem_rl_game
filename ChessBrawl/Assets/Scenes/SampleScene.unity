@@ -1528,6 +1528,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5063069292747176476, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 61ef61617b933a3efb107087c7e5e892, type: 3}
+    - target: {fileID: 5063069292747176476, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063069292747176476, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 5063069293597501118, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1575,6 +1587,22 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442501634957392652, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 61ef61617b933a3efb107087c7e5e892, type: 3}
+    - target: {fileID: 7442501634957392652, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442501634957392652, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442501634957392652, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_BrainParameters.NumStackedVectorObservations
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}

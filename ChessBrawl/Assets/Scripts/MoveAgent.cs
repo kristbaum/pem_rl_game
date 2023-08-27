@@ -83,8 +83,12 @@ public class MoveAgent : Agent {
         float kickForce = actions.ContinuousActions[3];
 
 
-        moveSpeed = 2.75f * moveSpeed + 2.75f;  // This will transform it to [0.5, 5]
-        kickForce = 2.75f * kickForce + 2.75f;  // This will transform it to [0.5, 5]
+        float moveSpeedMin = 0.5f;
+        float moveSpeedMax = 5f;
+        moveSpeed = moveSpeedMin + ((moveSpeed + 1) * (moveSpeedMax - moveSpeedMin) / 2);
+        float kickForceMin = 2f;
+        float kickForceMax = 10f;
+        kickForce = kickForceMin + ((kickForce + 1) * (kickForceMax - kickForceMin) / 2);
 
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
     }
@@ -110,6 +114,7 @@ public class MoveAgent : Agent {
         {
             // Penalize for touching the opposite agent directly.
             AddReward(-50f);
+            EndEpisode();
         }
 
         // Check for piece collision.
@@ -137,7 +142,7 @@ public class MoveAgent : Agent {
             else
             {
                 // Penalize for touching the opposite piece directly.
-                AddReward(-10f);
+                AddReward(-20f);
             }
         }
     }

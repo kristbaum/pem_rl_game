@@ -13,7 +13,7 @@ public class Piece : MonoBehaviour
     public MoveAgent agent; // Reference to the agent
 
     public float pushTimer = 0.0f;
-    public const float pushDuration = 1.0f; // This duration can be adjusted as needed
+    public const float pushDuration = 3.0f; // This duration can be adjusted as needed
 
     [Header("Piece Configuration")]
     [SerializeField] private PieceColor pieceColor = PieceColor.Black; // Default value
@@ -59,7 +59,7 @@ public class Piece : MonoBehaviour
             // Kick Interaction Detected
             if(agent != null) 
             {
-                agent.AddReward(20f);
+                agent.AddReward(50f);
                 Debug.Log("Successfull Kick Interaction!");
                 
                 agent.EndEpisode();
