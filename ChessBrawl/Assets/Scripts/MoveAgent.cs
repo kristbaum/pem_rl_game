@@ -44,6 +44,7 @@ public class MoveAgent : Agent {
         }
     }
 
+    private Rigidbody rb;
     private void ResetAgent() 
     {
         ResetAllPieces();
@@ -53,6 +54,15 @@ public class MoveAgent : Agent {
             Random.Range(startYMin, startYMax),
             Random.Range(startZMin, startZMax)
         );
+
+        //Reset agents rotation
+        transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+
+        if (rb != null) 
+        {
+            rb.velocity = Vector3.zero;  // Reset linear velocity.
+            rb.angularVelocity = Vector3.zero;  // Reset angular (rotational) velocity.
+        }
     }
 
 
@@ -70,11 +80,11 @@ public class MoveAgent : Agent {
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
         float moveSpeed = actions.ContinuousActions[2];
-        float kickForce = actions.ContinuousActions[3];  // Extracting the kickForce from actions
+        float kickForce = actions.ContinuousActions[3];
 
 
-        moveSpeed = Mathf.Clamp(moveSpeed, 0.5f, 5f); // Move speed range
-        kickForce = Mathf.Clamp(kickForce, 2f, 20f); // Kick force range
+        moveSpeed = 2.75f * moveSpeed + 2.75f;  // This will transform it to [0.5, 5]
+        kickForce = 2.75f * kickForce + 2.75f;  // This will transform it to [0.5, 5]
 
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
     }

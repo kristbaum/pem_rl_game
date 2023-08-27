@@ -56,11 +56,11 @@ public class Piece : MonoBehaviour
     {
         if(pushTimer > 0.0f && other.TryGetComponent<Piece>(out Piece otherPiece) && otherPiece.PieceColorValue != this.PieceColorValue)
         {
-            // Chain Interaction Detected
+            // Kick Interaction Detected
             if(agent != null) 
             {
                 agent.AddReward(20f);
-                Debug.Log("Chain Interaction Detected!");
+                Debug.Log("Successfull Kick Interaction!");
                 
                 agent.EndEpisode();
             }

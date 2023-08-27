@@ -2,24 +2,6 @@
     "MoveAgent": {
         "checkpoints": [
             {
-                "steps": 427531,
-                "file_path": "results/ppo/MoveAgent/MoveAgent-427531.onnx",
-                "reward": null,
-                "creation_time": 1693142110.3734682,
-                "auxillary_file_paths": [
-                    "results/ppo/MoveAgent/MoveAgent-427531.pt"
-                ]
-            },
-            {
-                "steps": 441766,
-                "file_path": "results/ppo/MoveAgent/MoveAgent-441766.onnx",
-                "reward": -72.35135135135135,
-                "creation_time": 1693145612.6409402,
-                "auxillary_file_paths": [
-                    "results/ppo/MoveAgent/MoveAgent-441766.pt"
-                ]
-            },
-            {
                 "steps": 452060,
                 "file_path": "results/ppo/MoveAgent/MoveAgent-452060.onnx",
                 "reward": null,
@@ -45,15 +27,33 @@
                 "auxillary_file_paths": [
                     "results/ppo/MoveAgent/MoveAgent-472666.pt"
                 ]
+            },
+            {
+                "steps": 483119,
+                "file_path": "results/ppo/MoveAgent/MoveAgent-483119.onnx",
+                "reward": null,
+                "creation_time": 1693147675.5912673,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveAgent/MoveAgent-483119.pt"
+                ]
+            },
+            {
+                "steps": 493521,
+                "file_path": "results/ppo/MoveAgent/MoveAgent-493521.onnx",
+                "reward": null,
+                "creation_time": 1693147897.571932,
+                "auxillary_file_paths": [
+                    "results/ppo/MoveAgent/MoveAgent-493521.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 472666,
+            "steps": 493521,
             "file_path": "results/ppo/MoveAgent.onnx",
             "reward": null,
-            "creation_time": 1693147216.0217054,
+            "creation_time": 1693147897.571932,
             "auxillary_file_paths": [
-                "results/ppo/MoveAgent/MoveAgent-472666.pt"
+                "results/ppo/MoveAgent/MoveAgent-493521.pt"
             ]
         }
     },
