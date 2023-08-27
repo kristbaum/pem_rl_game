@@ -7,15 +7,22 @@ using Unity.MLAgents.Sensors;
 
 public class MoveAgent : Agent {
 
+    public static List<MoveAgent> AllAgents = new List<MoveAgent>();
+
+
     public enum AgentColor
     {
         Black,
         White
     }
 
-
     [Header("Agent Configuration")]
     [SerializeField] private AgentColor agentColor = AgentColor.Black; // Default value
+
+    public AgentColor AgentColorValue 
+    {
+        get { return agentColor; }
+    }
 
     public List<Transform> targetTransforms = new List<Transform>();
 
@@ -29,16 +36,15 @@ public class MoveAgent : Agent {
 
     private static List<MoveAgent> allAgents = new List<MoveAgent>();
 
-    void Awake() 
+    private void Awake()
     {
-        // Every agent adds itself to the list upon being instantiated
-        allAgents.Add(this);
+        AllAgents.Add(this);
     }
 
     public override void OnEpisodeBegin()
     {
         // This agent will reset every agent, including itself
-        foreach (MoveAgent agent in allAgents) 
+        foreach (MoveAgent agent in AllAgents) 
         {
             agent.ResetAgent();
         }
@@ -113,7 +119,7 @@ public class MoveAgent : Agent {
         if(other.TryGetComponent<MoveAgent>(out MoveAgent agent))
         {
             // Penalize for touching the opposite agent directly.
-            AddReward(-50f);
+            AddReward(-100f);
             EndEpisode();
         }
 
@@ -142,7 +148,8 @@ public class MoveAgent : Agent {
             else
             {
                 // Penalize for touching the opposite piece directly.
-                AddReward(-20f);
+                AddReward(-100f);
+                EndEpisode();
             }
         }
     }

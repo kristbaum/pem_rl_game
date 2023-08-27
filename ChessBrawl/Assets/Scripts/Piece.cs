@@ -13,23 +13,29 @@ public class Piece : MonoBehaviour
     public MoveAgent agent; // Reference to the agent
 
     public float pushTimer = 0.0f;
-    public const float pushDuration = 3.0f; // This duration can be adjusted as needed
+    public const float pushDuration = 2.0f; // This duration can be adjusted as needed
 
     [Header("Piece Configuration")]
     [SerializeField] private PieceColor pieceColor = PieceColor.Black; // Default value
+    [SerializeField] private float pieceValue = 10.0f; // Default value
 
-    public PieceColor PieceColorValue
+    public PieceColor PieceColorValue 
     {
         get { return pieceColor; }
     }
 
+    public float PieceValue
+    {
+        get { return pieceValue; }
+    }
+
     private Rigidbody rb;
 
-    private void Awake() 
+    private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
-    
+
     private Vector3 initialPosition;
     private Quaternion initialRotation;
 
@@ -43,31 +49,51 @@ public class Piece : MonoBehaviour
     {
         transform.position = initialPosition;
         transform.rotation = initialRotation;
-        // Any other properties to reset can be added here.
 
-        if (rb != null) 
+        if (rb != null)
         {
             rb.velocity = Vector3.zero;  // Reset linear velocity.
             rb.angularVelocity = Vector3.zero;  // Reset angular (rotational) velocity.
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(pushTimer > 0.0f && other.TryGetComponent<Piece>(out Piece otherPiece) && otherPiece.PieceColorValue != this.PieceColorValue)
+        // If this piece is in a "pushed" state
+        if (pushTimer > 0.0f)
         {
-            // Kick Interaction Detected
-            if(agent != null) 
+            // Check for collision with another piece
+            if (collision.gameObject.TryGetComponent<Piece>(out Piece hitPiece))
             {
-                agent.AddReward(50f);
-                Debug.Log("Successfull Kick Interaction!");
-                
-                agent.EndEpisode();
+                // If the hit piece is of the same color, propagate the "pushed" state
+                if (hitPiece.PieceColorValue == this.PieceColorValue)
+                {
+                    hitPiece.SetPushedState();
+                }
+                // If of a different color, trigger the kick interaction if applicable
+                else
+                {
+                    if (agent != null)
+                    {
+                        agent.AddReward(50f);
+                        Debug.Log("Successful Kick Interaction!");
+                    }
+                }
             }
         }
     }
 
-    // Update is called once per frame
+    public void SetPushedState()
+    {
+        pushTimer = pushDuration; // Set the timer to the full duration to make it "pushed"
+
+        // Ensure there is a reference to the agent for the piece to report successful interactions
+        if (agent == null)
+        {
+            agent = FindObjectOfType<MoveAgent>();
+        }
+    }
+
     void Update()
     {
         if (pushTimer > 0.0f)
@@ -76,7 +102,7 @@ public class Piece : MonoBehaviour
         }
         else if(agent != null)
         {
-            agent = null; 
+            agent = null;
         }
     }
 }
