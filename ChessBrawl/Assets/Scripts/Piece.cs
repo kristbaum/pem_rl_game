@@ -123,10 +123,9 @@ public class Piece : MonoBehaviour
             if (agent != null)
             {
                 float reward = this.PieceValue;
-                Debug.Log(reward);
 
                 agent.AddReward(_gameManager.CPKickingOffOwnPiece * reward);
-                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + " with penalty: " + _gameManager.CPKickingOffOwnPiece * reward);
+                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + "of color" + this.PieceColorValue.ToString() + " with penalty: " + _gameManager.CPKickingOffOwnPiece * reward);
             }
         }
 
@@ -138,16 +137,10 @@ public class Piece : MonoBehaviour
                 float reward = this.PieceValue;
 
                 // Check the color of the piece that was kicked off
-                if ((int)this.PieceColorValue == (int)kickingAgent.AgentColorValue)
-                {
-                    // Give a penalty if the agent kicked off a piece of its own color
-                    //kickingAgent.AddReward(-reward * _gameManager.CPKickingOffOwnPiece);  // assuming _gameManager.CRKickingOffSameColorPiece is a negative value representing the penalty
-                    //Debug.Log("Penalized agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with same color: " + this.PieceColorValue.ToString() + " with penalty: " + -reward * _gameManager.CPKickingOffOwnPiece);
-                }
-                else
+                if ((int)this.PieceColorValue != (int)kickingAgent.AgentColorValue)
                 {
                     // Give a reward for kicking off an opponent piece
-                    kickingAgent.AddReward(reward * _gameManager.CRKickingOffOpponentPiece);
+                    kickingAgent.AddReward(_gameManager.CRKickingOffOpponentPiece * reward);
                     Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with color: " + this.PieceColorValue.ToString() + " with reward: " + reward * _gameManager.CRKickingOffOpponentPiece);
                 }
 

@@ -2116,13 +2116,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858f2bab1ce8f77e78a09242e281c609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Agents: []
   CPWall: -100
   CPTouchingAgent: -100
   CPTouchingOpponentPiece: -100
-  CPKickingOffOwnPiece: -100
-  CRTouchingOwnPiece: 1
-  CRKickMotion: 1
-  CRKickingOffOpponentPiece: 1
+  CPKickingOffOwnPiece: -2
+  CRTouchingOwnPiece: 0.1
+  CRKickMotion: 5
+  CRKickingOffOpponentPiece: 4
   currentScore: 0
 --- !u!1 &2476801395416597685
 GameObject:
@@ -3812,7 +3813,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.7884827, y: 0, z: 8.402984}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5063069292747176551}
   - {fileID: 5746411473656195388}
@@ -3960,9 +3961,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 39f6ab4d166461d3ab0dd24ac55f0a4d, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 90c826bddf7daae548786c67726923f6, type: 3}
   m_InferenceDevice: 1
-  m_BehaviorType: 1
+  m_BehaviorType: 0
   m_BehaviorName: MoveAgent
   TeamId: 0
   m_UseChildSensors: 1
@@ -4049,7 +4050,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.7884827, y: 0, z: 8.402984}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8865035324259761285}
   - {fileID: 4897969181680677515}
@@ -4530,9 +4531,9 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 39f6ab4d166461d3ab0dd24ac55f0a4d, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 90c826bddf7daae548786c67726923f6, type: 3}
   m_InferenceDevice: 1
-  m_BehaviorType: 1
+  m_BehaviorType: 0
   m_BehaviorName: MoveAgent
   TeamId: 0
   m_UseChildSensors: 1

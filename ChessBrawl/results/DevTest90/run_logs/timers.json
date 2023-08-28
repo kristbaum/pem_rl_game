@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1693241461",
+        "python_version": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+        "command_line_arguments": "/home/ludwig/anaconda3/envs/pemrl/bin/mlagents-learn config/MoveAgent.yaml --run-id=DevTest90",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.8.2+cu111",
+        "numpy_version": "1.21.6",
+        "end_time_seconds": "1693241483"
+    },
+    "total": 21.855651841004146,
+    "count": 1,
+    "self": 0.0026561790000414476,
+    "children": {
+        "run_training.setup": {
+            "total": 0.007321304001379758,
+            "count": 1,
+            "self": 0.007321304001379758
+        },
+        "TrainerController.start_learning": {
+            "total": 21.845674358002725,
+            "count": 1,
+            "self": 0.00014039999223314226,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 21.845527607001713,
+                    "count": 1,
+                    "self": 21.845527607001713
+                },
+                "trainer_threads": {
+                    "total": 5.500041879713535e-07,
+                    "count": 1,
+                    "self": 5.500041879713535e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 5.8010045904666185e-06,
+                    "count": 1,
+                    "self": 5.8010045904666185e-06
+                }
+            }
+        }
+    }
+}

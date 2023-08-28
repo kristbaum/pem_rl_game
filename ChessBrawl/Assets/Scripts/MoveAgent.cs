@@ -46,12 +46,19 @@ public class MoveAgent : Agent {
         }
 
         AllAgents.Add(this);
+
+        // Also, add this agent to GameManager's list
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.Agents.Add(this);
+        }
     }
+
 
     public override void OnEpisodeBegin()
     {
-        // This agent will reset every agent, including itself
-        foreach (MoveAgent agent in AllAgents)
+        // This agent will reset only agents that are in GameManager's list
+        foreach (MoveAgent agent in GameManager.Instance.Agents)
         {
             agent.ResetAgent();
         }
@@ -124,10 +131,12 @@ public class MoveAgent : Agent {
     private void OnTriggerEnter(Collider other)
     {
         audioPlayer.Play();
+
         // Check for wall collision.
         if (other.TryGetComponent<Wall>(out Wall wall))
         {
             AddReward(_gameManager.CPWall);
+            Debug.Log("Wall Interaction Detected!");
             EndEpisode();
         }
 
@@ -136,6 +145,7 @@ public class MoveAgent : Agent {
         {
             // Penalize for touching the opposite agent directly.
             AddReward(_gameManager.CPTouchingAgent);
+            Debug.Log("Touching Opposite Agent Interaction Detected!");
             EndEpisode();
         }
 
@@ -169,6 +179,7 @@ public class MoveAgent : Agent {
                 //EndEpisode();
             }
         }
+        
     }
 
     private void ResetAllPieces()
