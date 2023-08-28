@@ -8,6 +8,7 @@ using Unity.MLAgents.Sensors;
 public class MoveAgent : Agent {
 
     public static List<MoveAgent> AllAgents;
+    public GameManager _gameManager = null;
 
     [Header("Environment Configuration")]
     [SerializeField] private GameObject board;
@@ -122,7 +123,7 @@ public class MoveAgent : Agent {
         // Check for wall collision.
         if(other.TryGetComponent<Wall>(out Wall wall))
         {
-            AddReward(-100f);
+            AddReward(_gameManager.CPWall);
             EndEpisode();
         }
 
@@ -130,7 +131,7 @@ public class MoveAgent : Agent {
         if(other.TryGetComponent<MoveAgent>(out MoveAgent agent))
         {
             // Penalize for touching the opposite agent directly.
-            AddReward(-100f);
+            AddReward(_gameManager.CPTouchingAgent);
             EndEpisode();
         }
 
@@ -159,7 +160,7 @@ public class MoveAgent : Agent {
             else
             {
                 // Penalize for touching the opposite piece directly.
-                AddReward(-100f);
+                AddReward(_gameManager.CPTouchingOpponentPiece);
                 //EndEpisode();
             }
         }

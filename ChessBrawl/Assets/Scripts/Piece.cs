@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Piece : MonoBehaviour
 {
+
+    public GameManager _gameManager = null;
     public enum PieceColor
     {
         Black,
@@ -75,7 +77,7 @@ public class Piece : MonoBehaviour
                 {
                     if (agent != null)
                     {
-                        agent.AddReward(1f);
+                        agent.AddReward(_gameManager.CRKickMotion);
                         Debug.Log("Successful Kick Interaction!");
                     }
                 }
