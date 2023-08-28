@@ -60,10 +60,11 @@ Take-away from presentation:
 * Something else?
 
 # Setup
-Install Unity (https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux)
-Add the correct packages (https://unity-technologies.github.io/ml-agents/com.unity.ml-agents/)
+* Install Unity (https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux) in Version 2021.3 LTS
+* Add the correct ML_Agent package to Unity (https://unity-technologies.github.io/ml-agents/com.unity.ml-agents/) (Probably Version 2.0.1)
+* Download ML agents for locally
 '''
-conda create -n chessbrawl python=3.10.8
+conda create -n chessbrawl python=3.8
 conda activate chessbrawl
 pip install mlagents
 '''
