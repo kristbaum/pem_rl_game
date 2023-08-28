@@ -69,9 +69,11 @@ pip install mlagents
 '''
 
 
-DEMO video on Friday as part of presentation:
+# DEMO video on Friday as part of presentation:
 
 120 seconds
 16:9 MP4
-Project abstract, which kind of training etc
+
+# Afterwards
+Project abstract, which kind of training etc, user interactions etc
 Statment of contribution of each project member
