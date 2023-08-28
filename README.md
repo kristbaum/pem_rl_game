@@ -2,6 +2,8 @@
 
 Chess for the Sophisticated.
 
+![alt text](Demo.gif)
+
 TODOs (to be updated)
 - A: Study the suitable hyperparameters in .yaml for training the model
 - B: Implement the behaviors of agents in C# scripts
