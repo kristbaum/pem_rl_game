@@ -84,7 +84,7 @@ https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_
 | speed | for agent movement  | none |
 | kickforce |  applied to kicked objects  | none |
 
-Reward parameters
+# Reward parameters
 
 | Name  | Description | Idea/Learning |
 | ------------- | ------------- | ------------- |
@@ -95,6 +95,14 @@ Reward parameters
 | Collision Reward Touching own piece | Reward for touching one of your own chess pieces  | Intended to incentivise movement and interaction of the agent |
 | CR Kick Motion (Chain reation)  | Calculates an extra reward for a kick that leads to a sucessful kick off of an oponent piece | Incentivise actions that directly lead to kicking of oponent pieces |
 | CR Kicking Off Oponent Piece (Globally) | Reward for a oponent piece falling off the board | intended as a global reward similar to the human score for removing pieces from the board |
+
+# Ideas to try
+
+* Additional physical boundaries, some wall in the middel or to the sides
+* Make agent King or Queen instead of external pawn
+* How to control speed and kickforce as human?
+* Third person camera (already implemented)
+* Score board for humans (already implemented)
 
 # DEMO video on Friday as part of presentation:
 
