@@ -22,7 +22,7 @@ public class MoveAgent : Agent {
     [Header("Agent Configuration")]
     [SerializeField] private AgentColor agentColor = AgentColor.Black; // Default value
 
-    public AgentColor AgentColorValue 
+    public AgentColor AgentColorValue
     {
         get { return agentColor; }
     }
@@ -43,21 +43,21 @@ public class MoveAgent : Agent {
         {
             AllAgents = new List<MoveAgent>();
         }
-        
+
         AllAgents.Add(this);
     }
 
     public override void OnEpisodeBegin()
     {
         // This agent will reset every agent, including itself
-        foreach (MoveAgent agent in AllAgents) 
+        foreach (MoveAgent agent in AllAgents)
         {
             agent.ResetAgent();
         }
     }
 
     private Rigidbody rb;
-    private void ResetAgent() 
+    private void ResetAgent()
     {
         ResetAllPieces();
 
@@ -70,7 +70,7 @@ public class MoveAgent : Agent {
         //Reset agents rotation
         transform.rotation = Quaternion.Euler(0f, 180f, 0f);
 
-        if (rb != null) 
+        if (rb != null)
         {
             rb.velocity = Vector3.zero;  // Reset linear velocity.
             rb.angularVelocity = Vector3.zero;  // Reset angular (rotational) velocity.
@@ -87,10 +87,10 @@ public class MoveAgent : Agent {
         foreach (Transform targetTransform in targetTransforms)
         {
             sensor.AddObservation(targetTransform.position);
-        }      
+        }
     }
 
-    private float kickForce; 
+    private float kickForce;
     public override void OnActionReceived(ActionBuffers actions){
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
@@ -168,9 +168,9 @@ public class MoveAgent : Agent {
         }
     }
 
-    private void ResetAllPieces() 
+    private void ResetAllPieces()
     {
-        foreach (Transform targetTransform in targetTransforms) 
+        foreach (Transform targetTransform in targetTransforms)
         {
             Piece piece = targetTransform.GetComponent<Piece>();
             piece.ResetPiece();

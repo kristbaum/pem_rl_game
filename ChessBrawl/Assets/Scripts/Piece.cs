@@ -54,7 +54,6 @@ public class Piece : MonoBehaviour
     {
         transform.position = initialPosition;
         transform.rotation = initialRotation;
-        _gameManager.currentScore = 0;
 
         if (rb != null)
         {
@@ -62,7 +61,6 @@ public class Piece : MonoBehaviour
             rb.angularVelocity = Vector3.zero;  // Reset angular (rotational) velocity.
         }
     }
-
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -125,7 +123,7 @@ public class Piece : MonoBehaviour
 
                 // Give the reward to the kicking agent regardless of piece color
                 kickingAgent.AddReward(reward * _gameManager.CRKickingOffOpponentPiece);
-                Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+                Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with color: " + this.PieceColorValue.ToString() + " with reward: " + reward * _gameManager.CRKickingOffOpponentPiece);
 
                 // Reset the kicked state and kicking agent reference to prevent rewarding multiple times
                 wasKicked = false;
@@ -133,6 +131,7 @@ public class Piece : MonoBehaviour
             }
         }
     }
+
 
 
     // Define this function based on your color system. This example assumes only two colors (0 and 1).
@@ -164,4 +163,5 @@ public class Piece : MonoBehaviour
         }
     }
 }
+
 
