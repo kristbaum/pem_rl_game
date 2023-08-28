@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public float CRKickMotion = 0f;
     public float CRKickingOffOpponentPiece = 0f;
 
+    public int currentScore = 0;
+
     private void Awake()
     {
         // Sync the AllAgents list in MoveAgent with the Agents in GameManager

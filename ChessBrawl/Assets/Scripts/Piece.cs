@@ -103,7 +103,9 @@ public class Piece : MonoBehaviour
                 {
                     float reward = this.PieceValue;
                     agentInstance.AddReward(reward*_gameManager.CRKickingOffOpponentPiece); // Positive reward
-                    //Debug.Log("Rewarded agent with color: " + agentInstance.AgentColorValue.ToString() + " for opponent losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+                                                                                            //Debug.Log("Rewarded agent with color: " + agentInstance.AgentColorValue.ToString() + " for opponent losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+
+                    _gameManager.currentScore++;
                 }
             }
         }
