@@ -16,12 +16,15 @@ public class Piece : MonoBehaviour
 
     public float pushTimer = 0.0f;
     public const float pushDuration = 2.0f; // This duration can be adjusted as needed
+    public bool wasKicked = false; // Flag to check if the piece was kicked
+    public MoveAgent kickingAgent; // Reference to the agent that kicked this piece
+
 
     [Header("Piece Configuration")]
     [SerializeField] private PieceColor pieceColor = PieceColor.Black; // Default value
     [SerializeField] private float pieceValue = 10.0f; // Default value
 
-    public PieceColor PieceColorValue 
+    public PieceColor PieceColorValue
     {
         get { return pieceColor; }
     }
@@ -59,6 +62,7 @@ public class Piece : MonoBehaviour
         }
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
         // If this piece is in a "pushed" state
@@ -75,44 +79,60 @@ public class Piece : MonoBehaviour
                 // If of a different color, trigger the kick interaction if applicable
                 else
                 {
+                    hitPiece.wasKicked = true; // Set the piece's kicked state
+                    hitPiece.kickingAgent = this.agent; // Store the kicker's agent reference to the piece being kicked
+
+                    // Assign the kicker's agent reference to the piece being kicked
+                    hitPiece.agent = this.agent;
+
                     if (agent != null)
                     {
                         agent.AddReward(_gameManager.CRKickMotion);
                         _gameManager.currentScore++;
-                        Debug.Log("Successful Kick Interaction!");
+                        Debug.Log("Successful Kick Interaction! Reward: " + _gameManager.CRKickMotion);
                     }
                 }
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Wall") && pushTimer > 0.0f) // Assuming the wall has a "Wall" tag
+        // If this piece is in a "kicked" state
+        else if (wasKicked)
         {
-            int oppositeColorValue = GetOppositeColorValue((int)this.PieceColorValue);
-
-            foreach (var agentInstance in MoveAgent.AllAgents)
+            // Check for collision with another piece
+            if (collision.gameObject.TryGetComponent<Piece>(out Piece hitPiece))
             {
-                if ((int)agentInstance.AgentColorValue == (int)this.PieceColorValue)
+                // Only propagate the "kicked" state if the piece is of the same color
+                if (hitPiece.PieceColorValue == this.PieceColorValue)
                 {
-                    float penalty = this.PieceValue;
-                    agentInstance.AddReward(-penalty*4); // Negative reward (Uncomment if you want to penalize)
-                                                         //Debug.Log("Penalized agent with color: " + agentInstance.AgentColorValue.ToString() + " for losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+                    hitPiece.wasKicked = true;
+                    hitPiece.kickingAgent = this.kickingAgent;
 
-                }
-                else if ((int)agentInstance.AgentColorValue == oppositeColorValue)
-                {
-                    float reward = this.PieceValue;
-                    agentInstance.AddReward(reward*_gameManager.CRKickingOffOpponentPiece); // Positive reward
-                                                                                            //Debug.Log("Rewarded agent with color: " + agentInstance.AgentColorValue.ToString() + " for opponent losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
-
-                    _gameManager.currentScore--;
-                    //Debug.Log("Score negative " + _gameManager.currentScore);
+                    // You can decide if you want to reassign the agent reference here
+                    hitPiece.agent = this.agent;
                 }
             }
         }
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Wall") && wasKicked)
+        {
+            if (kickingAgent != null)
+            {
+                float reward = this.PieceValue;
+
+                // Give the reward to the kicking agent regardless of piece color
+                kickingAgent.AddReward(reward * _gameManager.CRKickingOffOpponentPiece);
+                Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+
+                // Reset the kicked state and kicking agent reference to prevent rewarding multiple times
+                wasKicked = false;
+                kickingAgent = null;
+            }
+        }
+    }
+
 
     // Define this function based on your color system. This example assumes only two colors (0 and 1).
     private int GetOppositeColorValue(int colorValue)
@@ -143,3 +163,4 @@ public class Piece : MonoBehaviour
         }
     }
 }
+
