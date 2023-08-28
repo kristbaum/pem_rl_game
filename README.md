@@ -96,6 +96,13 @@ https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_
 | CR Kick Motion (Chain reation)  | Calculates an extra reward for a kick that leads to a sucessful kick off of an oponent piece | Incentivise actions that directly lead to kicking of oponent pieces |
 | CR Kicking Off Oponent Piece (Globally) | Reward for a oponent piece falling off the board | intended as a global reward similar to the human score for removing pieces from the board |
 
+# Rules of the game
+
+Somewhat different from rewards.
+* Don't touch other player or it's pieces (Game Over/Reset)
+* Don't fall off the board (Game Over/Reset)
+* Get points if opponent pieces fall off the board, loose points if your pieces fall of the board
+
 # Ideas to try
 
 * Additional physical boundaries, some wall in the middel or to the sides
