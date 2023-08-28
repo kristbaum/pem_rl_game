@@ -9,6 +9,7 @@ public class MoveAgent : Agent {
 
     public static List<MoveAgent> AllAgents;
     public GameManager _gameManager = null;
+    public AudioSource audioPlayer;
 
     [Header("Environment Configuration")]
     [SerializeField] private GameObject board;
@@ -122,8 +123,9 @@ public class MoveAgent : Agent {
     // Reward calculation for the agent.
     private void OnTriggerEnter(Collider other)
     {
+        audioPlayer.Play();
         // Check for wall collision.
-        if(other.TryGetComponent<Wall>(out Wall wall))
+        if (other.TryGetComponent<Wall>(out Wall wall))
         {
             AddReward(_gameManager.CPWall);
             EndEpisode();
