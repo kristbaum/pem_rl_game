@@ -77,12 +77,12 @@ https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_
 
 # Trainble Values
 
-| Name  | Description |
-| ------------- | ------------- |
-| x-axis  | for agent movement  |
-| y-axis  | for agent movement  |
-| speed | for agent movement  |
-| kickforce |  applied to kicked objects  |
+| Name  | Description | User interaction equivalent |
+| ------------- | ------------- | ------------- |
+| x-axis  | for agent movement  | arrow key |
+| y-axis  | for agent movement  | arrow key |
+| speed | for agent movement  | none |
+| kickforce |  applied to kicked objects  | none |
 
 
 # DEMO video on Friday as part of presentation:
