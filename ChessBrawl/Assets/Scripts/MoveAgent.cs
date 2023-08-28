@@ -155,16 +155,17 @@ public class MoveAgent : Agent {
             // If agent collides with a piece of its own color.
             if((int)piece.PieceColorValue == (int)this.agentColor)
             {
-                //Debug.Log("Same Color Interaction Detected!");
+                Debug.Log("Same Color Interaction Detected!");
                 piece.agent = this; // Setting the reference
                 piece.pushTimer = Piece.pushDuration; // Reference to the constant pushDuration from the Piece script
-                //AddReward(1f);
+                AddReward(_gameManager.CRTouchingOwnPiece);
             }
             // If agent collides directly with a piece of the opposite color.
             else
             {
                 // Penalize for touching the opposite piece directly.
                 AddReward(_gameManager.CPTouchingOpponentPiece);
+                Debug.Log("Opposite Color Interaction Detected!");
                 //EndEpisode();
             }
         }

@@ -115,14 +115,18 @@ public class Piece : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+
         // Check for wall collision.
         if (other.gameObject.CompareTag("Wall") && pushTimer > 0.0f)
         {
             if (agent != null)
             {
+                float reward = this.PieceValue;
+                Debug.Log(reward);
 
-                agent.AddReward(-_gameManager.CPKickingOffOwnPiece);
-                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + " with penalty: " + _gameManager.CRTouchingOwnPiece);
+                agent.AddReward(_gameManager.CPKickingOffOwnPiece * reward);
+                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + " with penalty: " + _gameManager.CPKickingOffOwnPiece * reward);
             }
         }
 
@@ -183,5 +187,3 @@ public class Piece : MonoBehaviour
         }
     }
 }
-
-
