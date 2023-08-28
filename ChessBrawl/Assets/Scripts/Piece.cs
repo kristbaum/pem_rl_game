@@ -115,24 +115,43 @@ public class Piece : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // Check for wall collision.
+        if (other.gameObject.CompareTag("Wall") && pushTimer > 0.0f)
+        {
+            if (agent != null)
+            {
+                agent.AddReward(_gameManager.CRTouchingOwnPiece);
+                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + " with penalty: " + _gameManager.CRTouchingOwnPiece);
+            }
+        }
+
+
         if (other.gameObject.CompareTag("Wall") && wasKicked)
         {
             if (kickingAgent != null)
             {
                 float reward = this.PieceValue;
 
-                // Give the reward to the kicking agent regardless of piece color
-                kickingAgent.AddReward(reward * _gameManager.CRKickingOffOpponentPiece);
-                Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with color: " + this.PieceColorValue.ToString() + " with reward: " + reward * _gameManager.CRKickingOffOpponentPiece);
+                // Check the color of the piece that was kicked off
+                if ((int)this.PieceColorValue == (int)kickingAgent.AgentColorValue)
+                {
+                    // Give a penalty if the agent kicked off a piece of its own color
+                    kickingAgent.AddReward(-reward * _gameManager.CPKickingOffOwnPiece);  // assuming _gameManager.CRKickingOffSameColorPiece is a negative value representing the penalty
+                    Debug.Log("Penalized agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with same color: " + this.PieceColorValue.ToString() + " with penalty: " + -reward * _gameManager.CPKickingOffOwnPiece);
+                }
+                else
+                {
+                    // Give a reward for kicking off an opponent piece
+                    kickingAgent.AddReward(reward * _gameManager.CRKickingOffOpponentPiece);
+                    Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with color: " + this.PieceColorValue.ToString() + " with reward: " + reward * _gameManager.CRKickingOffOpponentPiece);
+                }
 
-                // Reset the kicked state and kicking agent reference to prevent rewarding multiple times
+                // Reset the kicked state and kicking agent reference to prevent rewarding or penalizing multiple times
                 wasKicked = false;
                 kickingAgent = null;
             }
         }
     }
-
-
 
     // Define this function based on your color system. This example assumes only two colors (0 and 1).
     private int GetOppositeColorValue(int colorValue)
