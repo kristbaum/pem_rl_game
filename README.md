@@ -101,6 +101,7 @@ https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_
 * Additional physical boundaries, some wall in the middel or to the sides
 * Make agent King or Queen instead of external pawn
 * How to control speed and kickforce as human?
+* Introduce timelimit for training (in epoch steps) and interactive game (as time?)
 * Third person camera (already implemented)
 * Score board for humans (already implemented)
 
