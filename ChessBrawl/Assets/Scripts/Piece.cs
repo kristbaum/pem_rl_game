@@ -78,6 +78,7 @@ public class Piece : MonoBehaviour
                     if (agent != null)
                     {
                         agent.AddReward(_gameManager.CRKickMotion);
+                        _gameManager.currentScore++;
                         Debug.Log("Successful Kick Interaction!");
                     }
                 }
@@ -97,7 +98,8 @@ public class Piece : MonoBehaviour
                 {
                     float penalty = this.PieceValue;
                     agentInstance.AddReward(-penalty*4); // Negative reward (Uncomment if you want to penalize)
-                    //Debug.Log("Penalized agent with color: " + agentInstance.AgentColorValue.ToString() + " for losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+                                                         //Debug.Log("Penalized agent with color: " + agentInstance.AgentColorValue.ToString() + " for losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
+
                 }
                 else if ((int)agentInstance.AgentColorValue == oppositeColorValue)
                 {
@@ -105,7 +107,8 @@ public class Piece : MonoBehaviour
                     agentInstance.AddReward(reward*_gameManager.CRKickingOffOpponentPiece); // Positive reward
                                                                                             //Debug.Log("Rewarded agent with color: " + agentInstance.AgentColorValue.ToString() + " for opponent losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
 
-                    _gameManager.currentScore++;
+                    _gameManager.currentScore--;
+                    //Debug.Log("Score negative " + _gameManager.currentScore);
                 }
             }
         }
