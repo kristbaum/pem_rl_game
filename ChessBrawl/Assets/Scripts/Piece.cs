@@ -54,6 +54,7 @@ public class Piece : MonoBehaviour
     {
         transform.position = initialPosition;
         transform.rotation = initialRotation;
+        _gameManager.currentScore = 0;
 
         if (rb != null)
         {
