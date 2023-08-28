@@ -102,7 +102,7 @@ public class Piece : MonoBehaviour
                 else if ((int)agentInstance.AgentColorValue == oppositeColorValue)
                 {
                     float reward = this.PieceValue;
-                    agentInstance.AddReward(reward*2); // Positive reward
+                    agentInstance.AddReward(reward*_gameManager.CRKickingOffOpponentPiece); // Positive reward
                     //Debug.Log("Rewarded agent with color: " + agentInstance.AgentColorValue.ToString() + " for opponent losing piece " + this.gameObject.name + " with value " + this.PieceValue.ToString());
                 }
             }
