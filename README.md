@@ -69,6 +69,11 @@ conda activate chessbrawl
 pip install mlagents
 '''
 
+Reset of all boards if agent dies.
+
+# Result board
+
+https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_tic/edit
 
 # DEMO video on Friday as part of presentation:
 
