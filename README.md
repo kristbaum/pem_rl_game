@@ -77,9 +77,13 @@ https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_
 
 # Trainble Values
 
-x-axis, y axis for agent movement
-speed parameter for movements speed
-kickforce parameter applied to kicked objects
+| Name  | Description |
+| ------------- | ------------- |
+| x-axis  | for agent movement  |
+| y-axis  | for agent movement  |
+| speed | for agent movement  |
+| kickforce |  applied to kicked objects  |
+
 
 # DEMO video on Friday as part of presentation:
 
