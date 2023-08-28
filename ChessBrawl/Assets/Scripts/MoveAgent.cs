@@ -115,6 +115,8 @@ public class MoveAgent : Agent {
         ActionSegment<float> continuousActions = actionsOut.ContinuousActions;
         continuousActions[0] = Input.GetAxisRaw("Horizontal");
         continuousActions[1] = Input.GetAxisRaw("Vertical");
+        continuousActions[2] = Input.GetAxisRaw("VerticalWAndS");
+        continuousActions[3] = Input.GetAxisRaw("HorizontalAndD");
     }
 
     // Reward calculation for the agent.
