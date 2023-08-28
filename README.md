@@ -75,6 +75,12 @@ Reset of all boards if agent dies.
 
 https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_tic/edit
 
+# Trainble Values
+
+x-axis, y axis for agent movement
+speed parameter for movements speed
+kickforce parameter applied to kicked objects
+
 # DEMO video on Friday as part of presentation:
 
 120 seconds
