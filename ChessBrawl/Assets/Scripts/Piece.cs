@@ -15,7 +15,7 @@ public class Piece : MonoBehaviour
     public MoveAgent agent; // Reference to the agent
 
     public float pushTimer = 0.0f;
-    public const float pushDuration = 2.0f; // This duration can be adjusted as needed
+    public const float pushDuration = 3.0f; // This duration can be adjusted as needed
     public bool wasKicked = false; // Flag to check if the piece was kicked
     public MoveAgent kickingAgent; // Reference to the agent that kicked this piece
 
@@ -120,7 +120,8 @@ public class Piece : MonoBehaviour
         {
             if (agent != null)
             {
-                agent.AddReward(_gameManager.CRTouchingOwnPiece);
+
+                agent.AddReward(-_gameManager.CPKickingOffOwnPiece);
                 Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + " with penalty: " + _gameManager.CRTouchingOwnPiece);
             }
         }
@@ -136,8 +137,8 @@ public class Piece : MonoBehaviour
                 if ((int)this.PieceColorValue == (int)kickingAgent.AgentColorValue)
                 {
                     // Give a penalty if the agent kicked off a piece of its own color
-                    kickingAgent.AddReward(-reward * _gameManager.CPKickingOffOwnPiece);  // assuming _gameManager.CRKickingOffSameColorPiece is a negative value representing the penalty
-                    Debug.Log("Penalized agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with same color: " + this.PieceColorValue.ToString() + " with penalty: " + -reward * _gameManager.CPKickingOffOwnPiece);
+                    //kickingAgent.AddReward(-reward * _gameManager.CPKickingOffOwnPiece);  // assuming _gameManager.CRKickingOffSameColorPiece is a negative value representing the penalty
+                    //Debug.Log("Penalized agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with same color: " + this.PieceColorValue.ToString() + " with penalty: " + -reward * _gameManager.CPKickingOffOwnPiece);
                 }
                 else
                 {

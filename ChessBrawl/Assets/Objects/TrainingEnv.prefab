@@ -168,7 +168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 234
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -395,6 +395,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 3
 --- !u!1 &850715277995811373
@@ -541,6 +543,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &889111843330662683
@@ -790,6 +794,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 3
 --- !u!1 &1037900434834903760
@@ -936,6 +942,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &1144966122703576277
@@ -1082,6 +1090,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &1168015390649228897
@@ -1228,6 +1238,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &1186385361726207723
@@ -1374,6 +1386,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &1427418086332343100
@@ -1520,6 +1534,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 50
 --- !u!1 &1555173682912226661
@@ -1666,6 +1682,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &1622474187845166930
@@ -1922,6 +1940,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 3
 --- !u!1 &2082125209679135846
@@ -1968,9 +1988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858f2bab1ce8f77e78a09242e281c609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Agents:
-  - {fileID: 5063069292747176477}
-  - {fileID: 3676831208320808413}
   CPWall: -100
   CPTouchingAgent: -100
   CPTouchingOpponentPiece: -100
@@ -2123,6 +2140,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &2704230006749183856
@@ -2379,6 +2398,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &3307033075495859057
@@ -2525,6 +2546,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &3429270397741079813
@@ -2671,6 +2694,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 5
 --- !u!1 &3491999856449892832
@@ -2817,6 +2842,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 50
 --- !u!1 &3599465194470826953
@@ -2963,6 +2990,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &4543972668331718717
@@ -3109,6 +3138,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &4909261993635826202
@@ -3365,6 +3396,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 3
 --- !u!1 &4931755979564462778
@@ -3621,6 +3654,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 5
 --- !u!1 &5063069292321265329
@@ -4087,6 +4122,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 3
 --- !u!1 &5498304935568688983
@@ -4233,6 +4270,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &5686108824770104501
@@ -4257,7 +4296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8865035324259761285
 Transform:
   m_ObjectHideFlags: 0
@@ -4265,14 +4304,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5686108824770104501}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 10.93055, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5063069292760325332}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &705727517177449880
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4363,7 +4402,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: 39f6ab4d166461d3ab0dd24ac55f0a4d, type: 3}
   m_InferenceDevice: 1
-  m_BehaviorType: 0
+  m_BehaviorType: 1
   m_BehaviorName: MoveAgent
   TeamId: 0
   m_UseChildSensors: 1
@@ -4567,6 +4606,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 3
 --- !u!1 &5903782371258024733
@@ -4823,6 +4864,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 3
 --- !u!1 &6573710848806186500
@@ -4969,6 +5012,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 3
 --- !u!1 &6580617481520161016
@@ -5115,6 +5160,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 9
 --- !u!1 &6779352730321611970
@@ -5261,6 +5308,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &6783540642143923942
@@ -5407,6 +5456,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 5
 --- !u!1 &6803742730414096597
@@ -5553,6 +5604,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 3676831208320808413}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 0
   pieceValue: 1
 --- !u!1 &7084018198833794989
@@ -5699,6 +5752,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 9
 --- !u!1 &7439057931489336693
@@ -5845,6 +5900,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &7899424687655315877
@@ -5991,6 +6048,8 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 1
 --- !u!1 &7955130168276341668
@@ -6137,5 +6196,7 @@ MonoBehaviour:
   _gameManager: {fileID: 7932204280784068178}
   agent: {fileID: 5063069292747176477}
   pushTimer: 0
+  wasKicked: 0
+  kickingAgent: {fileID: 0}
   pieceColor: 1
   pieceValue: 5
