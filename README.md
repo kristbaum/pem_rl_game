@@ -67,3 +67,11 @@ conda create -n chessbrawl python=3.10.8
 conda activate chessbrawl
 pip install mlagents
 '''
+
+
+DEMO video on Friday as part of presentation:
+
+120 seconds
+16:9 MP4
+Project abstract, which kind of training etc
+Statment of contribution of each project member
