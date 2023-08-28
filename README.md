@@ -84,6 +84,17 @@ https://docs.google.com/spreadsheets/d/1vLPF9WEUuqI6n34Wo41OAbFHOeJACiuNkI61odF_
 | speed | for agent movement  | none |
 | kickforce |  applied to kicked objects  | none |
 
+Reward parameters
+
+| Name  | Description | Idea/Learning |
+| ------------- | ------------- | ------------- |
+| Collision Penalty Wall | (Rule) Large penalty for throwing the agent off the board (the wall is the boundary) | Obvious rule to prevent the agent from falling |
+| CP Touching Other Agent  | (Rule) Large penalty for touching  | Rule of the game |
+| CP Touching opponent piece | (Rule) Large penalty; Agents should not touch opposing pieces | Rule of the game |
+| CP Kicking of own piece |  Apply penalty for doing an action that kicks of a piece of your own  | Disincentivise the agents from losing pieces through own actions  |
+| Collision Reward Touching own piece | Reward for touching one of your own chess pieces  | Intended to incentivise movement and interaction of the agent |
+| CR Kick Motion (Chain reation)  | Calculates an extra reward for a kick that leads to a sucessful kick off of an oponent piece | Incentivise actions that directly lead to kicking of oponent pieces |
+| CR Kicking Off Oponent Piece (Globally) | Reward for a oponent piece falling off the board | intended as a global reward similar to the human score for removing pieces from the board |
 
 # DEMO video on Friday as part of presentation:
 
