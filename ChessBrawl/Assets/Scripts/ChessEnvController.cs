@@ -34,7 +34,7 @@ public class ChessEnvController : MonoBehaviour
     public List<GameObject> PiecesList = new List<GameObject>();
     [HideInInspector]
     public List<Rigidbody> pieceRbList = new List<Rigidbody>();
-    List <Vector3> m_pieceStartingPosList = new List<Vector3>();
+    List<Vector3> m_pieceStartingPosList = new List<Vector3>();
 
     //List of Agents On Platform
     public List<PlayerInfo> AgentsList = new List<PlayerInfo>();
@@ -46,6 +46,14 @@ public class ChessEnvController : MonoBehaviour
     private SimpleMultiAgentGroup m_WhiteAgentGroup;
 
     private int m_ResetTimer;
+
+    [Header("Initial Position Ranges")]
+    [SerializeField] private float startXMin = 3f;
+    [SerializeField] private float startXMax = 11.5f;
+    [SerializeField] private float startYMin = 0f;
+    [SerializeField] private float startYMax = 0f;
+    [SerializeField] private float startZMin = -6.7f;
+    [SerializeField] private float startZMax = -6.7f;
 
     void Start()
     {
@@ -91,9 +99,6 @@ public class ChessEnvController : MonoBehaviour
 
     public void Resetpieces()
     {
-        //var randomPosX = Random.Range(-2.5f, 2.5f);
-        //var randomPosZ = Random.Range(-2.5f, 2.5f);
-
 
         for (int i = 0; i < PiecesList.Count; i++)
         {
@@ -122,7 +127,6 @@ public class ChessEnvController : MonoBehaviour
 
     }
 
-
     public void ResetScene()
     {
         m_ResetTimer = 0;
@@ -130,17 +134,20 @@ public class ChessEnvController : MonoBehaviour
         //Reset Agents
         foreach (var item in AgentsList)
         {
-            var randomPosX = Random.Range(-5f, 5f);
-            var newStartPos = item.Agent.initialPos + new Vector3(randomPosX, 0f, 0f);
-            var rot = item.Agent.rotSign * Random.Range(80.0f, 100.0f);
-            var newRot = Quaternion.Euler(0, rot, 0);
-            item.Agent.transform.SetPositionAndRotation(newStartPos, newRot);
 
+            item.Agent.transform.localPosition = new Vector3(
+            Random.Range(startXMin, startXMax),
+            Random.Range(startYMin, startYMax),
+            Random.Range(startZMin, startZMax)
+        );
+
+            item.Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             item.Rb.velocity = Vector3.zero;
             item.Rb.angularVelocity = Vector3.zero;
         }
 
-        //Reset piece
+        //Reset pieces
         Resetpieces();
     }
+
 }

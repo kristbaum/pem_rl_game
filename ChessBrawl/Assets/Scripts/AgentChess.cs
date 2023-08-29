@@ -193,7 +193,7 @@ public class AgentChess : Agent
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
         }
 
-        if(c.gameObject.CompareTag("blackGoal")  || c.gameObject.CompareTag("whiteGoal"))
+        if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
         {
             AddReward(-100f);
 
