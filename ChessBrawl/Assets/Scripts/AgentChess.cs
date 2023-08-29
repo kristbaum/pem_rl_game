@@ -192,11 +192,17 @@ public class AgentChess : Agent
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
         }
+
+        if(c.gameObject.CompareTag("blackGoal")  || c.gameObject.CompareTag("whiteGoal"))
+        {
+            AddReward(-100f);
+
+        }
     }
 
     public override void OnEpisodeBegin()
     {
-        m_PieceTouch = m_ResetParams.GetWithDefault("piece_touch", 0);
+        //m_PieceTouch = m_ResetParams.GetWithDefault("piece_touch", 0);
     }
 
 }

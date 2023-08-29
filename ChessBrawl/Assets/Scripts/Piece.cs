@@ -8,18 +8,43 @@ public class Piece : MonoBehaviour
     public string whiteGoalTag; //will be used to check if collided with white goal
     public string blackGoalTag; //will be used to check if collided with black goal
 
-    public string whitePiece;
-    public string blackPiece;
+    private new string tag;
+
+    //private Vector3 initialPosition;
+    //private Quaternion initialRotation;
+
+    //private Rigidbody rb;
+
+    //private void Awake()
+    //{
+    //    rb = GetComponent<Rigidbody>();
+    //}
 
     void Start()
     {
+        //initialPosition = transform.position;
+        //initialRotation = transform.rotation;
+
         envController = area.GetComponent<ChessEnvController>();
+        tag = gameObject.tag;
     }
+
+    //public void ResetPiece()
+    //{
+    //    transform.position = initialPosition;
+    //    transform.rotation = initialRotation;
+
+    //    if (rb != null)
+    //    {
+    //        rb.velocity = Vector3.zero;  // Reset linear velocity.
+    //        rb.angularVelocity = Vector3.zero;  // Reset angular (rotational) velocity.
+    //    }
+    //}
 
     void OnCollisionEnter(Collision col)
     {
 
-        if (col.gameObject.CompareTag(whitePiece))
+        if (gameObject.CompareTag(tag))
         {
             Debug.Log("WhitePieceTouched");
 
@@ -31,7 +56,7 @@ public class Piece : MonoBehaviour
 
         }
 
-        if (col.gameObject.CompareTag(blackPiece))
+        if (gameObject.CompareTag(tag))
         {
             if (col.gameObject.CompareTag(blackGoalTag)) //black piece touched black goal
             {

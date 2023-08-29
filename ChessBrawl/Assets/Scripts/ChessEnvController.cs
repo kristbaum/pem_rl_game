@@ -33,8 +33,8 @@ public class ChessEnvController : MonoBehaviour
 
     public List<GameObject> PiecesList = new List<GameObject>();
     [HideInInspector]
-    public Rigidbody pieceRb;
-    Vector3 m_pieceStartingPos;
+    public List<Rigidbody> pieceRbList = new List<Rigidbody>();
+    List <Vector3> m_pieceStartingPosList = new List<Vector3>();
 
     //List of Agents On Platform
     public List<PlayerInfo> AgentsList = new List<PlayerInfo>();
@@ -57,8 +57,8 @@ public class ChessEnvController : MonoBehaviour
 
         foreach (GameObject piece in PiecesList)
         {
-            pieceRb = piece.GetComponent<Rigidbody>();
-            m_pieceStartingPos = new Vector3(piece.transform.position.x, piece.transform.position.y, piece.transform.position.z);
+            pieceRbList.Add(piece.GetComponent<Rigidbody>());
+            m_pieceStartingPosList.Add(new Vector3(piece.transform.position.x, piece.transform.position.y, piece.transform.position.z));
         }
         foreach (var item in AgentsList)
         {
@@ -89,18 +89,17 @@ public class ChessEnvController : MonoBehaviour
     }
 
 
-    public void Resetpiece()
+    public void Resetpieces()
     {
-        var randomPosX = Random.Range(-2.5f, 2.5f);
-        var randomPosZ = Random.Range(-2.5f, 2.5f);
+        //var randomPosX = Random.Range(-2.5f, 2.5f);
+        //var randomPosZ = Random.Range(-2.5f, 2.5f);
 
 
-        foreach (GameObject piece in PiecesList)
+        for (int i = 0; i < PiecesList.Count; i++)
         {
-
-            piece.transform.position = m_pieceStartingPos + new Vector3(randomPosX, 0f, randomPosZ);
-            pieceRb.velocity = Vector3.zero;
-            pieceRb.angularVelocity = Vector3.zero;
+            PiecesList[i].transform.position = m_pieceStartingPosList[i];
+            pieceRbList[i].velocity = Vector3.zero;
+            pieceRbList[i].angularVelocity = Vector3.zero;
         }
     }
 
@@ -142,6 +141,6 @@ public class ChessEnvController : MonoBehaviour
         }
 
         //Reset piece
-        Resetpiece();
+        Resetpieces();
     }
 }
