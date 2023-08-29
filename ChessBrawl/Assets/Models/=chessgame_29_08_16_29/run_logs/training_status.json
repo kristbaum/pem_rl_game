@@ -1,0 +1,30 @@
+{
+    "MoveAgent": {
+        "elo": -522.4452816709041,
+        "checkpoints": [
+            {
+                "steps": 430403,
+                "file_path": "results\\=chessgame_29_08_16_29\\MoveAgent\\MoveAgent-430403.onnx",
+                "reward": -163.0,
+                "creation_time": 1693322499.7178328,
+                "auxillary_file_paths": [
+                    "results\\=chessgame_29_08_16_29\\MoveAgent\\MoveAgent-430403.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 430403,
+            "file_path": "results\\=chessgame_29_08_16_29\\MoveAgent.onnx",
+            "reward": -163.0,
+            "creation_time": 1693322499.7178328,
+            "auxillary_file_paths": [
+                "results\\=chessgame_29_08_16_29\\MoveAgent\\MoveAgent-430403.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "2.0.0+cu117"
+    }
+}

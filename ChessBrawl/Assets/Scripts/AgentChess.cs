@@ -154,11 +154,11 @@ public class AgentChess : Agent
     {
         var discreteActionsOut = actionsOut.DiscreteActions;
         //forward
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.S))
         {
             discreteActionsOut[0] = 1;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.W))
         {
             discreteActionsOut[0] = 2;
         }
@@ -200,7 +200,7 @@ public class AgentChess : Agent
     {
         if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
         {
-            AddReward(-100f);
+            AddReward(-1f);
 
             Debug.Log("Agent touched the goal border");
             _chessEnvController.ResetScene();

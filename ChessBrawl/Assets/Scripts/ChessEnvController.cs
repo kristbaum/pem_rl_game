@@ -145,18 +145,20 @@ public class ChessEnvController : MonoBehaviour
 
 
         AgentsList[0].Agent.transform.localPosition = new Vector3(
-Random.Range(startXMin, startXMax),
-Random.Range(startYMin, startYMax),
-Random.Range(startZMin, startZMax)
-);
+        Random.Range(startXMin, startXMax),
+        Random.Range(startYMin, startYMax),
+        Random.Range(startZMin, startZMax)
+        );
 
 
-        AgentsList[1].Agent.transform.localPosition = new Vector3(
-Random.Range(startXMin, startXMax),
-Random.Range(startYMin, startYMax),
-Random.Range(startZMinAgent2, startZMaxAgent2)
-);
+                AgentsList[1].Agent.transform.localPosition = new Vector3(
+        Random.Range(startXMin, startXMax),
+        Random.Range(startYMin, startYMax),
+        Random.Range(startZMinAgent2, startZMaxAgent2)
+        );
 
+        AgentsList[0].Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        AgentsList[1].Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
         //Reset Agents
         foreach (var item in AgentsList)
@@ -164,7 +166,7 @@ Random.Range(startZMinAgent2, startZMaxAgent2)
 
 
 
-            item.Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            //item.Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             item.Rb.velocity = Vector3.zero;
             item.Rb.angularVelocity = Vector3.zero;
         }
