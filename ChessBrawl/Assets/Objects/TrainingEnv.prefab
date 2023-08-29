@@ -2117,13 +2117,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Agents: []
-  CPWall: -2
-  CPTouchingAgent: -1
-  CPTouchingOpponentPiece: -1
+  CPWall: -100
+  CPTouchingAgent: -100
+  CPTouchingOpponentPiece: -100
   CPKickingOffOwnPiece: -0.1
-  CRTouchingOwnPiece: 0.05
-  CRKickMotion: 1
-  CRKickingOffOpponentPiece: 0.5
+  CRTouchingOwnPiece: 1
+  CRKickMotion: 50
+  CRKickingOffOpponentPiece: 10
   currentScore: 0
 --- !u!1 &2476801395416597685
 GameObject:
@@ -3953,7 +3953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 102
-    NumStackedVectorObservations: 2
+    NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 4
       BranchSizes: 
@@ -4427,7 +4427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8865035324259761285
 Transform:
   m_ObjectHideFlags: 0
@@ -4523,7 +4523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BrainParameters:
     VectorObservationSize: 102
-    NumStackedVectorObservations: 2
+    NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 4
       BranchSizes: 
@@ -4533,7 +4533,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 1
-  m_BehaviorType: 2
+  m_BehaviorType: 0
   m_BehaviorName: MoveAgent
   TeamId: 0
   m_UseChildSensors: 1

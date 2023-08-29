@@ -103,7 +103,7 @@ public class MoveAgent : Agent {
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
         float moveSpeed = actions.ContinuousActions[2];
-        //float kickForce = actions.ContinuousActions[3];
+        float kickForce = actions.ContinuousActions[3];
 
 
         float moveSpeedMin = 0.5f;
@@ -111,8 +111,7 @@ public class MoveAgent : Agent {
         moveSpeed = moveSpeedMin + ((moveSpeed + 1) * (moveSpeedMax - moveSpeedMin) / 2);
         float kickForceMin = 2f;
         float kickForceMax = 20f;
-        //kickForce = kickForceMin + ((kickForce + 1) * (kickForceMax - kickForceMin) / 2);
-        kickForce = 5f;
+        kickForce = kickForceMin + ((kickForce + 1) * (kickForceMax - kickForceMin) / 2);
 
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
 
