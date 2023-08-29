@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Piece
   - Wall
+  - piece
+  - blackGoal
+  - whiteGoal
+  - wall
+  - blackAgent
+  - whiteAgent
   layers:
   - Default
   - TransparentFX

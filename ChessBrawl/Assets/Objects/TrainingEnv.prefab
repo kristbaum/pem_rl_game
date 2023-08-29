@@ -1,5 +1,102 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &118338898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118338899}
+  - component: {fileID: 118338902}
+  - component: {fileID: 118338901}
+  - component: {fileID: 118338900}
+  m_Layer: 0
+  m_Name: WallA
+  m_TagString: wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118338899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118338898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.51, y: -0, z: 1.66}
+  m_LocalScale: {x: 1, y: 35.15012, z: 3.4764402}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &118338902
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118338898}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &118338901
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118338898}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 50158aae05df532beadf4160fa184fb7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &118338900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118338898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1183103446
 GameObject:
   m_ObjectHideFlags: 0
@@ -18,7 +115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1183103447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33,7 +130,7 @@ RectTransform:
   m_Children:
   - {fileID: 1945161557}
   m_Father: {fileID: 5063069293597501118}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -101,6 +198,103 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &1366821512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366821513}
+  - component: {fileID: 1366821516}
+  - component: {fileID: 1366821515}
+  - component: {fileID: 1366821514}
+  m_Layer: 0
+  m_Name: WallB
+  m_TagString: wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1366821513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366821512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.9, y: -0, z: 1.66}
+  m_LocalScale: {x: 1, y: 35.15012, z: 3.4764402}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1366821516
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366821512}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1366821515
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366821512}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 50158aae05df532beadf4160fa184fb7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1366821514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366821512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1588929046
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +325,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5063069293597501118}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1588929048
 AudioSource:
@@ -378,7 +572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreText: {fileID: 1945161558}
-  _gameManager: {fileID: 7932204280784068178}
+  _gameManager: {fileID: 0}
 --- !u!1 &88030955107384657
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,12 +585,11 @@ GameObject:
   - component: {fileID: 2565901980575371999}
   - component: {fileID: 8795588718296933335}
   - component: {fileID: 3700582956816065888}
-  - component: {fileID: 3700582956816065889}
   - component: {fileID: 7955502752822196377}
-  - component: {fileID: 9202814879049338644}
+  - component: {fileID: 8441569790992635425}
   m_Layer: 0
   m_Name: Bishop.002
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,19 +675,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3700582956816065889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88030955107384657}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
-  m_Center: {x: 3.1895658e-22, y: 0.7531149, z: 0.00000047683716}
 --- !u!65 &7955502752822196377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -502,13 +682,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88030955107384657}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: 3.1895658e-22, y: 0.75311494, z: 0}
---- !u!114 &9202814879049338644
+--- !u!114 &8441569790992635425
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -520,13 +700,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
+--- !u!1 &617834887844847320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6975054466740255408}
+  - component: {fileID: 2084051527965222793}
+  - component: {fileID: 3120133986147915511}
+  - component: {fileID: 4298234236082117585}
+  m_Layer: 0
+  m_Name: GoalRed
+  m_TagString: whiteGoal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6975054466740255408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617834887844847320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23, y: 18.07, z: 0.34}
+  m_LocalScale: {x: 31.09772, y: 4.1978, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2084051527965222793
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617834887844847320}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3120133986147915511
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617834887844847320}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 97004935848b5478889da9b53475cabd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4298234236082117585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617834887844847320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &850715277995811373
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,12 +813,11 @@ GameObject:
   - component: {fileID: 8030962975476240653}
   - component: {fileID: 6544073338360611580}
   - component: {fileID: 7634847722408806625}
-  - component: {fileID: 3734338961469911048}
   - component: {fileID: 8476584839141829681}
   - component: {fileID: 5905284583688471846}
   m_Layer: 0
   m_Name: Pawn.006
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,19 +903,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3734338961469911048
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850715277995811373}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &8476584839141829681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -650,7 +910,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850715277995811373}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -668,13 +928,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &889111843330662683
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +968,10 @@ Transform:
   - {fileID: 2325377078333370275}
   - {fileID: 229914690804452947}
   - {fileID: 651338501810077922}
+  - {fileID: 118338899}
+  - {fileID: 1366821513}
+  - {fileID: 1997538167260564754}
+  - {fileID: 6975054466740255408}
   m_Father: {fileID: 5063069293597501118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -790,12 +1051,11 @@ GameObject:
   - component: {fileID: 6004852467150869966}
   - component: {fileID: 1796284096801185017}
   - component: {fileID: 1796284096801184967}
-  - component: {fileID: 1796284096801185016}
   - component: {fileID: 148512649959203055}
-  - component: {fileID: 4429793378488369202}
+  - component: {fileID: 1157723392697488289}
   m_Layer: 0
   m_Name: Knight.003
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -881,19 +1141,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1796284096801185016
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927117622780511368}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
-  m_Center: {x: 2.6598317e-22, y: 0.62803495, z: 0.027925223}
 --- !u!65 &148512649959203055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -901,13 +1148,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927117622780511368}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 2.6598317e-22, y: 0.628035, z: 0.027925223}
---- !u!114 &4429793378488369202
+--- !u!114 &1157723392697488289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -919,13 +1166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &1037900434834903760
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,12 +1182,11 @@ GameObject:
   - component: {fileID: 1573194281283242874}
   - component: {fileID: 3375552937680694583}
   - component: {fileID: 4171317469104750614}
-  - component: {fileID: 703354028227173942}
   - component: {fileID: 4171317469104750615}
-  - component: {fileID: 1264134156765115655}
+  - component: {fileID: 7616182111857588689}
   m_Layer: 0
   m_Name: Pawn.014
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,19 +1272,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &703354028227173942
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1037900434834903760}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &4171317469104750615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1049,13 +1279,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037900434834903760}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &1264134156765115655
+--- !u!114 &7616182111857588689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1067,13 +1297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &1144966122703576277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,12 +1313,11 @@ GameObject:
   - component: {fileID: 4621951437147674925}
   - component: {fileID: 7175243410744619440}
   - component: {fileID: 1144966122703576275}
-  - component: {fileID: 6124277862637370290}
   - component: {fileID: 1144966122703576276}
-  - component: {fileID: 1311334131791820400}
+  - component: {fileID: 4871615332999467619}
   m_Layer: 0
   m_Name: Pawn.015
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1177,19 +1403,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6124277862637370290
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144966122703576277}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &1144966122703576276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1197,13 +1410,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144966122703576277}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &1311334131791820400
+--- !u!114 &4871615332999467619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1215,13 +1428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &1168015390649228897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,12 +1444,11 @@ GameObject:
   - component: {fileID: 841373734954092737}
   - component: {fileID: 5659395777694260666}
   - component: {fileID: 6514186251774199087}
-  - component: {fileID: 7538761672251857512}
   - component: {fileID: 5441972343601378182}
   - component: {fileID: 3217807781857365813}
   m_Layer: 0
   m_Name: Pawn.004
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1325,19 +1534,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7538761672251857512
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168015390649228897}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &5441972343601378182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1345,7 +1541,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168015390649228897}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1363,13 +1559,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &1186385361726207723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,12 +1575,11 @@ GameObject:
   - component: {fileID: 2932117850682948860}
   - component: {fileID: 3784527347103003613}
   - component: {fileID: 3784527347103003611}
-  - component: {fileID: 3784527347103003612}
   - component: {fileID: 263823911418680552}
   - component: {fileID: 8887403203056719778}
   m_Layer: 0
   m_Name: Pawn
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1473,19 +1665,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3784527347103003612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186385361726207723}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066803, z: 0}
 --- !u!65 &263823911418680552
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1493,7 +1672,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186385361726207723}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1511,13 +1690,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
+--- !u!1 &1188711352598162735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9051318808895639576}
+  m_Layer: 0
+  m_Name: Players
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9051318808895639576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188711352598162735}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.7884827, y: 0, z: 8.402984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5063069293597501118}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1427418086332343100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,12 +1737,11 @@ GameObject:
   - component: {fileID: 6420317569897642157}
   - component: {fileID: 2363838171785105989}
   - component: {fileID: 4114736642864492220}
-  - component: {fileID: 4114736642864492221}
   - component: {fileID: 4876270821748567840}
-  - component: {fileID: 968579382430417806}
+  - component: {fileID: 1179023312719588319}
   m_Layer: 0
   m_Name: King.001
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1621,19 +1827,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4114736642864492221
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427418086332343100}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
-  m_Center: {x: 0, y: 0.8596715, z: 0}
 --- !u!65 &4876270821748567840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1641,13 +1834,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427418086332343100}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
   m_Center: {x: 0, y: 0.8596714, z: 0}
---- !u!114 &968579382430417806
+--- !u!114 &1179023312719588319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1659,13 +1852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 50
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &1555173682912226661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,12 +1868,11 @@ GameObject:
   - component: {fileID: 4166427884870045060}
   - component: {fileID: 452280375670104369}
   - component: {fileID: 5035447818799450671}
-  - component: {fileID: 3159366450080634139}
   - component: {fileID: 8656508383548078174}
   - component: {fileID: 2254946193664870563}
   m_Layer: 0
   m_Name: Pawn.007
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1769,19 +1958,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3159366450080634139
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555173682912226661}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &8656508383548078174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1789,7 +1965,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555173682912226661}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1807,13 +1983,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &1622474187845166930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,7 +2006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2325377078333370275
 Transform:
   m_ObjectHideFlags: 0
@@ -1936,12 +2109,11 @@ GameObject:
   - component: {fileID: 4317757060916931454}
   - component: {fileID: 8797731585145576393}
   - component: {fileID: 7797046822657168907}
-  - component: {fileID: 5210041029548892578}
   - component: {fileID: 850920052183263130}
-  - component: {fileID: 2956415623295187534}
+  - component: {fileID: 7076547069029471056}
   m_Layer: 0
   m_Name: Bishop.003
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2027,19 +2199,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5210041029548892578
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722219783434572897}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
-  m_Center: {x: -0.00000047683716, y: 0.75311494, z: 0}
 --- !u!65 &850920052183263130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2047,13 +2206,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722219783434572897}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
   m_Center: {x: -0.00000047683716, y: 0.75311494, z: 0}
---- !u!114 &2956415623295187534
+--- !u!114 &7076547069029471056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2065,66 +2224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 3
---- !u!1 &2082125209679135846
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1499873234142745399}
-  - component: {fileID: 7932204280784068178}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1499873234142745399
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082125209679135846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5063069293597501118}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7932204280784068178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082125209679135846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 858f2bab1ce8f77e78a09242e281c609, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Agents: []
-  CPWall: -100
-  CPTouchingAgent: -100
-  CPTouchingOpponentPiece: -100
-  CPKickingOffOwnPiece: -0.1
-  CRTouchingOwnPiece: 1
-  CRKickMotion: 50
-  CRKickingOffOpponentPiece: 10
-  currentScore: 0
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &2476801395416597685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,12 +2240,11 @@ GameObject:
   - component: {fileID: 4068406879460965434}
   - component: {fileID: 8630841596710333248}
   - component: {fileID: 4068406879460965432}
-  - component: {fileID: 1881168872392039530}
   - component: {fileID: 4068406879460965433}
-  - component: {fileID: 3237742782152077679}
+  - component: {fileID: 2091548006572034430}
   m_Layer: 0
   m_Name: Pawn.011
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2228,19 +2330,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1881168872392039530
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2476801395416597685}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &4068406879460965433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2248,13 +2337,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2476801395416597685}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &3237742782152077679
+--- !u!114 &2091548006572034430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2266,13 +2355,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &2704230006749183856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &651338501810077922
 Transform:
   m_ObjectHideFlags: 0
@@ -2395,12 +2481,11 @@ GameObject:
   - component: {fileID: 6366995256170571613}
   - component: {fileID: 3932869156288533353}
   - component: {fileID: 3932869156288533367}
-  - component: {fileID: 2611361811413639962}
   - component: {fileID: 3932869156288533352}
-  - component: {fileID: 1985353406375769968}
+  - component: {fileID: 4983788908516422841}
   m_Layer: 0
   m_Name: Pawn.013
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2486,19 +2571,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2611361811413639962
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3051200213713017632}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &3932869156288533352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2506,13 +2578,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3051200213713017632}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &1985353406375769968
+--- !u!114 &4983788908516422841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2524,13 +2596,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &3307033075495859057
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,12 +2612,11 @@ GameObject:
   - component: {fileID: 7729226011709502921}
   - component: {fileID: 5842653446825697180}
   - component: {fileID: 3307033075495859071}
-  - component: {fileID: 7469826890879594635}
   - component: {fileID: 3307033075495859056}
-  - component: {fileID: 2974053961954318060}
+  - component: {fileID: 8422313972240523780}
   m_Layer: 0
   m_Name: Pawn.010
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2634,19 +2702,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7469826890879594635
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3307033075495859057}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &3307033075495859056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2654,13 +2709,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3307033075495859057}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &2974053961954318060
+--- !u!114 &8422313972240523780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2672,13 +2727,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &3429270397741079813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,12 +2743,11 @@ GameObject:
   - component: {fileID: 1876820210290888978}
   - component: {fileID: 2342283580268464284}
   - component: {fileID: 9212559674465943268}
-  - component: {fileID: 1377590394671645978}
   - component: {fileID: 686760030546508582}
   - component: {fileID: 3140097251368787036}
   m_Layer: 0
   m_Name: Rook.001
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2782,19 +2833,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1377590394671645978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3429270397741079813}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
-  m_Center: {x: 0, y: 0.6577771, z: 0}
 --- !u!65 &686760030546508582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2802,7 +2840,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3429270397741079813}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2820,13 +2858,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 5
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &3491999856449892832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,12 +2874,11 @@ GameObject:
   - component: {fileID: 3120704422811538001}
   - component: {fileID: 3625150110911843014}
   - component: {fileID: 3491999856449892846}
-  - component: {fileID: 3491999856449892847}
   - component: {fileID: 1638298121024306098}
   - component: {fileID: 7125794066884794610}
   m_Layer: 0
   m_Name: King
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2930,19 +2964,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3491999856449892847
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3491999856449892832}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.7193428, z: 0.7589414}
-  m_Center: {x: 0, y: 0.8596714, z: 0}
 --- !u!65 &1638298121024306098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2950,7 +2971,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3491999856449892832}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2968,13 +2989,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 50
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &3599465194470826953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,12 +3005,11 @@ GameObject:
   - component: {fileID: 7482115594377392406}
   - component: {fileID: 8386210031071546746}
   - component: {fileID: 3599465194470826967}
-  - component: {fileID: 6045698079229511147}
   - component: {fileID: 3599465194470826952}
-  - component: {fileID: 8893983511654847808}
+  - component: {fileID: 5128921030476709853}
   m_Layer: 0
   m_Name: Pawn.009
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3078,19 +3095,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6045698079229511147
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3599465194470826953}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &3599465194470826952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3098,13 +3102,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3599465194470826953}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &8893983511654847808
+--- !u!114 &5128921030476709853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3116,13 +3120,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
+--- !u!1 &4535949133169301426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997538167260564754}
+  - component: {fileID: 2156970718527487224}
+  - component: {fileID: 7109643020435285682}
+  - component: {fileID: 9016426662308061991}
+  m_Layer: 0
+  m_Name: GoalBlue
+  m_TagString: blackGoal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1997538167260564754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535949133169301426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23, y: -18.1, z: 0.34}
+  m_LocalScale: {x: 31.09772, y: 4.1978, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2156970718527487224
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535949133169301426}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7109643020435285682
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535949133169301426}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: be5694ebe56466d94b485a560d653129, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9016426662308061991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4535949133169301426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4543972668331718717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,12 +3233,11 @@ GameObject:
   - component: {fileID: 8271446375265711705}
   - component: {fileID: 6237614153035665465}
   - component: {fileID: 8846235473696215013}
-  - component: {fileID: 1894488110295595518}
   - component: {fileID: 485362582408373401}
   - component: {fileID: 2859364080807424875}
   m_Layer: 0
   m_Name: Pawn.002
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3226,19 +3323,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1894488110295595518
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4543972668331718717}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &485362582408373401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3246,7 +3330,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4543972668331718717}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3264,13 +3348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &4909261993635826202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,7 +3371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3144716563406120264
 Transform:
   m_ObjectHideFlags: 0
@@ -3393,12 +3474,11 @@ GameObject:
   - component: {fileID: 8676261234066729091}
   - component: {fileID: 3782012792175375841}
   - component: {fileID: 5825398400146051690}
-  - component: {fileID: 186837586864746144}
   - component: {fileID: 6798927104386365683}
   - component: {fileID: 7095350364385409101}
   m_Layer: 0
   m_Name: Bishop.001
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3484,19 +3564,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &186837586864746144
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920846236956684629}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
-  m_Center: {x: 0, y: 0.75311494, z: 0}
 --- !u!65 &6798927104386365683
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3504,7 +3571,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4920846236956684629}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3522,13 +3589,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &4931755979564462778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,7 +3612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4974747848639925524
 Transform:
   m_ObjectHideFlags: 0
@@ -3651,12 +3715,11 @@ GameObject:
   - component: {fileID: 1628008727242102058}
   - component: {fileID: 8013126947594044270}
   - component: {fileID: 4203226904675811513}
-  - component: {fileID: 4203226904675811514}
   - component: {fileID: 7763593749562114116}
-  - component: {fileID: 5763914990941873021}
+  - component: {fileID: 2744657024016668728}
   m_Layer: 0
   m_Name: Rook.003
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3742,19 +3805,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4203226904675811514
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5019800012966674216}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8957171, y: 1.3155541, z: 0.7757138}
-  m_Center: {x: 0, y: 0.65777713, z: 0}
 --- !u!65 &7763593749562114116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3762,13 +3812,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5019800012966674216}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
---- !u!114 &5763914990941873021
+--- !u!114 &2744657024016668728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3780,13 +3830,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 5
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &5063069292321265329
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,9 +3898,11 @@ GameObject:
   - component: {fileID: 5063069292747176477}
   - component: {fileID: 5063069292747176478}
   - component: {fileID: 3380408618344202213}
+  - component: {fileID: 7803831537981122477}
+  - component: {fileID: 7811370922850731017}
   m_Layer: 0
   m_Name: AgentWhite
-  m_TagString: Untagged
+  m_TagString: whiteAgent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3931,14 +3980,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5063069292747176479}
   serializedVersion: 2
-  m_Mass: 120
-  m_Drag: 0
-  m_AngularDrag: 0.01
+  m_Mass: 50
+  m_Drag: 3
+  m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 116
+  m_CollisionDetection: 1
 --- !u!114 &5063069292747176476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3952,20 +4001,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 102
+    VectorObservationSize: 0
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 4
-      BranchSizes: 
-    VectorActionSize: 04000000
+      m_NumContinuousActions: 0
+      BranchSizes: 030000000300000003000000
+    VectorActionSize: 030000000300000003000000
     VectorActionDescriptions: []
-    VectorActionSpaceType: 1
+    VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: MoveAgent
-  TeamId: 0
+  TeamId: 1
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
@@ -3985,17 +4034,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  _gameManager: {fileID: 7932204280784068178}
-  audioPlayer: {fileID: 1588929048}
-  board: {fileID: 889111843330662683}
-  agentColor: 1
-  targetTransforms: []
-  startXMin: 3
-  startXMax: 11.5
-  startYMin: 0.1
-  startYMax: 0.1
-  startZMin: -6.7
-  startZMax: -6.7
+  team: 0
+  position: 0
+  agentRb: {fileID: 0}
+  initialPos: {x: 0, y: 0, z: 0}
+  rotSign: 0
 --- !u!114 &5063069292747176478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4024,6 +4067,51 @@ CapsuleCollider:
   m_Height: 1.2133604
   m_Direction: 1
   m_Center: {x: 0, y: 0.6066802, z: 0}
+--- !u!114 &7803831537981122477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063069292747176479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: WhiteRayPerceptionSensor
+  m_DetectableTags:
+  - piece
+  - blackGoal
+  - whiteGoal
+  - wall
+  - blackAgent
+  - whiteAgent
+  m_RaysPerDirection: 5
+  m_MaxRayDegrees: 60
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 3
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0.5
+  m_EndVerticalOffset: 0.5
+--- !u!114 &7811370922850731017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063069292747176479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89beb4dd6cd055f48840b9714e6703c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugCommandLineOverride: 
 --- !u!1 &5063069292760325333
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,6 +4169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5063069293597501118}
+  - component: {fileID: 935715745}
   m_Layer: 0
   m_Name: TrainingEnv
   m_TagString: Untagged
@@ -4103,12 +4192,36 @@ Transform:
   - {fileID: 3685465367007059209}
   - {fileID: 5063069292321265328}
   - {fileID: 5063069292760325332}
-  - {fileID: 1499873234142745399}
   - {fileID: 1183103447}
   - {fileID: 1588929047}
+  - {fileID: 9051318808895639576}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &935715745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063069293597501119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0378af82dd91a014c9d4b09f4ab4c9ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxEnvironmentSteps: 5000
+  piece: {fileID: 1186385361726207723}
+  pieceRb: {fileID: 0}
+  AgentsList:
+  - Agent: {fileID: 5063069292747176477}
+    StartingPos: {x: 0, y: 0, z: 0}
+    StartingRot: {x: 0, y: 0, z: 0, w: 0}
+    Rb: {fileID: 0}
+  - Agent: {fileID: 3676831208320808413}
+    StartingPos: {x: 0, y: 0, z: 0}
+    StartingRot: {x: 0, y: 0, z: 0, w: 0}
+    Rb: {fileID: 0}
 --- !u!1 &5119969686149559332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,12 +4234,11 @@ GameObject:
   - component: {fileID: 4707683343613161197}
   - component: {fileID: 2186031608671505223}
   - component: {fileID: 2186031608671505221}
-  - component: {fileID: 2186031608671505222}
   - component: {fileID: 3716140603922901466}
-  - component: {fileID: 4238778795329643659}
+  - component: {fileID: 7270776520072817605}
   m_Layer: 0
   m_Name: Knight.002
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4212,19 +4324,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2186031608671505222
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5119969686149559332}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
-  m_Center: {x: 2.6598317e-22, y: 0.62803495, z: 0.027925223}
 --- !u!65 &3716140603922901466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4232,13 +4331,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5119969686149559332}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
   m_Center: {x: 2.6598317e-22, y: 0.628035, z: 0.027925223}
---- !u!114 &4238778795329643659
+--- !u!114 &7270776520072817605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4250,13 +4349,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &5498304935568688983
 GameObject:
   m_ObjectHideFlags: 0
@@ -4269,12 +4365,11 @@ GameObject:
   - component: {fileID: 5439180445689081842}
   - component: {fileID: 3829320390539470989}
   - component: {fileID: 713680403014989670}
-  - component: {fileID: 610234349073815049}
   - component: {fileID: 7476396253049220082}
   - component: {fileID: 3682227261752315101}
   m_Layer: 0
   m_Name: Pawn.001
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4360,19 +4455,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &610234349073815049
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498304935568688983}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &7476396253049220082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4380,7 +4462,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5498304935568688983}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4398,13 +4480,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &5686108824770104501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,9 +4500,12 @@ GameObject:
   - component: {fileID: 3676831208320808413}
   - component: {fileID: 8678607530197316040}
   - component: {fileID: 1763394626901709628}
+  - component: {fileID: 7972799905297495294}
+  - component: {fileID: 1771437674729109260}
+  - component: {fileID: 3533938216131279780}
   m_Layer: 0
   m_Name: AgentBlack
-  m_TagString: Untagged
+  m_TagString: blackAgent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4501,14 +4583,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5686108824770104501}
   serializedVersion: 2
-  m_Mass: 120
-  m_Drag: 0
-  m_AngularDrag: 0.01
+  m_Mass: 50
+  m_Drag: 3
+  m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 116
+  m_CollisionDetection: 1
 --- !u!114 &7442501634957392652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4522,14 +4604,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 102
+    VectorObservationSize: 0
     NumStackedVectorObservations: 1
     m_ActionSpec:
-      m_NumContinuousActions: 4
-      BranchSizes: 
-    VectorActionSize: 04000000
+      m_NumContinuousActions: 0
+      BranchSizes: 030000000300000003000000
+    VectorActionSize: 030000000300000003000000
     VectorActionDescriptions: []
-    VectorActionSpaceType: 1
+    VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 1
@@ -4555,17 +4637,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  _gameManager: {fileID: 7932204280784068178}
-  audioPlayer: {fileID: 1588929048}
-  board: {fileID: 889111843330662683}
-  agentColor: 0
-  targetTransforms: []
-  startXMin: 3
-  startXMax: 11.5
-  startYMin: 0.1
-  startYMax: 0.1
-  startZMin: 2
-  startZMax: 2
+  team: 0
+  position: 0
+  agentRb: {fileID: 0}
+  initialPos: {x: 0, y: 0, z: 0}
+  rotSign: 0
 --- !u!114 &8678607530197316040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4594,6 +4670,65 @@ CapsuleCollider:
   m_Height: 1.2133604
   m_Direction: 1
   m_Center: {x: 0, y: 0.6066802, z: 0}
+--- !u!114 &7972799905297495294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686108824770104501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: BlackRayPerceptionSensor
+  m_DetectableTags:
+  - piece
+  - blackGoal
+  - whiteGoal
+  - wall
+  - blackAgent
+  - whiteAgent
+  m_RaysPerDirection: 5
+  m_MaxRayDegrees: 60
+  m_SphereCastRadius: 0.5
+  m_RayLength: 20
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 3
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  m_StartVerticalOffset: 0.5
+  m_EndVerticalOffset: 0.5
+--- !u!114 &1771437674729109260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686108824770104501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
+--- !u!114 &3533938216131279780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686108824770104501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89beb4dd6cd055f48840b9714e6703c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugCommandLineOverride: 
 --- !u!1 &5704173859435868369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,12 +4741,11 @@ GameObject:
   - component: {fileID: 1898127773347531571}
   - component: {fileID: 2300464619744402349}
   - component: {fileID: 3477548942525655950}
-  - component: {fileID: 3477548942525655951}
   - component: {fileID: 3942775777749947182}
   - component: {fileID: 882867506249155818}
   m_Layer: 0
   m_Name: Bishop
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4697,19 +4831,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3477548942525655951
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5704173859435868369}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.5062299, z: 0.7589414}
-  m_Center: {x: 0, y: 0.75311494, z: 0}
 --- !u!65 &3942775777749947182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4717,7 +4838,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704173859435868369}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4735,13 +4856,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &5903782371258024733
 GameObject:
   m_ObjectHideFlags: 0
@@ -4761,7 +4879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &229914690804452947
 Transform:
   m_ObjectHideFlags: 0
@@ -4864,12 +4982,11 @@ GameObject:
   - component: {fileID: 6279751205610523140}
   - component: {fileID: 1572501256333924301}
   - component: {fileID: 1572501256333924299}
-  - component: {fileID: 1572501256333924300}
   - component: {fileID: 7771973127436946302}
   - component: {fileID: 4549066380995225137}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4955,19 +5072,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1572501256333924300
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6072187833926354474}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
-  m_Center: {x: 0, y: 0.628035, z: 0.027925223}
 --- !u!65 &7771973127436946302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4975,7 +5079,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6072187833926354474}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4993,13 +5097,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &6573710848806186500
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,12 +5113,11 @@ GameObject:
   - component: {fileID: 8443868824943081991}
   - component: {fileID: 6297567500014232711}
   - component: {fileID: 976100433827495551}
-  - component: {fileID: 3822129309246218484}
   - component: {fileID: 916873961977028280}
   - component: {fileID: 5746823827638751946}
   m_Layer: 0
   m_Name: Knight.001
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5103,19 +5203,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3822129309246218484
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6573710848806186500}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.895717, y: 1.25607, z: 0.83156425}
-  m_Center: {x: 0, y: 0.628035, z: 0.027925223}
 --- !u!65 &916873961977028280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5123,7 +5210,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6573710848806186500}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5141,13 +5228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 3
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &6580617481520161016
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,12 +5244,11 @@ GameObject:
   - component: {fileID: 884689186467496903}
   - component: {fileID: 4558812127886847576}
   - component: {fileID: 4558812127886848422}
-  - component: {fileID: 4558812127886848423}
   - component: {fileID: 4709389799268571354}
-  - component: {fileID: 3606016877754953544}
+  - component: {fileID: 7921213507641783938}
   m_Layer: 0
   m_Name: Queen.001
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5251,19 +5334,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4558812127886848423
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6580617481520161016}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
-  m_Center: {x: 0, y: 0.85066193, z: 0}
 --- !u!65 &4709389799268571354
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5271,13 +5341,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6580617481520161016}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
   m_Center: {x: 0, y: 0.8506619, z: 0}
---- !u!114 &3606016877754953544
+--- !u!114 &7921213507641783938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5289,13 +5359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 9
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &6779352730321611970
 GameObject:
   m_ObjectHideFlags: 0
@@ -5308,12 +5375,11 @@ GameObject:
   - component: {fileID: 6612310572335861307}
   - component: {fileID: 2546522451959490265}
   - component: {fileID: 2546522451959490087}
-  - component: {fileID: 6327683138146196880}
   - component: {fileID: 2546522451959490264}
-  - component: {fileID: 8229201127427952719}
+  - component: {fileID: 9110252856503019519}
   m_Layer: 0
   m_Name: Pawn.012
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5399,19 +5465,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6327683138146196880
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6779352730321611970}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &2546522451959490264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5419,13 +5472,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6779352730321611970}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &8229201127427952719
+--- !u!114 &9110252856503019519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5437,13 +5490,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &6783540642143923942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,12 +5506,11 @@ GameObject:
   - component: {fileID: 7541957628214754318}
   - component: {fileID: 7369181486157883114}
   - component: {fileID: 7541957628214754316}
-  - component: {fileID: 7541957628214754317}
   - component: {fileID: 5821621884371329964}
-  - component: {fileID: 6873511551265171800}
+  - component: {fileID: 2857846338159215724}
   m_Layer: 0
   m_Name: Rook.002
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5547,19 +5596,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7541957628214754317
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6783540642143923942}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8957171, y: 1.3155541, z: 0.7757138}
-  m_Center: {x: 0, y: 0.65777713, z: 0}
 --- !u!65 &5821621884371329964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5567,13 +5603,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6783540642143923942}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.895717, y: 1.3155541, z: 0.7757138}
   m_Center: {x: 0, y: 0.6577771, z: 0}
---- !u!114 &6873511551265171800
+--- !u!114 &2857846338159215724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5585,13 +5621,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 5
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &6803742730414096597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5604,12 +5637,11 @@ GameObject:
   - component: {fileID: 2370654372249165263}
   - component: {fileID: 3117473445263723587}
   - component: {fileID: 3117473445263723585}
-  - component: {fileID: 4924553330424241127}
   - component: {fileID: 3117473445263723586}
-  - component: {fileID: 8912367438897281495}
+  - component: {fileID: 8284378247787895134}
   m_Layer: 0
   m_Name: Pawn.008
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5695,19 +5727,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4924553330424241127
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6803742730414096597}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &3117473445263723586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5715,13 +5734,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6803742730414096597}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7559096, y: 1.2133604, z: 0.654637}
   m_Center: {x: 0, y: 0.6066802, z: 0}
---- !u!114 &8912367438897281495
+--- !u!114 &8284378247787895134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5733,13 +5752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 3676831208320808413}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 0
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &7084018198833794989
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,12 +5768,11 @@ GameObject:
   - component: {fileID: 3692576109561829716}
   - component: {fileID: 343524309427130839}
   - component: {fileID: 3692576109561829714}
-  - component: {fileID: 3692576109561829715}
   - component: {fileID: 9195278485453301637}
   - component: {fileID: 5432319710829481114}
   m_Layer: 0
   m_Name: Queen
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5843,19 +5858,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3692576109561829715
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7084018198833794989}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8763499, y: 1.7013237, z: 0.7589414}
-  m_Center: {x: 0, y: 0.8506619, z: 0}
 --- !u!65 &9195278485453301637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5863,7 +5865,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7084018198833794989}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5881,13 +5883,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 9
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &7439057931489336693
 GameObject:
   m_ObjectHideFlags: 0
@@ -5900,12 +5899,11 @@ GameObject:
   - component: {fileID: 1357127666226224652}
   - component: {fileID: 4873438017527538487}
   - component: {fileID: 8379365563261682685}
-  - component: {fileID: 3096671150471410761}
   - component: {fileID: 1976196152554972042}
   - component: {fileID: 2079829443409943033}
   m_Layer: 0
   m_Name: Pawn.003
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5991,19 +5989,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3096671150471410761
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7439057931489336693}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &1976196152554972042
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6011,7 +5996,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7439057931489336693}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6029,13 +6014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &7899424687655315877
 GameObject:
   m_ObjectHideFlags: 0
@@ -6048,12 +6030,11 @@ GameObject:
   - component: {fileID: 5327074865789141847}
   - component: {fileID: 7652281584259632998}
   - component: {fileID: 6822496421078254874}
-  - component: {fileID: 7370455160920900439}
   - component: {fileID: 8976302943916168147}
   - component: {fileID: 8502740142763410571}
   m_Layer: 0
   m_Name: Pawn.005
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6139,19 +6120,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7370455160920900439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7899424687655315877}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75590956, y: 1.2133604, z: 0.654637}
-  m_Center: {x: 0, y: 0.6066802, z: 0}
 --- !u!65 &8976302943916168147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6159,7 +6127,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7899424687655315877}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6177,13 +6145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 1
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
 --- !u!1 &7955130168276341668
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,12 +6161,11 @@ GameObject:
   - component: {fileID: 4236325593071667692}
   - component: {fileID: 5442109565199398552}
   - component: {fileID: 4236325593071667690}
-  - component: {fileID: 4236325593071667691}
   - component: {fileID: 566175726113199344}
   - component: {fileID: 5883383711781158430}
   m_Layer: 0
   m_Name: Rook
-  m_TagString: Piece
+  m_TagString: piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6287,19 +6251,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4236325593071667691
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7955130168276341668}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8957171, y: 1.3155541, z: 0.7757138}
-  m_Center: {x: 0, y: 0.6577771, z: 0}
 --- !u!65 &566175726113199344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6307,7 +6258,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7955130168276341668}
-  m_Material: {fileID: 13400000, guid: 68ac56c49478c520292552312e63c4ea, type: 2}
+  m_Material: {fileID: 13400000, guid: d6499d528cbf9ce26a37e74384061441, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6325,10 +6276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140940382a9008d07a87ab42569ca26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 7932204280784068178}
-  agent: {fileID: 5063069292747176477}
-  pushTimer: 0
-  wasKicked: 0
-  kickingAgent: {fileID: 0}
-  pieceColor: 1
-  pieceValue: 5
+  area: {fileID: 5063069293597501119}
+  envController: {fileID: 0}
+  whiteGoalTag: whiteGoal
+  blackGoalTag: blackGoal
