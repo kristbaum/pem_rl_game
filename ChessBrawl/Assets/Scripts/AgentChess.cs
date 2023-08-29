@@ -194,7 +194,10 @@ public class AgentChess : Agent
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
         }
+    }
 
+    void OnTriggerEnter(Collider c)
+    {
         if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
         {
             AddReward(-100f);
