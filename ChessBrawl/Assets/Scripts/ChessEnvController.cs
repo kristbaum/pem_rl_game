@@ -35,6 +35,7 @@ public class ChessEnvController : MonoBehaviour
     [HideInInspector]
     public List<Rigidbody> pieceRbList = new List<Rigidbody>();
     List<Vector3> m_pieceStartingPosList = new List<Vector3>();
+    List<Quaternion> m_pieceStartingRotList = new List<Quaternion>();
 
     //List of Agents On Platform
     public List<PlayerInfo> AgentsList = new List<PlayerInfo>();
@@ -67,6 +68,8 @@ public class ChessEnvController : MonoBehaviour
         {
             pieceRbList.Add(piece.GetComponent<Rigidbody>());
             m_pieceStartingPosList.Add(new Vector3(piece.transform.position.x, piece.transform.position.y, piece.transform.position.z));
+            m_pieceStartingRotList.Add(Quaternion.Euler(piece.transform.rotation.eulerAngles));
+
         }
         foreach (var item in AgentsList)
         {
@@ -103,11 +106,12 @@ public class ChessEnvController : MonoBehaviour
         for (int i = 0; i < PiecesList.Count; i++)
         {
             PiecesList[i].transform.position = m_pieceStartingPosList[i];
+            PiecesList[i].transform.rotation = m_pieceStartingRotList[i];
             pieceRbList[i].velocity = Vector3.zero;
             pieceRbList[i].angularVelocity = Vector3.zero;
         }
     }
-
+    //TODO: All pieces for one of the playes are kicked out of the board
     public void GoalTouched(Team scoredTeam)
     {
         if (scoredTeam == Team.Black)
@@ -120,15 +124,19 @@ public class ChessEnvController : MonoBehaviour
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_BlackAgentGroup.AddGroupReward(-1);
         }
-        m_WhiteAgentGroup.EndGroupEpisode();
-        m_BlackAgentGroup.EndGroupEpisode();
+        //m_WhiteAgentGroup.EndGroupEpisode();
+        //m_BlackAgentGroup.EndGroupEpisode();
         Debug.Log("Goal Touched");
-        ResetScene();
+        //ResetScene();
 
     }
 
     public void ResetScene()
     {
+
+        m_WhiteAgentGroup.EndGroupEpisode();
+        m_BlackAgentGroup.EndGroupEpisode();
+
         m_ResetTimer = 0;
 
         //Reset Agents
@@ -148,6 +156,7 @@ public class ChessEnvController : MonoBehaviour
 
         //Reset pieces
         Resetpieces();
+
     }
 
 }

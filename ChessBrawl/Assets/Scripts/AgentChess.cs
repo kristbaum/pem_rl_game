@@ -44,6 +44,8 @@ public class AgentChess : Agent
     public Vector3 initialPos;
     public float rotSign;
 
+    public ChessEnvController _chessEnvController = null;
+
     EnvironmentParameters m_ResetParams;
 
     public override void Initialize()
@@ -196,6 +198,9 @@ public class AgentChess : Agent
         if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
         {
             AddReward(-100f);
+
+            Debug.Log("Agent touched the goal border");
+            _chessEnvController.ResetScene();
 
         }
     }
