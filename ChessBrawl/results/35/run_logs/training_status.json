@@ -1,0 +1,38 @@
+{
+    "MoveAgent": {
+        "checkpoints": [
+            {
+                "steps": 499963,
+                "file_path": "results/35/MoveAgent/MoveAgent-499963.onnx",
+                "reward": null,
+                "creation_time": 1693153601.4934363,
+                "auxillary_file_paths": [
+                    "results/35/MoveAgent/MoveAgent-499963.pt"
+                ]
+            },
+            {
+                "steps": 800073,
+                "file_path": "results/35/MoveAgent/MoveAgent-800073.onnx",
+                "reward": null,
+                "creation_time": 1693153850.6553993,
+                "auxillary_file_paths": [
+                    "results/35/MoveAgent/MoveAgent-800073.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 800073,
+            "file_path": "results/35/MoveAgent.onnx",
+            "reward": null,
+            "creation_time": 1693153850.6553993,
+            "auxillary_file_paths": [
+                "results/35/MoveAgent/MoveAgent-800073.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.8.2+cu111"
+    }
+}

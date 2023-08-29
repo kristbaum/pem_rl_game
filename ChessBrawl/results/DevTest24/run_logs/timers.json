@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1693150242",
+        "python_version": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+        "command_line_arguments": "/home/ludwig/anaconda3/envs/pemrl/bin/mlagents-learn --run-id=DevTest24",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.8.2+cu111",
+        "numpy_version": "1.21.6",
+        "end_time_seconds": "1693150306"
+    },
+    "total": 63.677710292000484,
+    "count": 1,
+    "self": 0.0014572970012523,
+    "children": {
+        "run_training.setup": {
+            "total": 0.006465058999310713,
+            "count": 1,
+            "self": 0.006465058999310713
+        },
+        "TrainerController.start_learning": {
+            "total": 63.66978793599992,
+            "count": 1,
+            "self": 3.731699962372659e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 63.66973910500019,
+                    "count": 1,
+                    "self": 63.66973910500019
+                },
+                "TrainerController._save_models": {
+                    "total": 1.1514000107126776e-05,
+                    "count": 1,
+                    "self": 1.1514000107126776e-05
+                }
+            }
+        }
+    }
+}
