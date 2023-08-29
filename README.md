@@ -124,3 +124,14 @@ Somewhat different from rewards.
 # Afterwards
 Project abstract, which kind of training etc, user interactions etc
 Statment of contribution of each project member
+
+# Progress log
+Monday:
+* Initial version by Ludwig tested on monday
+* Problems with running the training on some laptops (either too weak, or cuda not installed)
+* Defining rewards in a single file
+* User centric features like scoreboard and speed control
+* Table for documentation of parameters and trained models for comparison
+Tuesday:
+* use ml-agents soccer example as an inspiration for different observation mode to fix learning problems
+* fix CUDA install on laptop to increase learning speed
