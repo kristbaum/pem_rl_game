@@ -56,6 +56,9 @@ public class ChessEnvController : MonoBehaviour
     [SerializeField] private float startZMin = -6.7f;
     [SerializeField] private float startZMax = -6.7f;
 
+    [SerializeField] private float startZMinAgent2 = 2.0f;
+    [SerializeField] private float startZMaxAgent2 = 2.0f;
+
     void Start()
     {
 
@@ -139,15 +142,27 @@ public class ChessEnvController : MonoBehaviour
 
         m_ResetTimer = 0;
 
+
+
+        AgentsList[0].Agent.transform.localPosition = new Vector3(
+Random.Range(startXMin, startXMax),
+Random.Range(startYMin, startYMax),
+Random.Range(startZMin, startZMax)
+);
+
+
+        AgentsList[1].Agent.transform.localPosition = new Vector3(
+Random.Range(startXMin, startXMax),
+Random.Range(startYMin, startYMax),
+Random.Range(startZMinAgent2, startZMaxAgent2)
+);
+
+
         //Reset Agents
         foreach (var item in AgentsList)
         {
 
-            item.Agent.transform.localPosition = new Vector3(
-            Random.Range(startXMin, startXMax),
-            Random.Range(startYMin, startYMax),
-            Random.Range(startZMin, startZMax)
-        );
+
 
             item.Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             item.Rb.velocity = Vector3.zero;
