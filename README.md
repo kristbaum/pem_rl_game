@@ -1,8 +1,8 @@
-# ChessBrawl
+![Logo](media/logo.png)
 
 Chess for the Sophisticated.
 
-![alt text](Demo.gif)
+![Demo of ChessBrawl](media/Demo.gif)
 
 TODOs (to be updated)
 - A: Study the suitable hyperparameters in .yaml for training the model
