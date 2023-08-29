@@ -134,6 +134,7 @@ Monday:
 * Table for documentation of parameters and trained models for comparison
 
 
+
 Tuesday:
 * use ml-agents ray vision as a different observation mode to fix learning problems
 * fix CUDA install on laptop to increase learning speed
