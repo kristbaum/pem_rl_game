@@ -15,7 +15,7 @@ public class Piece : MonoBehaviour
     public MoveAgent agent; // Reference to the agent
 
     public float pushTimer = 0.0f;
-    public const float pushDuration = 3.0f; // This duration can be adjusted as needed
+    public const float pushDuration = 2.0f; // This duration can be adjusted as needed
     public bool wasKicked = false; // Flag to check if the piece was kicked
     public MoveAgent kickingAgent; // Reference to the agent that kicked this piece
 
@@ -125,7 +125,7 @@ public class Piece : MonoBehaviour
                 float reward = this.PieceValue;
 
                 agent.AddReward(_gameManager.CPKickingOffOwnPiece * reward);
-                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for touching own piece " + this.gameObject.name + "of color" + this.PieceColorValue.ToString() + " with penalty: " + _gameManager.CPKickingOffOwnPiece * reward);
+                Debug.Log("Penalized agent with color: " + agent.AgentColorValue.ToString() + " for kicking off own piece " + this.gameObject.name + "of color" + this.PieceColorValue.ToString() + " with penalty: " + _gameManager.CPKickingOffOwnPiece * reward);
             }
         }
 
@@ -141,7 +141,7 @@ public class Piece : MonoBehaviour
                 {
                     // Give a reward for kicking off an opponent piece
                     kickingAgent.AddReward(_gameManager.CRKickingOffOpponentPiece * reward);
-                    Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off piece " + this.gameObject.name + " with color: " + this.PieceColorValue.ToString() + " with reward: " + reward * _gameManager.CRKickingOffOpponentPiece);
+                    Debug.Log("Rewarded agent with color: " + kickingAgent.AgentColorValue.ToString() + " for kicking off opposite piece " + this.gameObject.name + " with color: " + this.PieceColorValue.ToString() + " with reward: " + reward * _gameManager.CRKickingOffOpponentPiece);
                 }
 
                 // Reset the kicked state and kicking agent reference to prevent rewarding or penalizing multiple times
