@@ -103,15 +103,16 @@ public class MoveAgent : Agent {
         float moveX = actions.ContinuousActions[0];
         float moveZ = actions.ContinuousActions[1];
         float moveSpeed = actions.ContinuousActions[2];
-        float kickForce = actions.ContinuousActions[3];
+        //float kickForce = actions.ContinuousActions[3];
 
 
         float moveSpeedMin = 0.5f;
         float moveSpeedMax = 5f;
         moveSpeed = moveSpeedMin + ((moveSpeed + 1) * (moveSpeedMax - moveSpeedMin) / 2);
         float kickForceMin = 2f;
-        float kickForceMax = 10f;
-        kickForce = kickForceMin + ((kickForce + 1) * (kickForceMax - kickForceMin) / 2);
+        float kickForceMax = 20f;
+        //kickForce = kickForceMin + ((kickForce + 1) * (kickForceMax - kickForceMin) / 2);
+        kickForce = 5f;
 
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * moveSpeed;
 
@@ -165,7 +166,7 @@ public class MoveAgent : Agent {
             // If agent collides with a piece of its own color.
             if((int)piece.PieceColorValue == (int)this.agentColor)
             {
-                Debug.Log("Same Color Interaction Detected!");
+                Debug.Log("Touching Own Piece Detected!");
                 piece.agent = this; // Setting the reference
                 piece.pushTimer = Piece.pushDuration; // Reference to the constant pushDuration from the Piece script
                 AddReward(_gameManager.CRTouchingOwnPiece);
@@ -175,7 +176,7 @@ public class MoveAgent : Agent {
             {
                 // Penalize for touching the opposite piece directly.
                 AddReward(_gameManager.CPTouchingOpponentPiece);
-                Debug.Log("Opposite Color Interaction Detected!");
+                Debug.Log("Touching Opposite Piece Detected!");
                 //EndEpisode();
             }
         }

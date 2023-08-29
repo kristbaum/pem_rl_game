@@ -1,0 +1,47 @@
+{
+    "MoveAgent": {
+        "checkpoints": [
+            {
+                "steps": 499962,
+                "file_path": "results/DevTest106/MoveAgent/MoveAgent-499962.onnx",
+                "reward": null,
+                "creation_time": 1693253260.697717,
+                "auxillary_file_paths": [
+                    "results/DevTest106/MoveAgent/MoveAgent-499962.pt"
+                ]
+            },
+            {
+                "steps": 999961,
+                "file_path": "results/DevTest106/MoveAgent/MoveAgent-999961.onnx",
+                "reward": null,
+                "creation_time": 1693253785.6199036,
+                "auxillary_file_paths": [
+                    "results/DevTest106/MoveAgent/MoveAgent-999961.pt"
+                ]
+            },
+            {
+                "steps": 1000025,
+                "file_path": "results/DevTest106/MoveAgent/MoveAgent-1000025.onnx",
+                "reward": null,
+                "creation_time": 1693253785.6348403,
+                "auxillary_file_paths": [
+                    "results/DevTest106/MoveAgent/MoveAgent-1000025.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000025,
+            "file_path": "results/DevTest106/MoveAgent.onnx",
+            "reward": null,
+            "creation_time": 1693253785.6348403,
+            "auxillary_file_paths": [
+                "results/DevTest106/MoveAgent/MoveAgent-1000025.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.8.2+cu111"
+    }
+}
