@@ -136,5 +136,7 @@ Monday:
 
 
 Tuesday:
-* use ml-agents ray vision as a different observation mode to fix learning problems
+* use ml-agents Ray Perception as a different observation mode to fix learning problems
+* reimplement some most functionality for Ray Perception 
+* add bouncing side walls
 * fix CUDA install on laptop to increase learning speed
