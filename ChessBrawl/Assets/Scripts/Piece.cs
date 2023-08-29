@@ -8,6 +8,9 @@ public class Piece : MonoBehaviour
     public string whiteGoalTag; //will be used to check if collided with white goal
     public string blackGoalTag; //will be used to check if collided with black goal
 
+    public string whitePiece;
+    public string blackPiece;
+
     void Start()
     {
         envController = area.GetComponent<ChessEnvController>();
@@ -15,15 +18,29 @@ public class Piece : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag(whiteGoalTag)) //piece touched white goal
+
+        if (col.gameObject.CompareTag(whitePiece))
         {
-            Debug.Log("Team black??");
-            Debug.Log(Team.Black);
-            envController.GoalTouched(Team.Black);
-        }
-        if (col.gameObject.CompareTag(blackGoalTag)) //piece touched black goal
+            Debug.Log("WhitePieceTouched");
+
+            if (col.gameObject.CompareTag(whiteGoalTag)) //white piece touched white goal
         {
-            envController.GoalTouched(Team.White);
+                Debug.Log("White scored!!!");
+                envController.GoalTouched(Team.White);
+            }
+
         }
+
+        if (col.gameObject.CompareTag(blackPiece))
+        {
+            if (col.gameObject.CompareTag(blackGoalTag)) //black piece touched black goal
+            {
+                Debug.Log("Black scored!!!");
+                envController.GoalTouched(Team.Black);
+            }
+
+        }
+
+
     }
 }
