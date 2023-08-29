@@ -132,6 +132,8 @@ Monday:
 * Defining rewards in a single file
 * User centric features like scoreboard and speed control
 * Table for documentation of parameters and trained models for comparison
+
+
 Tuesday:
-* use ml-agents soccer example as an inspiration for different observation mode to fix learning problems
+* use ml-agents ray vision as a different observation mode to fix learning problems
 * fix CUDA install on laptop to increase learning speed
