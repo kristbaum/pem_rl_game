@@ -189,7 +189,8 @@ public class AgentChess : Agent
         var force = k_Power * m_KickPower;
         if (c.gameObject.CompareTag("piece"))
         {
-            AddReward(.2f * m_PieceTouch);
+            AddReward(.2f * 1);
+            //AddReward(.2f * m_PieceTouch);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
@@ -203,7 +204,7 @@ public class AgentChess : Agent
             AddReward(-1f);
 
             Debug.Log("Agent touched the goal border");
-            _chessEnvController.ResetScene();
+            //_chessEnvController.ResetScene();
 
         }
     }
