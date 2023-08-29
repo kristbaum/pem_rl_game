@@ -2120,10 +2120,10 @@ MonoBehaviour:
   CPWall: -100
   CPTouchingAgent: -100
   CPTouchingOpponentPiece: -100
-  CPKickingOffOwnPiece: -2
-  CRTouchingOwnPiece: 0.1
-  CRKickMotion: 5
-  CRKickingOffOpponentPiece: 4
+  CPKickingOffOwnPiece: -0.1
+  CRTouchingOwnPiece: 1
+  CRKickMotion: 50
+  CRKickingOffOpponentPiece: 10
   currentScore: 0
 --- !u!1 &2476801395416597685
 GameObject:
@@ -3961,7 +3961,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 90c826bddf7daae548786c67726923f6, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: MoveAgent
@@ -4427,7 +4427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8865035324259761285
 Transform:
   m_ObjectHideFlags: 0
@@ -4531,7 +4531,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 90c826bddf7daae548786c67726923f6, type: 3}
+  m_Model: {fileID: 0}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: MoveAgent
