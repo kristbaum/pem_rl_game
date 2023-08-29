@@ -31,7 +31,7 @@ public class ChessEnvController : MonoBehaviour
     /// We will be changing the ground material based on success/failue
     /// </summary>
 
-    public GameObject piece;
+    public List<GameObject> PiecesList = new List<GameObject>();
     [HideInInspector]
     public Rigidbody pieceRb;
     Vector3 m_pieceStartingPos;
@@ -54,8 +54,12 @@ public class ChessEnvController : MonoBehaviour
         // Initialize TeamManager
         m_BlackAgentGroup = new SimpleMultiAgentGroup();
         m_WhiteAgentGroup = new SimpleMultiAgentGroup();
-        pieceRb = piece.GetComponent<Rigidbody>();
-        m_pieceStartingPos = new Vector3(piece.transform.position.x, piece.transform.position.y, piece.transform.position.z);
+
+        foreach (GameObject piece in PiecesList)
+        {
+            pieceRb = piece.GetComponent<Rigidbody>();
+            m_pieceStartingPos = new Vector3(piece.transform.position.x, piece.transform.position.y, piece.transform.position.z);
+        }
         foreach (var item in AgentsList)
         {
             item.StartingPos = item.Agent.transform.position;
@@ -90,10 +94,14 @@ public class ChessEnvController : MonoBehaviour
         var randomPosX = Random.Range(-2.5f, 2.5f);
         var randomPosZ = Random.Range(-2.5f, 2.5f);
 
-        piece.transform.position = m_pieceStartingPos + new Vector3(randomPosX, 0f, randomPosZ);
-        pieceRb.velocity = Vector3.zero;
-        pieceRb.angularVelocity = Vector3.zero;
 
+        foreach (GameObject piece in PiecesList)
+        {
+
+            piece.transform.position = m_pieceStartingPos + new Vector3(randomPosX, 0f, randomPosZ);
+            pieceRb.velocity = Vector3.zero;
+            pieceRb.angularVelocity = Vector3.zero;
+        }
     }
 
     public void GoalTouched(Team scoredTeam)
