@@ -45,8 +45,8 @@ public class ChessEnvController : MonoBehaviour
     private ChessSettings m_ChessSettings;
 
 
-    private SimpleMultiAgentGroup m_BlackAgentGroup;
-    private SimpleMultiAgentGroup m_WhiteAgentGroup;
+    public SimpleMultiAgentGroup m_BlackAgentGroup;
+    public SimpleMultiAgentGroup m_WhiteAgentGroup;
 
     private int m_ResetTimer;
 
@@ -66,7 +66,6 @@ public class ChessEnvController : MonoBehaviour
 
     void Start()
     {
-
         m_ChessSettings = FindObjectOfType<ChessSettings>();
         // Initialize TeamManager
         m_BlackAgentGroup = new SimpleMultiAgentGroup();
@@ -106,6 +105,7 @@ public class ChessEnvController : MonoBehaviour
             ResetScene();
             
         }
+        ObservePiecesLeft();
     }
 
 
@@ -188,5 +188,19 @@ public class ChessEnvController : MonoBehaviour
         //Reset pieces
         Resetpieces();
 
+        _whitePiecesLeft = 16;
+        _blackPiecesLeft = 16;
+
+    }
+
+    public void ObservePiecesLeft(){
+        if(_blackPiecesLeft == 0){
+            m_WhiteAgentGroup.AddGroupReward(20f);
+            ResetScene();
+        }
+        if(_whitePiecesLeft == 0){
+            m_BlackAgentGroup.AddGroupReward(20f);
+            ResetScene();
+        }
     }
 }

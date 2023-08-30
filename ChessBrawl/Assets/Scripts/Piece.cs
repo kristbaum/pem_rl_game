@@ -47,12 +47,13 @@ public class Piece : MonoBehaviour
 
   if (gameObject.CompareTag(tag))
         {
-            
         if(tag == "whitePiece" && col.gameObject.CompareTag("outsideBorder")){
             envController._whitePiecesLeft = envController._whitePiecesLeft-1;
+           envController.m_WhiteAgentGroup.AddGroupReward(-0.3f);
         }
         if(tag == "blackPiece"&& col.gameObject.CompareTag("outsideBorder")){
             envController._blackPiecesLeft = envController._blackPiecesLeft-1;
+           envController.m_BlackAgentGroup.AddGroupReward(-0.3f);
         }
     }
 }
