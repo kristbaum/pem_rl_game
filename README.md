@@ -144,3 +144,4 @@ Tuesday:
 
 Wednesday:
 * Fix the falling of in the beginning
+* Fix counting pieces (OnCollisionEnter, OnCollisionExit, sometimes not triggered) (Mean distancefunction does wierd stuff)
