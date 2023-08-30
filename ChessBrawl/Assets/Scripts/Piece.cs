@@ -22,7 +22,6 @@ public class Piece : MonoBehaviour
 
         if (gameObject.CompareTag(tag))
         {
-            Debug.Log("WhitePieceTouched");
 
             if (col.gameObject.CompareTag(whiteGoalTag)) //white piece touched white goal
             {

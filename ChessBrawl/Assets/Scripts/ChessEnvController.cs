@@ -136,6 +136,38 @@ public class ChessEnvController : MonoBehaviour
 
     }
 
+    public void ResetAgent(string agent)
+    {
+        if (agent == "whiteAgent")
+        {
+
+            AgentsList[0].Agent.transform.localPosition = new Vector3(
+            Random.Range(startXMin, startXMax),
+            Random.Range(startYMin, startYMax),
+            Random.Range(startZMin, startZMax)
+            );
+
+            AgentsList[0].Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+        else
+        {
+            AgentsList[1].Agent.transform.localPosition = new Vector3(
+                Random.Range(startXMin, startXMax),
+                Random.Range(startYMin, startYMax),
+                Random.Range(startZMinAgent2, startZMaxAgent2)
+            );
+
+            AgentsList[1].Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+
+        AgentsList[0].Rb.velocity = Vector3.zero;
+        AgentsList[0].Rb.angularVelocity = Vector3.zero;
+
+        AgentsList[1].Rb.velocity = Vector3.zero;
+        AgentsList[1].Rb.angularVelocity = Vector3.zero;
+
+    }
+
     public void ResetScene()
     {
 
@@ -144,31 +176,8 @@ public class ChessEnvController : MonoBehaviour
 
         m_ResetTimer = 0;
 
-
-
-        AgentsList[0].Agent.transform.localPosition = new Vector3(
-        Random.Range(startXMin, startXMax),
-        Random.Range(startYMin, startYMax),
-        Random.Range(startZMin, startZMax)
-        );
-
-
-                AgentsList[1].Agent.transform.localPosition = new Vector3(
-        Random.Range(startXMin, startXMax),
-        Random.Range(startYMin, startYMax),
-        Random.Range(startZMinAgent2, startZMaxAgent2)
-        );
-
-        AgentsList[0].Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-        AgentsList[1].Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-
-        //Reset Agents
-        foreach (var item in AgentsList)
-        {
-            //item.Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            item.Rb.velocity = Vector3.zero;
-            item.Rb.angularVelocity = Vector3.zero;
-        }
+        ResetAgent("whiteAgent");
+        ResetAgent("blackAgent");
 
         //Reset pieces
         Resetpieces();

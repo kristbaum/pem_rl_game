@@ -24,6 +24,8 @@ public class AgentChess : Agent
         Striker
     }
 
+    private string agentTag;
+
     [HideInInspector]
     public Team team;
     float m_KickPower;
@@ -47,6 +49,16 @@ public class AgentChess : Agent
     public ChessEnvController _chessEnvController = null;
 
     EnvironmentParameters m_ResetParams;
+
+    public Collider boardCollider1;
+    public Collider boardCollider2;
+
+    void Start()
+    {
+
+        agentTag = gameObject.tag;
+    }
+
 
     public override void Initialize()
     {
@@ -216,28 +228,22 @@ public class AgentChess : Agent
         {
             AddReward(-1f);
         }
-
-        //if (c.gameObject.CompareTag("blackWallInvisible") || c.gameObject.CompareTag("whiteWallInvisible"))
-        //{
-        //    // Prevent agent from falling of
-        //    AddReward(-1f);
-
-        //    Debug.Log("Agent touched the invisible WALL");
-        //    _chessEnvController.ResetScene();
-
-        //}
     }
 
     void OnTriggerEnter(Collider c)
     {
-        if (c.gameObject.CompareTag("blackWallInvisible") || c.gameObject.CompareTag("whiteWallInvisible"))
+        if (c.gameObject.CompareTag("blackWallInvisible"))
         {
             // Prevent agent from falling of
             AddReward(-10f);
+            _chessEnvController.ResetAgent(agentTag);
+        }
 
-            Debug.Log("Agent touched the goal border");
-            _chessEnvController.ResetScene();
-
+        if (c.gameObject.CompareTag("whiteWallInvisible"))
+        {
+            // Prevent agent from falling of
+            AddReward(-10f);
+            _chessEnvController.ResetAgent(agentTag);
         }
     }
 
