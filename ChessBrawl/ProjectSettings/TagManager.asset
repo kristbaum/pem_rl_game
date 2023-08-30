@@ -18,6 +18,7 @@ TagManager:
   - blackPiece
   - blackWallInvisible
   - whiteWallInvisible
+  - outsideBorder
   layers:
   - Default
   - TransparentFX

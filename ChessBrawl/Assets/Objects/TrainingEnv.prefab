@@ -5108,6 +5108,7 @@ MonoBehaviour:
   - {fileID: 6580617481520161016}
   - {fileID: 1427418086332343100}
   pieceRbList: []
+  boardRb: {fileID: 889111843330662683}
   AgentsList:
   - Agent: {fileID: 5063069292747176477}
     StartingPos: {x: 0, y: 0, z: 0}

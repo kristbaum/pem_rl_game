@@ -34,6 +34,8 @@ public class ChessEnvController : MonoBehaviour
     public List<GameObject> PiecesList = new List<GameObject>();
     [HideInInspector]
     public List<Rigidbody> pieceRbList = new List<Rigidbody>();
+    // public List<Rigidbody> boardRbList = new List<Rigidbody>();
+    public GameObject boardRb = null;
     List<Vector3> m_pieceStartingPosList = new List<Vector3>();
     List<Quaternion> m_pieceStartingRotList = new List<Quaternion>();
 
@@ -47,6 +49,9 @@ public class ChessEnvController : MonoBehaviour
     private SimpleMultiAgentGroup m_WhiteAgentGroup;
 
     private int m_ResetTimer;
+
+    public int _whitePiecesLeft = 16;
+    public int _blackPiecesLeft = 16;
 
     [Header("Initial Position Ranges")]
     [SerializeField] private float startXMin = 3f;
@@ -99,6 +104,7 @@ public class ChessEnvController : MonoBehaviour
             m_BlackAgentGroup.GroupEpisodeInterrupted();
             m_WhiteAgentGroup.GroupEpisodeInterrupted();
             ResetScene();
+            
         }
     }
 

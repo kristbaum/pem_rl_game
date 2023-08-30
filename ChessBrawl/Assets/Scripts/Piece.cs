@@ -19,7 +19,6 @@ public class Piece : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-
         if (gameObject.CompareTag(tag))
         {
 
@@ -40,7 +39,21 @@ public class Piece : MonoBehaviour
             }
 
         }
-
-
     }
+
+        void OnTriggerExit(Collider col)
+    {
+
+
+  if (gameObject.CompareTag(tag))
+        {
+            
+        if(tag == "whitePiece" && col.gameObject.CompareTag("outsideBorder")){
+            envController._whitePiecesLeft = envController._whitePiecesLeft-1;
+        }
+        if(tag == "blackPiece"&& col.gameObject.CompareTag("outsideBorder")){
+            envController._blackPiecesLeft = envController._blackPiecesLeft-1;
+        }
+    }
+}
 }
