@@ -1,0 +1,30 @@
+{
+    "MoveAgent": {
+        "elo": 1200.0,
+        "checkpoints": [
+            {
+                "steps": 342000,
+                "file_path": "results\\DevTest30_08_13\\MoveAgent\\MoveAgent-342000.onnx",
+                "reward": -516.0111083984375,
+                "creation_time": 1693395462.3389943,
+                "auxillary_file_paths": [
+                    "results\\DevTest30_08_13\\MoveAgent\\MoveAgent-342000.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 342000,
+            "file_path": "results\\DevTest30_08_13\\MoveAgent.onnx",
+            "reward": -516.0111083984375,
+            "creation_time": 1693395462.3389943,
+            "auxillary_file_paths": [
+                "results\\DevTest30_08_13\\MoveAgent\\MoveAgent-342000.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "2.0.0+cu117"
+    }
+}
