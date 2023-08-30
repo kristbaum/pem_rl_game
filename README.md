@@ -143,5 +143,7 @@ Tuesday:
 
 
 Wednesday:
-* Fix the falling of in the beginning
+* Fix the falling off with layers
 * Fix counting pieces (OnCollisionEnter, OnCollisionExit, sometimes not triggered) (Mean distancefunction does wierd stuff)
+* Fix Rayvision tags with huge success
+* Reimplement Gamemanager
