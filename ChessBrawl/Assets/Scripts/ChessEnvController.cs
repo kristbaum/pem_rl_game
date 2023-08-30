@@ -183,5 +183,4 @@ public class ChessEnvController : MonoBehaviour
         Resetpieces();
 
     }
-
 }
