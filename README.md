@@ -140,3 +140,7 @@ Tuesday:
 * reimplement some most functionality for Ray Perception 
 * add bouncing side walls
 * fix CUDA install on laptop to increase learning speed
+
+
+Wednesday:
+* Fix the falling of in the beginning
