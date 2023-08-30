@@ -233,7 +233,7 @@ public class AgentChess : Agent
         if (c.gameObject.CompareTag("blackWallInvisible") || c.gameObject.CompareTag("whiteWallInvisible"))
         {
             // Prevent agent from falling of
-            AddReward(-1f);
+            AddReward(-10f);
 
             Debug.Log("Agent touched the goal border");
             _chessEnvController.ResetScene();
