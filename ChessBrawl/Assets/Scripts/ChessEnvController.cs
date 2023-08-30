@@ -131,7 +131,9 @@ public class ChessEnvController : MonoBehaviour
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();
         Debug.Log("Goal Touched");
-        ResetScene();
+
+        //ResetScene();
+
     }
 
     public void ResetScene()

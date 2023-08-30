@@ -187,27 +187,56 @@ public class AgentChess : Agent
     void OnCollisionEnter(Collision c)
     {
         var force = k_Power * m_KickPower;
-        if (c.gameObject.CompareTag("piece"))
+        //rewarding touching own pieces 
+        if (team.ToString() == "White" && c.gameObject.CompareTag("whitePiece"))
         {
-            // Incentivise touching a piece
-            // TODO: Make the color disambiguation
+            Debug.Log("White touched white piece");
             AddReward(.2f * 1);
-            //AddReward(.2f * m_PieceTouch);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
         }
+        //rewarding touching own pieces 
+        if (team.ToString() == "Black" && c.gameObject.CompareTag("blackPiece"))
+        {
+            Debug.Log("Black touched black piece");
+            AddReward(.2f * 1);
+            var dir = c.contacts[0].point - transform.position;
+            dir = dir.normalized;
+            c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
+        }
+
+        //penalise touching opponent pieces 
+        if (team.ToString() == "White" && c.gameObject.CompareTag("blackPiece"))
+        {
+            AddReward(-1f);
+        }
+        //penalise touching opponent pieces 
+        if (team.ToString() == "Black" && c.gameObject.CompareTag("whitePiece"))
+        {
+            AddReward(-1f);
+        }
+
+        //if (c.gameObject.CompareTag("blackWallInvisible") || c.gameObject.CompareTag("whiteWallInvisible"))
+        //{
+        //    // Prevent agent from falling of
+        //    AddReward(-1f);
+
+        //    Debug.Log("Agent touched the invisible WALL");
+        //    _chessEnvController.ResetScene();
+
+        //}
     }
 
     void OnTriggerEnter(Collider c)
     {
-        if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
+        if (c.gameObject.CompareTag("blackWallInvisible") || c.gameObject.CompareTag("whiteWallInvisible"))
         {
             // Prevent agent from falling of
             AddReward(-1f);
 
             Debug.Log("Agent touched the goal border");
-            //_chessEnvController.ResetScene();
+            _chessEnvController.ResetScene();
 
         }
     }
