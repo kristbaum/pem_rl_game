@@ -33,7 +33,7 @@ public class AgentChess : Agent
     float m_PieceTouch;
     public Position position;
 
-    const float k_Power = 2000f;
+    const float k_Power = 500f;
     float m_Existential;
     float m_LateralSpeed;
     float m_ForwardSpeed;
@@ -228,23 +228,20 @@ public class AgentChess : Agent
         {
             AddReward(-1f);
         }
-    }
 
-    void OnTriggerEnter(Collider c)
-    {
         if (c.gameObject.CompareTag("blackWallInvisible"))
         {
             // Prevent agent from falling of
             AddReward(-10f);
-            _chessEnvController.ResetAgent(agentTag);
         }
 
         if (c.gameObject.CompareTag("whiteWallInvisible"))
         {
             // Prevent agent from falling of
             AddReward(-10f);
-            _chessEnvController.ResetAgent(agentTag);
         }
+
+
     }
 
     public override void OnEpisodeBegin()
