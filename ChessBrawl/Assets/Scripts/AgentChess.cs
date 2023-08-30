@@ -202,7 +202,6 @@ public class AgentChess : Agent
         //rewarding touching own pieces 
         if (team.ToString() == "White" && c.gameObject.CompareTag("whitePiece"))
         {
-            Debug.Log("White touched white piece");
             AddReward(.2f * 1);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
@@ -211,7 +210,6 @@ public class AgentChess : Agent
         //rewarding touching own pieces 
         if (team.ToString() == "Black" && c.gameObject.CompareTag("blackPiece"))
         {
-            Debug.Log("Black touched black piece");
             AddReward(.2f * 1);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
@@ -239,6 +237,16 @@ public class AgentChess : Agent
         {
             // Prevent agent from falling of
             AddReward(-10f);
+        }
+
+                //rewarding touching own pieces 
+        if (team.ToString() == "Black" && c.gameObject.CompareTag("whiteAgent"))
+        {
+            AddReward(-1f);
+        }
+        if (team.ToString() == "White" && c.gameObject.CompareTag("blackAgent"))
+        {
+            AddReward(-1f);
         }
 
 
