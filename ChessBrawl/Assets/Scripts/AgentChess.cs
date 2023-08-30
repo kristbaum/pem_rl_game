@@ -145,7 +145,7 @@ public class AgentChess : Agent
         {
             // Existential penalty for standing on the same position
             //AddReward(-m_Existential);
-            AddReward(-1f);
+            AddReward(-.1f);
         }
         MoveAgent(actionBuffers.DiscreteActions);
     }

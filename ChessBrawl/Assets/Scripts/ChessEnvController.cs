@@ -131,8 +131,12 @@ public class ChessEnvController : MonoBehaviour
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();
         Debug.Log("Goal Touched");
+<<<<<<< HEAD
         //ResetScene();
 
+=======
+        ResetScene();
+>>>>>>> 26861011f12d4ea09a667f9cbfa9111f65e9c572
     }
 
     public void ResetScene()
@@ -164,9 +168,6 @@ public class ChessEnvController : MonoBehaviour
         //Reset Agents
         foreach (var item in AgentsList)
         {
-
-
-
             //item.Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             item.Rb.velocity = Vector3.zero;
             item.Rb.angularVelocity = Vector3.zero;
