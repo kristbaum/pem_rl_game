@@ -4900,6 +4900,8 @@ MonoBehaviour:
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
   _chessEnvController: {fileID: 935715745}
+  boardCollider1: {fileID: 9016426662308061991}
+  boardCollider2: {fileID: 4298234236082117585}
 --- !u!114 &5063069292747176478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5843,6 +5845,8 @@ MonoBehaviour:
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
   _chessEnvController: {fileID: 935715745}
+  boardCollider1: {fileID: 0}
+  boardCollider2: {fileID: 0}
 --- !u!114 &8678607530197316040
 MonoBehaviour:
   m_ObjectHideFlags: 0
