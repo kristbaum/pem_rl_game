@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("Agent Configuration")]
 
     //Agent list
-    public List<MoveAgent> Agents = new List<MoveAgent>();
+    public List<AgentChess> Agents = new List<AgentChess>();
 
     public float CPWall = 0f;
     public float CPTouchingAgent = 0f;
