@@ -117,14 +117,15 @@ public class ChessEnvController : MonoBehaviour
     //TODO: All pieces for one of the playes are kicked out of the board
     public void GoalTouched(Team scoredTeam)
     {
+        // Reward kicking off opponent pieces
         if (scoredTeam == Team.Black)
         {
-            m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            m_BlackAgentGroup.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             //m_WhiteAgentGroup.AddGroupReward(-1);
         }
         else
         {
-            m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            m_WhiteAgentGroup.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             //m_BlackAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();

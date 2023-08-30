@@ -143,7 +143,7 @@ public class AgentChess : Agent
 
         if (position == Position.Striker)
         {
-            // Existential penalty for Strikers
+            // Existential penalty for standing on the same position
             //AddReward(-m_Existential);
             AddReward(-1f);
         }
@@ -189,6 +189,8 @@ public class AgentChess : Agent
         var force = k_Power * m_KickPower;
         if (c.gameObject.CompareTag("piece"))
         {
+            // Incentivise touching a piece
+            // TODO: Make the color disambiguation
             AddReward(.2f * 1);
             //AddReward(.2f * m_PieceTouch);
             var dir = c.contacts[0].point - transform.position;
@@ -201,6 +203,7 @@ public class AgentChess : Agent
     {
         if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
         {
+            // Prevent agent from falling of
             AddReward(-1f);
 
             Debug.Log("Agent touched the goal border");
