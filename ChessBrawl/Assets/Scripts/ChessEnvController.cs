@@ -203,14 +203,14 @@ public class ChessEnvController : MonoBehaviour
     {
         if (_blackPiecesLeft == 0)
         {
-            m_WhiteAgentGroup.AddGroupReward(20f);
-            whiteAgent.AddReward(20f);
+            m_WhiteAgentGroup.AddGroupReward(2f);
+            whiteAgent.AddReward(2f);
             ResetScene();
         }
         if (_whitePiecesLeft == 0)
         {
-            m_BlackAgentGroup.AddGroupReward(20f);
-            blackAgent.AddReward(20f);
+            m_BlackAgentGroup.AddGroupReward(2f);
+            blackAgent.AddReward(2f);
             ResetScene();
         }
     }
