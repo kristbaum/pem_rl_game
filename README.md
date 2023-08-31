@@ -67,13 +67,13 @@ Take-away from presentation:
 * Install Unity (https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux) in Version 2021.3 LTS
 * Add the correct ML_Agent package to Unity (https://unity-technologies.github.io/ml-agents/com.unity.ml-agents/) (Probably Version 2.0.1)
 * Download ML agents for locally
-'''
+```
 conda create -n chessbrawl python=3.8
 conda activate chessbrawl
 pip install mlagents
-'''
+```
 
-Reset of all boards if agent dies.
+Reset of all boards if agents die.
 
 # Result board
 
@@ -106,6 +106,15 @@ Somewhat different from rewards.
 * Don't touch other player or it's pieces (Game Over/Reset)
 * Don't fall off the board (Game Over/Reset)
 * Get points if opponent pieces fall off the board, loose points if your pieces fall of the board
+
+# How to play game in human play mode
+* How to move agents forward: Key W
+* How to move agents backward: Key S
+* How to rotate agents from right to left: Key A
+* How to rotate agents from left to right: Key D
+* How to move agents from left to right: Key Q
+* How to move agents from right to left: Key E
+  
 
 # Ideas to try
 
