@@ -1,5 +1,102 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2845887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2845888}
+  - component: {fileID: 2845891}
+  - component: {fileID: 2845890}
+  - component: {fileID: 2845889}
+  m_Layer: 9
+  m_Name: GoalBlueInvisibleAgent
+  m_TagString: blackWallInvisible
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2845888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: -21.88, z: 0.3}
+  m_LocalScale: {x: 55.498558, y: 4.1978, z: 49.831993}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2845891
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845887}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2845890
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845887}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: be5694ebe56466d94b485a560d653129, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2845889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &118338898
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 118338898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.51, y: -0, z: 1.66}
-  m_LocalScale: {x: 1, y: 35.15012, z: 13.16}
+  m_LocalScale: {x: 1, y: 45, z: 14}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3685465367007059209}
@@ -109,9 +206,9 @@ GameObject:
   - component: {fileID: 518041888}
   - component: {fileID: 518041887}
   - component: {fileID: 518041886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GoalBlueInvisible
-  m_TagString: blackGoal
+  m_TagString: blackWallInvisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518041884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: -18.1, z: 0.3}
+  m_LocalPosition: {x: 0.2, y: -21.88, z: 0.3}
   m_LocalScale: {x: 55.498558, y: 4.1978, z: 49.831993}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -194,6 +291,103 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &627000244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 627000245}
+  - component: {fileID: 627000248}
+  - component: {fileID: 627000247}
+  - component: {fileID: 627000246}
+  m_Layer: 9
+  m_Name: GoalRedInvisibleAgent
+  m_TagString: whiteWallInvisible
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &627000245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627000244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: 22, z: 0.34}
+  m_LocalScale: {x: 62.8516, y: 4.1978, z: 49.357075}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &627000248
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627000244}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &627000247
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627000244}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 97004935848b5478889da9b53475cabd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &627000246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627000244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1179341947
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,9 +400,9 @@ GameObject:
   - component: {fileID: 1179341951}
   - component: {fileID: 1179341950}
   - component: {fileID: 1179341949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GoalRedInvisible
-  m_TagString: whiteGoal
+  m_TagString: whiteWallInvisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179341947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 18.07, z: 0.34}
+  m_LocalPosition: {x: 0.2, y: 22, z: 0.34}
   m_LocalScale: {x: 62.8516, y: 4.1978, z: 49.357075}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -420,7 +614,7 @@ Transform:
   m_GameObject: {fileID: 1366821512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.9, y: -0, z: 1.66}
-  m_LocalScale: {x: 1, y: 35.15012, z: 11.39}
+  m_LocalScale: {x: 1, y: 45, z: 14}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3685465367007059209}
@@ -485,6 +679,103 @@ BoxCollider:
   m_GameObject: {fileID: 1366821512}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1443649538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443649539}
+  - component: {fileID: 1443649542}
+  - component: {fileID: 1443649541}
+  - component: {fileID: 1443649540}
+  m_Layer: 0
+  m_Name: OutsideBoarder
+  m_TagString: outsideBorder
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443649539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443649538}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 60, y: 60, z: 60}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3685465367007059209}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1443649542
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443649538}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1443649541
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443649538}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1443649540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443649538}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -781,7 +1072,7 @@ GameObject:
   - component: {fileID: 3700582956816065888}
   - component: {fileID: 7955502752822196377}
   - component: {fileID: 8441569790992635425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bishop.002
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -896,8 +1187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &617834887844847320
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,8 +1214,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617834887844847320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 18.07, z: 0.34}
-  m_LocalScale: {x: 31.09772, y: 4.1978, z: 1}
+  m_LocalPosition: {x: 0.2, y: 18.6, z: 0.3}
+  m_LocalScale: {x: 34, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3685465367007059209}
@@ -960,7 +1249,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 97004935848b5478889da9b53475cabd, type: 2}
+  - {fileID: 2100000, guid: d131bdf3f4cc449ffa17ea0e09f9a29f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1006,7 +1295,7 @@ GameObject:
   - component: {fileID: 2396744068674050366}
   - component: {fileID: 1820423413973367984}
   - component: {fileID: 309581103390354753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1371,7 @@ GameObject:
   - component: {fileID: 3322572098966102110}
   - component: {fileID: 4339547358287346640}
   - component: {fileID: 6326850057914960748}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1161,7 +1450,7 @@ GameObject:
   - component: {fileID: 7634847722408806625}
   - component: {fileID: 8476584839141829681}
   - component: {fileID: 5905284583688471846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.006
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -1276,8 +1565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &889111843330662683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,6 +1607,9 @@ Transform:
   - {fileID: 6975054466740255408}
   - {fileID: 518041885}
   - {fileID: 1179341948}
+  - {fileID: 1443649539}
+  - {fileID: 2845888}
+  - {fileID: 627000245}
   m_Father: {fileID: 5063069293597501118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1401,7 +1691,7 @@ GameObject:
   - component: {fileID: 1796284096801184967}
   - component: {fileID: 148512649959203055}
   - component: {fileID: 1157723392697488289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knight.003
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -1516,8 +1806,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1037900434834903760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1820,7 @@ GameObject:
   - component: {fileID: 4171317469104750614}
   - component: {fileID: 4171317469104750615}
   - component: {fileID: 7616182111857588689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.014
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -1647,8 +1935,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1144966122703576277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1949,7 @@ GameObject:
   - component: {fileID: 1144966122703576275}
   - component: {fileID: 1144966122703576276}
   - component: {fileID: 4871615332999467619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.015
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -1778,8 +2064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1168015390649228897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +2078,7 @@ GameObject:
   - component: {fileID: 6514186251774199087}
   - component: {fileID: 5441972343601378182}
   - component: {fileID: 3217807781857365813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.004
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -1909,8 +2193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1186385361726207723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,7 +2207,7 @@ GameObject:
   - component: {fileID: 3784527347103003611}
   - component: {fileID: 263823911418680552}
   - component: {fileID: 8887403203056719778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -2040,8 +2322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1188711352598162735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,7 +2366,7 @@ GameObject:
   - component: {fileID: 1390183572138200909}
   - component: {fileID: 8277316156090346385}
   - component: {fileID: 2141349994278810981}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OnScreenUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2219,7 +2499,7 @@ GameObject:
   - component: {fileID: 4114736642864492220}
   - component: {fileID: 4876270821748567840}
   - component: {fileID: 1179023312719588319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: King.001
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -2334,8 +2614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1555173682912226661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,7 +2628,7 @@ GameObject:
   - component: {fileID: 5035447818799450671}
   - component: {fileID: 8656508383548078174}
   - component: {fileID: 2254946193664870563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.007
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -2465,8 +2743,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1622474187845166930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,7 +2867,7 @@ GameObject:
   - component: {fileID: 7797046822657168907}
   - component: {fileID: 850920052183263130}
   - component: {fileID: 7076547069029471056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bishop.003
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -2706,8 +2982,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &2476801395416597685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +2996,7 @@ GameObject:
   - component: {fileID: 4068406879460965432}
   - component: {fileID: 4068406879460965433}
   - component: {fileID: 2091548006572034430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.011
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -2837,8 +3111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &2704230006749183856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2960,7 +3232,7 @@ GameObject:
   - component: {fileID: 5060096534718122324}
   - component: {fileID: 569088510476530924}
   - component: {fileID: 4473735780892216770}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3045,7 +3317,7 @@ GameObject:
   - component: {fileID: 3932869156288533367}
   - component: {fileID: 3932869156288533352}
   - component: {fileID: 4983788908516422841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.013
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -3160,8 +3432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3307033075495859057
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,7 +3446,7 @@ GameObject:
   - component: {fileID: 3307033075495859071}
   - component: {fileID: 3307033075495859056}
   - component: {fileID: 8422313972240523780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.010
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -3291,8 +3561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3429270397741079813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,7 +3575,7 @@ GameObject:
   - component: {fileID: 9212559674465943268}
   - component: {fileID: 686760030546508582}
   - component: {fileID: 3140097251368787036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rook.001
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -3422,8 +3690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3491999856449892832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,7 +3704,7 @@ GameObject:
   - component: {fileID: 3491999856449892846}
   - component: {fileID: 1638298121024306098}
   - component: {fileID: 7125794066884794610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: King
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -3553,8 +3819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3599465194470826953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,7 +3833,7 @@ GameObject:
   - component: {fileID: 3599465194470826967}
   - component: {fileID: 3599465194470826952}
   - component: {fileID: 5128921030476709853}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.009
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -3684,8 +3948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3847332554024968915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,7 +3959,7 @@ GameObject:
   - component: {fileID: 3822353789046473824}
   - component: {fileID: 8056257096295581429}
   - component: {fileID: 4889860909304070729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3784,7 +4046,7 @@ GameObject:
   - component: {fileID: 6326342227008121066}
   - component: {fileID: 362157803583574607}
   - component: {fileID: 687065964559975225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OnScreenUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3930,8 +4192,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4535949133169301426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23, y: -18.1, z: 0.34}
-  m_LocalScale: {x: 31.09772, y: 4.1978, z: 1}
+  m_LocalPosition: {x: 0.2, y: -18.5, z: 0.3}
+  m_LocalScale: {x: 34, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3685465367007059209}
@@ -3965,7 +4227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be5694ebe56466d94b485a560d653129, type: 2}
+  - {fileID: 2100000, guid: 50158aae05df532beadf4160fa184fb7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4014,7 +4276,7 @@ GameObject:
   - component: {fileID: 8846235473696215013}
   - component: {fileID: 485362582408373401}
   - component: {fileID: 2859364080807424875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.002
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -4129,8 +4391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &4633053364738175195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4142,7 +4402,7 @@ GameObject:
   - component: {fileID: 4677072313168697736}
   - component: {fileID: 586332283054807213}
   - component: {fileID: 6474606224617623268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4335,7 +4595,7 @@ GameObject:
   - component: {fileID: 5825398400146051690}
   - component: {fileID: 6798927104386365683}
   - component: {fileID: 7095350364385409101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bishop.001
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -4450,8 +4710,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &4931755979564462778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,7 +4834,7 @@ GameObject:
   - component: {fileID: 4203226904675811513}
   - component: {fileID: 7763593749562114116}
   - component: {fileID: 2744657024016668728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rook.003
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -4691,8 +4949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &5063069292321265329
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,7 +5015,7 @@ GameObject:
   - component: {fileID: 3380408618344202213}
   - component: {fileID: 7803831537981122477}
   - component: {fileID: 7811370922850731017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AgentWhite
   m_TagString: whiteAgent
   m_Icon: {fileID: 0}
@@ -4900,6 +5156,8 @@ MonoBehaviour:
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
   _chessEnvController: {fileID: 935715745}
+  boardCollider1: {fileID: 9016426662308061991}
+  boardCollider2: {fileID: 4298234236082117585}
 --- !u!114 &5063069292747176478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4942,12 +5200,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SensorName: WhiteRayPerceptionSensor
   m_DetectableTags:
-  - piece
+  - whitePiece
+  - blackPiece
   - blackGoal
   - whiteGoal
-  - wall
   - blackAgent
   - whiteAgent
+  - whiteWallInvisible
+  - blackWallInvisible
   m_RaysPerDirection: 5
   m_MaxRayDegrees: 60
   m_SphereCastRadius: 0.5
@@ -5106,6 +5366,7 @@ MonoBehaviour:
   - {fileID: 6580617481520161016}
   - {fileID: 1427418086332343100}
   pieceRbList: []
+  boardRb: {fileID: 889111843330662683}
   AgentsList:
   - Agent: {fileID: 5063069292747176477}
     StartingPos: {x: 0, y: 0, z: 0}
@@ -5115,6 +5376,8 @@ MonoBehaviour:
     StartingPos: {x: 0, y: 0, z: 0}
     StartingRot: {x: 0, y: 0, z: 0, w: 0}
     Rb: {fileID: 0}
+  _whitePiecesLeft: 16
+  _blackPiecesLeft: 16
   startXMin: 3
   startXMax: 11.5
   startYMin: 0
@@ -5137,7 +5400,7 @@ GameObject:
   - component: {fileID: 2186031608671505221}
   - component: {fileID: 3716140603922901466}
   - component: {fileID: 7270776520072817605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knight.002
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -5252,8 +5515,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &5141409156695597890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,7 +5526,7 @@ GameObject:
   - component: {fileID: 725175874383545949}
   - component: {fileID: 1162636619372322989}
   - component: {fileID: 7217157072194272936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5348,7 +5609,7 @@ GameObject:
   - component: {fileID: 4772713868866320042}
   - component: {fileID: 7529632566742607838}
   - component: {fileID: 6905898795573407019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5486,7 +5747,7 @@ GameObject:
   - component: {fileID: 713680403014989670}
   - component: {fileID: 7476396253049220082}
   - component: {fileID: 3682227261752315101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.001
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -5601,8 +5862,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &5670803727141663263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,7 +5873,7 @@ GameObject:
   - component: {fileID: 4795846018829006341}
   - component: {fileID: 3909216258110087716}
   - component: {fileID: 4490024412072229563}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5702,7 +5961,7 @@ GameObject:
   - component: {fileID: 7972799905297495294}
   - component: {fileID: 1771437674729109260}
   - component: {fileID: 3533938216131279780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AgentBlack
   m_TagString: blackAgent
   m_Icon: {fileID: 0}
@@ -5843,6 +6102,8 @@ MonoBehaviour:
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
   _chessEnvController: {fileID: 935715745}
+  boardCollider1: {fileID: 0}
+  boardCollider2: {fileID: 0}
 --- !u!114 &8678607530197316040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5885,12 +6146,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SensorName: BlackRayPerceptionSensor
   m_DetectableTags:
-  - piece
+  - whitePiece
+  - blackPiece
   - blackGoal
   - whiteGoal
-  - wall
   - blackAgent
   - whiteAgent
+  - whiteWallInvisible
+  - blackWallInvisible
   m_RaysPerDirection: 5
   m_MaxRayDegrees: 60
   m_SphereCastRadius: 0.5
@@ -5944,7 +6207,7 @@ GameObject:
   - component: {fileID: 3477548942525655950}
   - component: {fileID: 3942775777749947182}
   - component: {fileID: 882867506249155818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bishop
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -6059,8 +6322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &5903782371258024733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6185,7 +6446,7 @@ GameObject:
   - component: {fileID: 1572501256333924299}
   - component: {fileID: 7771973127436946302}
   - component: {fileID: 4549066380995225137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knight
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -6300,8 +6561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6200020816842418866
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,7 +6572,7 @@ GameObject:
   - component: {fileID: 3697329037001116059}
   - component: {fileID: 9010350757150292399}
   - component: {fileID: 1906290252129402534}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6393,7 +6652,7 @@ GameObject:
   - component: {fileID: 2593473169479256466}
   - component: {fileID: 3521427962598311166}
   - component: {fileID: 5840267641197040144}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6478,7 +6737,7 @@ GameObject:
   - component: {fileID: 976100433827495551}
   - component: {fileID: 916873961977028280}
   - component: {fileID: 5746823827638751946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knight.001
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -6593,8 +6852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6580617481520161016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6609,7 +6866,7 @@ GameObject:
   - component: {fileID: 4558812127886848422}
   - component: {fileID: 4709389799268571354}
   - component: {fileID: 7921213507641783938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Queen.001
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -6724,8 +6981,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6654224755705023800
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,7 +6992,7 @@ GameObject:
   - component: {fileID: 7042853496205438946}
   - component: {fileID: 3909297967766882167}
   - component: {fileID: 1854403352844523692}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6820,7 +7075,7 @@ GameObject:
   - component: {fileID: 2546522451959490087}
   - component: {fileID: 2546522451959490264}
   - component: {fileID: 9110252856503019519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.012
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -6935,8 +7190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6783540642143923942
 GameObject:
   m_ObjectHideFlags: 0
@@ -6951,7 +7204,7 @@ GameObject:
   - component: {fileID: 7541957628214754316}
   - component: {fileID: 5821621884371329964}
   - component: {fileID: 2857846338159215724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rook.002
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -7066,8 +7319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6803742730414096597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7082,7 +7333,7 @@ GameObject:
   - component: {fileID: 3117473445263723585}
   - component: {fileID: 3117473445263723586}
   - component: {fileID: 8284378247787895134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.008
   m_TagString: blackPiece
   m_Icon: {fileID: 0}
@@ -7197,8 +7448,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &7084018198833794989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7213,7 +7462,7 @@ GameObject:
   - component: {fileID: 3692576109561829714}
   - component: {fileID: 9195278485453301637}
   - component: {fileID: 5432319710829481114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Queen
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -7328,8 +7577,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &7279832124625010143
 GameObject:
   m_ObjectHideFlags: 0
@@ -7341,7 +7588,7 @@ GameObject:
   - component: {fileID: 2827899737907237485}
   - component: {fileID: 8574578051115184267}
   - component: {fileID: 7009414367319057797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -7429,7 +7676,7 @@ GameObject:
   - component: {fileID: 8379365563261682685}
   - component: {fileID: 1976196152554972042}
   - component: {fileID: 2079829443409943033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.003
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -7544,8 +7791,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &7454778255742853094
 GameObject:
   m_ObjectHideFlags: 0
@@ -7560,7 +7805,7 @@ GameObject:
   - component: {fileID: 4922115371003786914}
   - component: {fileID: 3045339977810935185}
   - component: {fileID: 2280455196517525019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7698,7 +7943,7 @@ GameObject:
   - component: {fileID: 6822496421078254874}
   - component: {fileID: 8976302943916168147}
   - component: {fileID: 8502740142763410571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pawn.005
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -7813,8 +8058,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &7955130168276341668
 GameObject:
   m_ObjectHideFlags: 0
@@ -7829,7 +8072,7 @@ GameObject:
   - component: {fileID: 4236325593071667690}
   - component: {fileID: 566175726113199344}
   - component: {fileID: 5883383711781158430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rook
   m_TagString: whitePiece
   m_Icon: {fileID: 0}
@@ -7944,8 +8187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &8207585617980182380
 GameObject:
   m_ObjectHideFlags: 0
@@ -7957,7 +8198,7 @@ GameObject:
   - component: {fileID: 7355910555248414423}
   - component: {fileID: 8471993218907277827}
   - component: {fileID: 9018754816037630652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8037,7 +8278,7 @@ GameObject:
   - component: {fileID: 6905277342496242656}
   - component: {fileID: 9012261270146615397}
   - component: {fileID: 3672867704273624499}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8117,7 +8358,7 @@ GameObject:
   - component: {fileID: 6059550403169570792}
   - component: {fileID: 1399640887166990220}
   - component: {fileID: 5659208193103662568}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rules (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

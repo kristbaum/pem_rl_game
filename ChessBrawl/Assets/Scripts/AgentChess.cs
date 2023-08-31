@@ -24,6 +24,8 @@ public class AgentChess : Agent
         Striker
     }
 
+    private string agentTag;
+
     [HideInInspector]
     public Team team;
     float m_KickPower;
@@ -31,7 +33,7 @@ public class AgentChess : Agent
     float m_PieceTouch;
     public Position position;
 
-    const float k_Power = 2000f;
+    const float k_Power = 500f;
     float m_Existential;
     float m_LateralSpeed;
     float m_ForwardSpeed;
@@ -47,6 +49,16 @@ public class AgentChess : Agent
     public ChessEnvController _chessEnvController = null;
 
     EnvironmentParameters m_ResetParams;
+
+    public Collider boardCollider1;
+    public Collider boardCollider2;
+
+    void Start()
+    {
+
+        agentTag = gameObject.tag;
+    }
+
 
     public override void Initialize()
     {
@@ -143,9 +155,9 @@ public class AgentChess : Agent
 
         if (position == Position.Striker)
         {
-            // Existential penalty for Strikers
+            // Existential penalty for standing on the same position
             //AddReward(-m_Existential);
-            AddReward(-1f);
+            AddReward(-.1f);
         }
         MoveAgent(actionBuffers.DiscreteActions);
     }
@@ -187,26 +199,57 @@ public class AgentChess : Agent
     void OnCollisionEnter(Collision c)
     {
         var force = k_Power * m_KickPower;
-        if (c.gameObject.CompareTag("piece"))
+        //rewarding touching own pieces 
+        if (team.ToString() == "White" && c.gameObject.CompareTag("whitePiece"))
         {
-            AddReward(.2f * 1);
-            //AddReward(.2f * m_PieceTouch);
+            AddReward(.3f * 1);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
         }
-    }
+        //rewarding touching own pieces 
+        if (team.ToString() == "Black" && c.gameObject.CompareTag("blackPiece"))
+        {
+            AddReward(.3f * 1);
+            var dir = c.contacts[0].point - transform.position;
+            dir = dir.normalized;
+            c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
+        }
 
-    void OnTriggerEnter(Collider c)
-    {
-        if (c.gameObject.CompareTag("blackGoal") || c.gameObject.CompareTag("whiteGoal"))
+        //penalise touching opponent pieces 
+        if (team.ToString() == "White" && c.gameObject.CompareTag("blackPiece"))
         {
             AddReward(-1f);
-
-            Debug.Log("Agent touched the goal border");
-            //_chessEnvController.ResetScene();
-
         }
+        //penalise touching opponent pieces 
+        if (team.ToString() == "Black" && c.gameObject.CompareTag("whitePiece"))
+        {
+            AddReward(-1f);
+        }
+
+        if (c.gameObject.CompareTag("blackWallInvisible"))
+        {
+            // Prevent agent from falling of
+            AddReward(-1f);
+        }
+
+        if (c.gameObject.CompareTag("whiteWallInvisible"))
+        {
+            // Prevent agent from falling of
+            AddReward(-1f);
+        }
+
+                //rewarding touching own pieces 
+        if (team.ToString() == "Black" && c.gameObject.CompareTag("whiteAgent"))
+        {
+            AddReward(-1f);
+        }
+        if (team.ToString() == "White" && c.gameObject.CompareTag("blackAgent"))
+        {
+            AddReward(-1f);
+        }
+
+
     }
 
     public override void OnEpisodeBegin()

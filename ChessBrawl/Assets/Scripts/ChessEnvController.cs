@@ -34,6 +34,8 @@ public class ChessEnvController : MonoBehaviour
     public List<GameObject> PiecesList = new List<GameObject>();
     [HideInInspector]
     public List<Rigidbody> pieceRbList = new List<Rigidbody>();
+    // public List<Rigidbody> boardRbList = new List<Rigidbody>();
+    public GameObject boardRb = null;
     List<Vector3> m_pieceStartingPosList = new List<Vector3>();
     List<Quaternion> m_pieceStartingRotList = new List<Quaternion>();
 
@@ -43,10 +45,15 @@ public class ChessEnvController : MonoBehaviour
     private ChessSettings m_ChessSettings;
 
 
-    private SimpleMultiAgentGroup m_BlackAgentGroup;
-    private SimpleMultiAgentGroup m_WhiteAgentGroup;
+    public SimpleMultiAgentGroup m_BlackAgentGroup;
+    public SimpleMultiAgentGroup m_WhiteAgentGroup;
+    private Agent blackAgent;
+    private Agent whiteAgent;
 
     private int m_ResetTimer;
+
+    public int _whitePiecesLeft = 16;
+    public int _blackPiecesLeft = 16;
 
     [Header("Initial Position Ranges")]
     [SerializeField] private float startXMin = 3f;
@@ -61,7 +68,6 @@ public class ChessEnvController : MonoBehaviour
 
     void Start()
     {
-
         m_ChessSettings = FindObjectOfType<ChessSettings>();
         // Initialize TeamManager
         m_BlackAgentGroup = new SimpleMultiAgentGroup();
@@ -82,10 +88,12 @@ public class ChessEnvController : MonoBehaviour
             if (item.Agent.team == Team.Black)
             {
                 m_BlackAgentGroup.RegisterAgent(item.Agent);
+                blackAgent = item.Agent;
             }
             else
             {
                 m_WhiteAgentGroup.RegisterAgent(item.Agent);
+                whiteAgent = item.Agent;
             }
         }
         //ResetScene();
@@ -99,7 +107,9 @@ public class ChessEnvController : MonoBehaviour
             m_BlackAgentGroup.GroupEpisodeInterrupted();
             m_WhiteAgentGroup.GroupEpisodeInterrupted();
             ResetScene();
+            
         }
+        ObservePiecesLeft();
     }
 
 
@@ -117,20 +127,57 @@ public class ChessEnvController : MonoBehaviour
     //TODO: All pieces for one of the playes are kicked out of the board
     public void GoalTouched(Team scoredTeam)
     {
+        // Reward kicking off opponent pieces
         if (scoredTeam == Team.Black)
         {
+            Debug.Log("Goal BLACK");
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_WhiteAgentGroup.AddGroupReward(-1);
+            blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            m_WhiteAgentGroup.AddGroupReward(-1);
         }
         else
         {
+            Debug.Log("Goal WHITE");
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_BlackAgentGroup.AddGroupReward(-1);
+            whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            m_BlackAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();
-        Debug.Log("Goal Touched");
-        ResetScene();
+
+        //ResetScene();
+
+    }
+
+    public void ResetAgent(string agent)
+    {
+        if (agent == "whiteAgent")
+        {
+
+            AgentsList[0].Agent.transform.localPosition = new Vector3(
+            Random.Range(startXMin, startXMax),
+            Random.Range(startYMin, startYMax),
+            Random.Range(startZMin, startZMax)
+            );
+
+            AgentsList[0].Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+        else
+        {
+            AgentsList[1].Agent.transform.localPosition = new Vector3(
+                Random.Range(startXMin, startXMax),
+                Random.Range(startYMin, startYMax),
+                Random.Range(startZMinAgent2, startZMaxAgent2)
+            );
+
+            AgentsList[1].Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+
+        AgentsList[0].Rb.velocity = Vector3.zero;
+        AgentsList[0].Rb.angularVelocity = Vector3.zero;
+
+        AgentsList[1].Rb.velocity = Vector3.zero;
+        AgentsList[1].Rb.angularVelocity = Vector3.zero;
 
     }
 
@@ -142,38 +189,27 @@ public class ChessEnvController : MonoBehaviour
 
         m_ResetTimer = 0;
 
-
-
-        AgentsList[0].Agent.transform.localPosition = new Vector3(
-        Random.Range(startXMin, startXMax),
-        Random.Range(startYMin, startYMax),
-        Random.Range(startZMin, startZMax)
-        );
-
-
-                AgentsList[1].Agent.transform.localPosition = new Vector3(
-        Random.Range(startXMin, startXMax),
-        Random.Range(startYMin, startYMax),
-        Random.Range(startZMinAgent2, startZMaxAgent2)
-        );
-
-        AgentsList[0].Agent.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-        AgentsList[1].Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-
-        //Reset Agents
-        foreach (var item in AgentsList)
-        {
-
-
-
-            //item.Agent.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-            item.Rb.velocity = Vector3.zero;
-            item.Rb.angularVelocity = Vector3.zero;
-        }
+        ResetAgent("whiteAgent");
+        ResetAgent("blackAgent");
 
         //Reset pieces
         Resetpieces();
 
+        _whitePiecesLeft = 16;
+        _blackPiecesLeft = 16;
+
     }
 
+    public void ObservePiecesLeft(){
+        if(_blackPiecesLeft == 0){
+            m_WhiteAgentGroup.AddGroupReward(20f);
+            whiteAgent.AddReward(20f);
+            ResetScene();
+        }
+        if(_whitePiecesLeft == 0){
+            m_BlackAgentGroup.AddGroupReward(20f);
+            blackAgent.AddReward(20f);
+            ResetScene();
+        }
+    }
 }
