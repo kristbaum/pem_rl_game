@@ -130,15 +130,27 @@ public class ChessEnvController : MonoBehaviour
         // Reward kicking off opponent pieces
         if (scoredTeam == Team.Black)
         {
+            // Reward for using own pieces to kick off opponent pieces
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_WhiteAgentGroup.AddGroupReward(-1);
+            m_WhiteAgentGroup.AddGroupReward(-1);
+
+            // Reward for kicking of own pieces
+            //m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            //whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            //m_BlackAgentGroup.AddGroupReward(-1);
         }
         else
         {
+            // Reward for using own pieces to kick off opponent pieces
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_BlackAgentGroup.AddGroupReward(-1);
+            m_BlackAgentGroup.AddGroupReward(-1);
+
+            // Reward for kicking of own pieces
+            //m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            //blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            //m_WhiteAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();

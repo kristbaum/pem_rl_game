@@ -25,6 +25,7 @@ public class Piece : MonoBehaviour
             if (col.gameObject.CompareTag(whiteGoalTag)) //white piece touched white goal
             {
                 envController.GoalTouched(Team.White);
+                Debug.Log("white piece touched white goal");
             }
 
         }
@@ -34,6 +35,7 @@ public class Piece : MonoBehaviour
             if (col.gameObject.CompareTag(blackGoalTag)) //black piece touched black goal
             {
                 envController.GoalTouched(Team.Black);
+                Debug.Log("black piece touched black goal");
             }
 
         }
