@@ -132,13 +132,13 @@ public class ChessEnvController : MonoBehaviour
         {
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_WhiteAgentGroup.AddGroupReward(-1);
+            m_WhiteAgentGroup.AddGroupReward(-1);
         }
         else
         {
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_BlackAgentGroup.AddGroupReward(-1);
+            m_BlackAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();

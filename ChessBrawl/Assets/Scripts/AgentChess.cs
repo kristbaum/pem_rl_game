@@ -202,7 +202,7 @@ public class AgentChess : Agent
         //rewarding touching own pieces 
         if (team.ToString() == "White" && c.gameObject.CompareTag("whitePiece"))
         {
-            AddReward(.2f * 1);
+            AddReward(.3f * 1);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
@@ -210,7 +210,7 @@ public class AgentChess : Agent
         //rewarding touching own pieces 
         if (team.ToString() == "Black" && c.gameObject.CompareTag("blackPiece"))
         {
-            AddReward(.2f * 1);
+            AddReward(.3f * 1);
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
@@ -230,13 +230,13 @@ public class AgentChess : Agent
         if (c.gameObject.CompareTag("blackWallInvisible"))
         {
             // Prevent agent from falling of
-            AddReward(-10f);
+            AddReward(-1f);
         }
 
         if (c.gameObject.CompareTag("whiteWallInvisible"))
         {
             // Prevent agent from falling of
-            AddReward(-10f);
+            AddReward(-1f);
         }
 
                 //rewarding touching own pieces 
