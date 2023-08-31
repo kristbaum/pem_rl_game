@@ -107,7 +107,7 @@ public class ChessEnvController : MonoBehaviour
             m_BlackAgentGroup.GroupEpisodeInterrupted();
             m_WhiteAgentGroup.GroupEpisodeInterrupted();
             ResetScene();
-            
+
         }
         ObservePiecesLeft();
     }
@@ -124,7 +124,7 @@ public class ChessEnvController : MonoBehaviour
             pieceRbList[i].angularVelocity = Vector3.zero;
         }
     }
-    //TODO: All pieces for one of the playes are kicked out of the board
+
     public void GoalTouched(Team scoredTeam)
     {
         // Reward kicking off opponent pieces
@@ -134,11 +134,6 @@ public class ChessEnvController : MonoBehaviour
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_WhiteAgentGroup.AddGroupReward(-1);
-
-            // Reward for kicking of own pieces
-            //m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_BlackAgentGroup.AddGroupReward(-1);
         }
         else
         {
@@ -146,11 +141,6 @@ public class ChessEnvController : MonoBehaviour
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_BlackAgentGroup.AddGroupReward(-1);
-
-            // Reward for kicking of own pieces
-            //m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_WhiteAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();
@@ -207,16 +197,18 @@ public class ChessEnvController : MonoBehaviour
 
         _whitePiecesLeft = 16;
         _blackPiecesLeft = 16;
-
     }
 
-    public void ObservePiecesLeft(){
-        if(_blackPiecesLeft == 0){
+    public void ObservePiecesLeft()
+    {
+        if (_blackPiecesLeft == 0)
+        {
             m_WhiteAgentGroup.AddGroupReward(20f);
             whiteAgent.AddReward(20f);
             ResetScene();
         }
-        if(_whitePiecesLeft == 0){
+        if (_whitePiecesLeft == 0)
+        {
             m_BlackAgentGroup.AddGroupReward(20f);
             blackAgent.AddReward(20f);
             ResetScene();

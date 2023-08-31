@@ -33,7 +33,7 @@ public class AgentChess : Agent
     float m_PieceTouch;
     public Position position;
 
-    const float k_Power = 500f;
+    const float k_Power = 200f;
     float m_Existential;
     float m_LateralSpeed;
     float m_ForwardSpeed;
@@ -49,9 +49,6 @@ public class AgentChess : Agent
     public ChessEnvController _chessEnvController = null;
 
     EnvironmentParameters m_ResetParams;
-
-    public Collider boardCollider1;
-    public Collider boardCollider2;
 
     void Start()
     {
@@ -87,8 +84,8 @@ public class AgentChess : Agent
         }
         if (position == Position.Striker)
         {
-            m_LateralSpeed = 0.3f;
-            m_ForwardSpeed = 1.3f;
+            m_LateralSpeed = 0.2f;
+            m_ForwardSpeed = 0.8f;
         }
         else
         {
