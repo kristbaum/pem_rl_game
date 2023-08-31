@@ -107,7 +107,7 @@ public class ChessEnvController : MonoBehaviour
             m_BlackAgentGroup.GroupEpisodeInterrupted();
             m_WhiteAgentGroup.GroupEpisodeInterrupted();
             ResetScene();
-            
+
         }
         ObservePiecesLeft();
     }
@@ -124,18 +124,19 @@ public class ChessEnvController : MonoBehaviour
             pieceRbList[i].angularVelocity = Vector3.zero;
         }
     }
-    //TODO: All pieces for one of the playes are kicked out of the board
     public void GoalTouched(Team scoredTeam)
     {
         // Reward kicking off opponent pieces
         if (scoredTeam == Team.Black)
         {
+            Debug.Log("GoalTouched BLACK");
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_WhiteAgentGroup.AddGroupReward(-1);
         }
         else
         {
+            Debug.Log("GoalTouched WHITE");
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_BlackAgentGroup.AddGroupReward(-1);
@@ -198,15 +199,18 @@ public class ChessEnvController : MonoBehaviour
 
     }
 
-    public void ObservePiecesLeft(){
-        if(_blackPiecesLeft == 0){
-            m_WhiteAgentGroup.AddGroupReward(20f);
-            whiteAgent.AddReward(20f);
+    public void ObservePiecesLeft()
+    {
+        if (_blackPiecesLeft == 0)
+        {
+            m_WhiteAgentGroup.AddGroupReward(2f);
+            whiteAgent.AddReward(2f);
             ResetScene();
         }
-        if(_whitePiecesLeft == 0){
-            m_BlackAgentGroup.AddGroupReward(20f);
-            blackAgent.AddReward(20f);
+        if (_whitePiecesLeft == 0)
+        {
+            m_BlackAgentGroup.AddGroupReward(2f);
+            blackAgent.AddReward(2f);
             ResetScene();
         }
     }

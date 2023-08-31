@@ -17,42 +17,38 @@ public class Piece : MonoBehaviour
         tag = gameObject.tag;
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if (gameObject.CompareTag(tag))
+
+        if (col.gameObject.CompareTag(whiteGoalTag) && tag == "blackPiece") //black piece touched white goal
         {
-
-            if (col.gameObject.CompareTag(whiteGoalTag)) //white piece touched white goal
-            {
-                envController.GoalTouched(Team.White);
-            }
-
+            Debug.Log("black piece touched white goal");
+            envController.GoalTouched(Team.White);
         }
 
-        if (gameObject.CompareTag(tag))
+        if (col.gameObject.CompareTag(blackGoalTag) && tag == "whitePiece") //white piece touched black goal
         {
-            if (col.gameObject.CompareTag(blackGoalTag)) //black piece touched black goal
-            {
-                envController.GoalTouched(Team.Black);
-            }
-
+            Debug.Log("white piece touched black goal");
+            envController.GoalTouched(Team.Black);
         }
     }
 
-        void OnTriggerExit(Collider col)
+    void OnTriggerExit(Collider col)
     {
 
 
-  if (gameObject.CompareTag(tag))
+        if (gameObject.CompareTag(tag))
         {
-        if(tag == "whitePiece" && col.gameObject.CompareTag("outsideBorder")){
-            envController._whitePiecesLeft = envController._whitePiecesLeft-1;
-           envController.m_WhiteAgentGroup.AddGroupReward(-0.3f);
-        }
-        if(tag == "blackPiece"&& col.gameObject.CompareTag("outsideBorder")){
-            envController._blackPiecesLeft = envController._blackPiecesLeft-1;
-           envController.m_BlackAgentGroup.AddGroupReward(-0.3f);
+            if (tag == "whitePiece" && col.gameObject.CompareTag("outsideBorder"))
+            {
+                envController._whitePiecesLeft = envController._whitePiecesLeft - 1;
+                envController.m_WhiteAgentGroup.AddGroupReward(-0.3f);
+            }
+            if (tag == "blackPiece" && col.gameObject.CompareTag("outsideBorder"))
+            {
+                envController._blackPiecesLeft = envController._blackPiecesLeft - 1;
+                envController.m_BlackAgentGroup.AddGroupReward(-0.3f);
+            }
         }
     }
-}
 }

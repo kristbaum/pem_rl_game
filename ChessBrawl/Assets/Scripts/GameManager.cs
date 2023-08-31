@@ -22,18 +22,18 @@ public class GameManager : MonoBehaviour
 
     public int currentScore = 0;
     private void Awake()
+    {
+        // Singleton pattern initialization
+        if (Instance != null && Instance != this)
         {
-            // Singleton pattern initialization
-            if (Instance != null && Instance != this)
-            {
-                Destroy(this.gameObject);
-                return;
-            }
-            Instance = this;
-
-            // Optionally, if you want this manager to persist across scenes
-            // DontDestroyOnLoad(this.gameObject);
+            Destroy(this.gameObject);
+            return;
         }
+        Instance = this;
 
-        // Add any other GameManager related functions and logic below
+        // Optionally, if you want this manager to persist across scenes
+        // DontDestroyOnLoad(this.gameObject);
+    }
+
+    // Add any other GameManager related functions and logic below
 }
