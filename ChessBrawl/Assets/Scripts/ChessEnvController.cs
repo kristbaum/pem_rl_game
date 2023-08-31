@@ -130,12 +130,14 @@ public class ChessEnvController : MonoBehaviour
         // Reward kicking off opponent pieces
         if (scoredTeam == Team.Black)
         {
+            Debug.Log("Goal BLACK");
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_WhiteAgentGroup.AddGroupReward(-1);
         }
         else
         {
+            Debug.Log("Goal WHITE");
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_BlackAgentGroup.AddGroupReward(-1);

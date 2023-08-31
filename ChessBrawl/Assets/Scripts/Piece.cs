@@ -17,26 +17,20 @@ public class Piece : MonoBehaviour
         tag = gameObject.tag;
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if (gameObject.CompareTag(tag))
+
+        if (col.gameObject.CompareTag(whiteGoalTag) && tag == "blackPiece") //black piece touched white goal
         {
-
-            if (col.gameObject.CompareTag(whiteGoalTag)) //white piece touched white goal
-            {
-                envController.GoalTouched(Team.White);
-            }
-
+            Debug.Log("black piece touched white goal");
+            envController.GoalTouched(Team.White);
         }
 
-        if (gameObject.CompareTag(tag))
+        if (col.gameObject.CompareTag(blackGoalTag) && tag == "whitePiece") //white piece touched black goal
         {
-            if (col.gameObject.CompareTag(blackGoalTag)) //black piece touched black goal
-            {
-                envController.GoalTouched(Team.Black);
+            Debug.Log("white piece touched black goal");
+            envController.GoalTouched(Team.Black);
             }
-
-        }
     }
 
         void OnTriggerExit(Collider col)
