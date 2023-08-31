@@ -159,4 +159,5 @@ Wednesday:
 
 Thursday:
 * Change gamemode: New goal should be most points after clearing the board
-*  Collect videos
+* Collect videos
+* Broken ELO system 
