@@ -147,3 +147,7 @@ Wednesday:
 * Fix counting pieces (OnCollisionEnter, OnCollisionExit, sometimes not triggered) (Mean distancefunction does wierd stuff)
 * Fix Rayvision tags with huge success
 * Reimplement Gamemanager
+
+Thursday:
+* Change gamemode: New goal should be most points after clearing the board
+*  Collect videos
