@@ -132,15 +132,15 @@ public class ChessEnvController : MonoBehaviour
         {
             Debug.Log("Goal BLACK");
             m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            m_WhiteAgentGroup.AddGroupReward(-1);
+            // blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            // m_WhiteAgentGroup.AddGroupReward(-1);
         }
         else
         {
             Debug.Log("Goal WHITE");
             m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            m_BlackAgentGroup.AddGroupReward(-1);
+            // whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            // m_BlackAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();
@@ -202,13 +202,13 @@ public class ChessEnvController : MonoBehaviour
 
     public void ObservePiecesLeft(){
         if(_blackPiecesLeft == 0){
-            m_WhiteAgentGroup.AddGroupReward(2f);
-            whiteAgent.AddReward(2f);
+            m_WhiteAgentGroup.AddGroupReward(1f);
+            // whiteAgent.AddReward(1f);
             ResetScene();
         }
         if(_whitePiecesLeft == 0){
-            m_BlackAgentGroup.AddGroupReward(2f);
-            blackAgent.AddReward(2f);
+            m_BlackAgentGroup.AddGroupReward(1f);
+            // blackAgent.AddReward(1f);
             ResetScene();
         }
     }
