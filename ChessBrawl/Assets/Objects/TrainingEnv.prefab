@@ -1187,8 +1187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &617834887844847320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,8 +1565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &889111843330662683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,8 +1806,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1037900434834903760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,8 +1935,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1144966122703576277
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,8 +2064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &1168015390649228897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,8 +2193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &1186385361726207723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,8 +2322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &1188711352598162735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,8 +2614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &1555173682912226661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,8 +2743,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &1622474187845166930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,8 +2982,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &2476801395416597685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,8 +3111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &2704230006749183856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,8 +3432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3307033075495859057
 GameObject:
   m_ObjectHideFlags: 0
@@ -3585,8 +3561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3429270397741079813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,8 +3690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &3491999856449892832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,8 +3819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &3599465194470826953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3978,8 +3948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &3847332554024968915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,8 +4391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &4633053364738175195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,8 +4710,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &4931755979564462778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,8 +4949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &5063069292321265329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,8 +5515,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &5141409156695597890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,8 +5862,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &5670803727141663263
 GameObject:
   m_ObjectHideFlags: 0
@@ -6364,8 +6322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &5903782371258024733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,8 +6561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &6200020816842418866
 GameObject:
   m_ObjectHideFlags: 0
@@ -6898,8 +6852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &6580617481520161016
 GameObject:
   m_ObjectHideFlags: 0
@@ -7029,8 +6981,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6654224755705023800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7240,8 +7190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6783540642143923942
 GameObject:
   m_ObjectHideFlags: 0
@@ -7371,8 +7319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &6803742730414096597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7502,8 +7448,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteGoal
-  blackGoalTag: blackGoal
 --- !u!1 &7084018198833794989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7633,8 +7577,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &7279832124625010143
 GameObject:
   m_ObjectHideFlags: 0
@@ -7849,8 +7791,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &7454778255742853094
 GameObject:
   m_ObjectHideFlags: 0
@@ -8118,8 +8058,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &7955130168276341668
 GameObject:
   m_ObjectHideFlags: 0
@@ -8249,8 +8187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   area: {fileID: 5063069293597501119}
   envController: {fileID: 0}
-  whiteGoalTag: whiteWallInvisible
-  blackGoalTag: blackWallInvisible
 --- !u!1 &8207585617980182380
 GameObject:
   m_ObjectHideFlags: 0

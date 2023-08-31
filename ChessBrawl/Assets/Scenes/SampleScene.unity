@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingEnv (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
 --- !u!1001 &137397891
@@ -234,6 +238,10 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
@@ -426,6 +434,10 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
@@ -881,6 +893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingEnv (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
 --- !u!1001 &1160734212
@@ -938,6 +954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingEnv (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
 --- !u!1001 &1328120127
@@ -994,6 +1014,10 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
@@ -1211,6 +1235,10 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
@@ -1558,6 +1586,10 @@ PrefabInstance:
     - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
       propertyPath: m_Name
       value: TrainingEnv (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063069293597501119, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a524263d25c6756bb362b2117a90840, type: 3}
