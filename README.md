@@ -161,3 +161,14 @@ Thursday:
 * Change gamemode: New goal should be most points after clearing the board
 * Collect videos
 * Broken ELO system 
+
+# Contributions
+
+| Task  | Contributors |
+| ------------- | ------------- |
+| Concept | Ludwig, Max, Van, Martin |
+| Game specification | Ludwig, Max, Van, Martin  |
+| Reward function setup | Ludwig, Max, Van, Martin |
+| Unity development | Ludwig, Martin |
+| User-Testing | Van |
+| ML-Model-Evaluation | Ludwig, Max, Van, Martin |
