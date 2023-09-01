@@ -172,3 +172,10 @@ Thursday:
 | Unity development | Ludwig, Martin |
 | User-Testing | Van |
 | ML-Model-Evaluation | Ludwig, Max, Van, Martin |
+
+# Human score calculation
+
+| Action  | Score |
+| ------------- | ------------- |
+| Touch opponent piece | -600 |
+| Opponent piece falls off | +500 |
