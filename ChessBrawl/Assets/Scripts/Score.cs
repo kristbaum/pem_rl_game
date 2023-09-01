@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
 
-    public TextMeshProUGUI _scoreText;
-    public GameManager _gameManager = null;
+    public TextMeshProUGUI _scoreBlackText;
+    public TextMeshProUGUI _scoreWhiteText;
+
+    public ChessEnvController _chess = null;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,8 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _scoreText.text = _gameManager.currentScore.ToString();
+        _scoreBlackText.text = _chess.currentScoreBlack.ToString();
+
+        _scoreWhiteText.text = _chess.currentScoreWhite.ToString();
     }
 }

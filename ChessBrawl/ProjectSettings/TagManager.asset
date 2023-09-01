@@ -19,6 +19,8 @@ TagManager:
   - blackWallInvisible
   - whiteWallInvisible
   - outsideBorder
+  - whiteTarget
+  - blackTarget
   layers:
   - Default
   - TransparentFX

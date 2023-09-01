@@ -46,9 +46,15 @@ public class ChessEnvController : MonoBehaviour
 
 
     public SimpleMultiAgentGroup m_BlackAgentGroup;
+
     public SimpleMultiAgentGroup m_WhiteAgentGroup;
+
     private Agent blackAgent;
     private Agent whiteAgent;
+
+    public int currentScoreWhite = 0;
+
+    public int currentScoreBlack = 0;
 
     private int m_ResetTimer;
 
@@ -131,26 +137,17 @@ public class ChessEnvController : MonoBehaviour
         if (scoredTeam == Team.Black)
         {
             // Reward for using own pieces to kick off opponent pieces
-            m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            m_WhiteAgentGroup.AddGroupReward(-1);
-
-            // Reward for kicking of own pieces
-            //m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_BlackAgentGroup.AddGroupReward(-1);
+            m_BlackAgentGroup.AddGroupReward(.8f - (float)m_ResetTimer / MaxEnvironmentSteps);
+            //m_WhiteAgentGroup.AddGroupReward(-.5f);
+            currentScoreBlack = currentScoreBlack + 500;
         }
         else
         {
             // Reward for using own pieces to kick off opponent pieces
-            m_WhiteAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            whiteAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            m_BlackAgentGroup.AddGroupReward(-1);
+            m_WhiteAgentGroup.AddGroupReward(.8f - (float)m_ResetTimer / MaxEnvironmentSteps);
+            //m_BlackAgentGroup.AddGroupReward(-.5f);
+            currentScoreWhite = currentScoreWhite + 500;
 
-            // Reward for kicking of own pieces
-            //m_BlackAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //blackAgent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            //m_WhiteAgentGroup.AddGroupReward(-1);
         }
         //m_WhiteAgentGroup.EndGroupEpisode();
         //m_BlackAgentGroup.EndGroupEpisode();
@@ -208,17 +205,22 @@ public class ChessEnvController : MonoBehaviour
         _whitePiecesLeft = 16;
         _blackPiecesLeft = 16;
 
+        currentScoreWhite = 0;
+        currentScoreBlack = 0;
+
     }
 
     public void ObservePiecesLeft(){
         if(_blackPiecesLeft == 0){
-            m_WhiteAgentGroup.AddGroupReward(20f);
-            whiteAgent.AddReward(20f);
+            //m_WhiteAgentGroup.AddGroupReward(2f);
+            //m_BlackAgentGroup.AddGroupReward(-1f);
+            //m_WhiteAgentGroup.AddGroupReward(1f);
             ResetScene();
         }
         if(_whitePiecesLeft == 0){
-            m_BlackAgentGroup.AddGroupReward(20f);
-            blackAgent.AddReward(20f);
+            //m_BlackAgentGroup.AddGroupReward(2f);
+            //m_BlackAgentGroup.AddGroupReward(1f);
+            //m_WhiteAgentGroup.AddGroupReward(-1f);
             ResetScene();
         }
     }
