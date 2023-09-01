@@ -5,8 +5,8 @@ public class Piece : MonoBehaviour
     public GameObject area;
     [HideInInspector]
     public ChessEnvController envController;
-    public string whiteGoalTag; //will be used to check if collided with white goal
-    public string blackGoalTag; //will be used to check if collided with black goal
+    private string whiteGoalTag = "whiteWallInvisible"; //will be used to check if collided with white goal
+    private string blackGoalTag = "blackWallInvisible"; //will be used to check if collided with black goal
 
     private new string tag;
 
@@ -35,18 +35,15 @@ public class Piece : MonoBehaviour
 
     void OnTriggerExit(Collider col)
     {
-
-
-  if (gameObject.CompareTag(tag))
+        if (tag == "whitePiece" && col.gameObject.CompareTag("outsideBorder"))
         {
-        if(tag == "whitePiece" && col.gameObject.CompareTag("outsideBorder")){
-            envController._whitePiecesLeft = envController._whitePiecesLeft-1;
-           envController.m_WhiteAgentGroup.AddGroupReward(-0.3f);
+            envController._whitePiecesLeft = envController._whitePiecesLeft - 1;
+            envController.m_WhiteAgentGroup.AddGroupReward(-0.3f);
         }
-        if(tag == "blackPiece"&& col.gameObject.CompareTag("outsideBorder")){
-            envController._blackPiecesLeft = envController._blackPiecesLeft-1;
-           envController.m_BlackAgentGroup.AddGroupReward(-0.3f);
+        if (tag == "blackPiece" && col.gameObject.CompareTag("outsideBorder"))
+        {
+            envController._blackPiecesLeft = envController._blackPiecesLeft - 1;
+            envController.m_BlackAgentGroup.AddGroupReward(-0.3f);
         }
     }
-}
 }
