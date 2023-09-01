@@ -33,7 +33,7 @@ public class AgentChess : Agent
     float m_PieceTouch;
     public Position position;
 
-    const float k_Power = 500f;
+    const float k_Power = 400f;
     float m_Existential;
     float m_LateralSpeed;
     float m_ForwardSpeed;
@@ -88,7 +88,7 @@ public class AgentChess : Agent
         if (position == Position.Striker)
         {
             m_LateralSpeed = 0.3f;
-            m_ForwardSpeed = 1.3f;
+            m_ForwardSpeed = 1f;
         }
         else
         {
@@ -219,34 +219,40 @@ public class AgentChess : Agent
         //penalise touching opponent pieces 
         if (team.ToString() == "White" && c.gameObject.CompareTag("blackPiece"))
         {
-            AddReward(-1f);
+            AddReward(-.1f);
+            _chessEnvController.currentScoreWhite =  _chessEnvController.currentScoreWhite - 600;
+            Debug.Log("white agent touched black piece");
         }
         //penalise touching opponent pieces 
         if (team.ToString() == "Black" && c.gameObject.CompareTag("whitePiece"))
         {
-            AddReward(-1f);
+            AddReward(-.1f);
+            _chessEnvController.currentScoreBlack =  _chessEnvController.currentScoreBlack - 600;
+            Debug.Log("black agent touched white piece");
         }
 
         if (c.gameObject.CompareTag("blackWallInvisible"))
         {
             // Prevent agent from falling of
-            AddReward(-1f);
+            AddReward(-.5f);
         }
 
         if (c.gameObject.CompareTag("whiteWallInvisible"))
         {
             // Prevent agent from falling of
-            AddReward(-1f);
+            AddReward(-.5f);
         }
 
-                //rewarding touching own pieces 
+            //rewarding touching own pieces 
         if (team.ToString() == "Black" && c.gameObject.CompareTag("whiteAgent"))
         {
-            AddReward(-1f);
+            AddReward(-.5f);
+            Debug.Log("black agent touched white agent");
         }
         if (team.ToString() == "White" && c.gameObject.CompareTag("blackAgent"))
         {
-            AddReward(-1f);
+            AddReward(-.5f);
+            Debug.Log("white agent touched black agent");
         }
 
 

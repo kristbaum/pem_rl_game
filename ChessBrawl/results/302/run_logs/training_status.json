@@ -1,0 +1,57 @@
+{
+    "MoveAgent": {
+        "checkpoints": [
+            {
+                "steps": 499729,
+                "file_path": "results/302/MoveAgent/MoveAgent-499729.onnx",
+                "reward": -289.88912309919084,
+                "creation_time": 1693427245.1409738,
+                "auxillary_file_paths": [
+                    "results/302/MoveAgent/MoveAgent-499729.pt"
+                ]
+            },
+            {
+                "steps": 999907,
+                "file_path": "results/302/MoveAgent/MoveAgent-999907.onnx",
+                "reward": -175.47394561767578,
+                "creation_time": 1693427585.960296,
+                "auxillary_file_paths": [
+                    "results/302/MoveAgent/MoveAgent-999907.pt"
+                ]
+            },
+            {
+                "steps": 1499834,
+                "file_path": "results/302/MoveAgent/MoveAgent-1499834.onnx",
+                "reward": -126.03015649318695,
+                "creation_time": 1693427933.1867335,
+                "auxillary_file_paths": [
+                    "results/302/MoveAgent/MoveAgent-1499834.pt"
+                ]
+            },
+            {
+                "steps": 1902428,
+                "file_path": "results/302/MoveAgent/MoveAgent-1902428.onnx",
+                "reward": -90.31093663585429,
+                "creation_time": 1693428223.7573237,
+                "auxillary_file_paths": [
+                    "results/302/MoveAgent/MoveAgent-1902428.pt"
+                ]
+            }
+        ],
+        "elo": 1186.372028870249,
+        "final_checkpoint": {
+            "steps": 1902428,
+            "file_path": "results/302/MoveAgent.onnx",
+            "reward": -90.31093663585429,
+            "creation_time": 1693428223.7573237,
+            "auxillary_file_paths": [
+                "results/302/MoveAgent/MoveAgent-1902428.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.8.2+cu111"
+    }
+}
