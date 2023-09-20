@@ -96,10 +96,11 @@ Thursday:
 | Task  | Contributors |
 | ------------- | ------------- |
 | Concept | Ludwig, Max, Van, Martin |
-| Game specification | Ludwig, Max, Van, Martin  |
-| Reward function setup | Ludwig, Max, Van, Martin |
+| Game specification | Ludwig, Max, Martin  |
+| Reward function setup | Ludwig, Max, Martin |
 | Unity development | Ludwig, Martin |
 | User-Testing | Van |
+| ML-Model-Training | Ludwig, Van |
 | ML-Model-Evaluation | Ludwig, Max, Van, Martin |
 
 # Human score calculation
