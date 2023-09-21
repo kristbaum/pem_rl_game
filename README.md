@@ -100,7 +100,7 @@ Thursday:
 | Reward function setup | Ludwig, Max, Martin |
 | Unity development | Ludwig, Martin |
 | User-Testing | Van |
-| ML-Model-Training | Ludwig, Van |
+| ML-Model-Training | Ludwig, Van, Martin |
 | ML-Model-Evaluation | Ludwig, Max, Van, Martin |
 
 # Human score calculation
